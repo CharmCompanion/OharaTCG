@@ -3,52 +3,44 @@
 [ext_resource type="Script" uid="uid://dveft3ujnhv0y" path="res://scripts/decks/Decks.gd" id="1_udmiw"]
 [ext_resource type="PackedScene" uid="uid://hbm0chvljaiv" path="res://addons/smart_drag_drop/field/deck_field.tscn" id="2_qxohf"]
 
-[node name="Decks" type="Control" unique_id=170012391]
+[node name="Decks" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_udmiw")
 field_path = NodePath("DeckField")
 search_grid_path = NodePath("DeckField/CardDropAreaLeft/SearchGrid")
 main_deck_grid_path = NodePath("DeckField/CardDropAreaRight/MainDeckGrid")
 don_deck_grid_path = NodePath("DeckField/CardDropAreaBottom/DonDeckGrid")
 
-[node name="HeaderBar" type="Control" parent="." unique_id=1658979626]
+[node name="HeaderBar" type="HBoxContainer" parent="."]
 z_index = 200
 z_as_relative = false
-anchors_preset = 0
-offset_left = 933.0
-offset_right = 1152.0
-offset_bottom = 31.0
-size_flags_horizontal = 8
-
-[node name="BackButton" type="Button" parent="HeaderBar" unique_id=861507522]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.54300004
-anchor_right = 0.98200005
-anchor_bottom = 1.0
-offset_left = 0.08299255
-offset_right = -0.058013916
-text = "Back"
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 32.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/separation = 6
 
-[node name="DeckDropdown" type="OptionButton" parent="HeaderBar" unique_id=1287142702]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -2.7440002
-anchor_right = -1.6760001
-anchor_bottom = 1.0
-offset_left = -0.063964844
-# Shrink width so it doesn't overlap StarterToggle.
-offset_right = -260.0
+[node name="DeckDropdown" type="OptionButton" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
 
-[node name="StarterToggle" type="OptionButton" parent="HeaderBar" unique_id=1203466275]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -1.6580001
-anchor_right = -1.1960001
-anchor_bottom = 1.0
-offset_left = 0.10202026
-offset_right = -0.07598877
+[node name="StarterToggle" type="OptionButton" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
 item_count = 3
 popup/item_0/text = "Starter"
 popup/item_0/id = 0
@@ -57,204 +49,229 @@ popup/item_1/id = 1
 popup/item_2/text = "Custom"
 popup/item_2/id = 2
 
-[node name="RenameButton" type="Button" parent="HeaderBar" unique_id=230769748]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -1.1780001
-anchor_right = -0.84900004
-anchor_bottom = 1.0
-offset_left = -0.017974854
-offset_right = -0.068984985
+[node name="RenameButton" type="Button" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
 text = "Rename"
 
-[node name="SaveDeckButton" type="Button" parent="HeaderBar" unique_id=1605699213]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.83100003
-anchor_right = -0.63000005
-anchor_bottom = 1.0
-offset_left = -0.010986328
-offset_right = -0.02998352
+[node name="SaveDeckButton" type="Button" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
 text = "Save"
 
-[node name="DeleteButton" type="Button" parent="HeaderBar" unique_id=877451458]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.61200005
-anchor_right = -0.342
-anchor_bottom = 1.0
-offset_left = 0.028015137
-offset_right = -0.101997375
+[node name="DeleteButton" type="Button" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
 text = "Delete"
 
-[node name="ExportButton" type="Button" parent="HeaderBar" unique_id=770570601]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.17400001
-anchor_right = 0.52500004
-anchor_bottom = 1.0
-offset_left = -0.10600281
-offset_right = 0.024993896
+[node name="ClearMainDeckButton" type="Button" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
+text = "Clear Deck"
+
+[node name="ExportButton" type="Button" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
 theme_override_font_sizes/font_size = 10
 text = "Import/Export"
 
-[node name="ClearMainDeckButton" type="Button" parent="HeaderBar" unique_id=1971985535]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.324
-anchor_right = 0.16000001
-anchor_bottom = 1.0
-offset_left = -0.04399872
-offset_right = -0.040000916
-text = "Clear Deck"
+[node name="Spacer" type="Control" parent="HeaderBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
 
-[node name="SaveMenu" type="PopupMenu" parent="HeaderBar" unique_id=2000000003]
-oversampling_override = 1.0
+[node name="BackButton" type="Button" parent="HeaderBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 0
+text = "Back"
+
+[node name="SaveMenu" type="PopupMenu" parent="HeaderBar"]
 item_count = 2
 item_0/text = "Save"
 item_0/id = 0
 item_1/text = "Save As Custom"
 item_1/id = 1
 
-[node name="ImportExportMenu" type="PopupMenu" parent="HeaderBar" unique_id=2000000001]
-oversampling_override = 1.0
+[node name="ImportExportMenu" type="PopupMenu" parent="HeaderBar"]
 size = Vector2i(100, 116)
 item_count = 4
+item_0/text = "Import from Clipboard"
 item_0/id = 0
+item_1/text = "Export for TTS"
 item_1/id = 1
+item_2/text = "Export for Sim"
 item_2/id = 2
+item_3/text = "Export Image"
 item_3/id = 3
 
-[node name="ClearMenu" type="PopupMenu" parent="HeaderBar" unique_id=2000000002]
-oversampling_override = 1.0
+[node name="ClearMenu" type="PopupMenu" parent="HeaderBar"]
 item_count = 2
+item_0/text = "Clear Main Deck"
 item_0/id = 0
+item_1/text = "Clear Don Deck"
 item_1/id = 1
 
-[node name="SaveConflictMenu" type="PopupMenu" parent="HeaderBar" unique_id=2000000004]
-oversampling_override = 1.0
+[node name="SaveConflictMenu" type="PopupMenu" parent="HeaderBar"]
 item_count = 2
 item_0/text = "Overwrite existing"
 item_0/id = 0
 item_1/text = "Save as copy"
 item_1/id = 1
 
-[node name="SaveAsDialog" type="AcceptDialog" parent="." unique_id=2000000005]
+[node name="SaveAsDialog" type="AcceptDialog" parent="."]
 title = "Save Deck As"
 exclusive = false
 
-[node name="VBox" type="VBoxContainer" parent="SaveAsDialog" unique_id=2000000006]
+[node name="VBox" type="VBoxContainer" parent="SaveAsDialog"]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="NameLabel" type="Label" parent="SaveAsDialog/VBox" unique_id=2000000007]
+[node name="NameLabel" type="Label" parent="SaveAsDialog/VBox"]
 layout_mode = 2
 text = "Deck name:"
 
-[node name="NameEdit" type="LineEdit" parent="SaveAsDialog/VBox" unique_id=2000000008]
+[node name="NameEdit" type="LineEdit" parent="SaveAsDialog/VBox"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Control" type="Control" parent="." unique_id=491708829]
+[node name="FilterBar" type="HBoxContainer" parent="."]
 z_index = 150
 z_as_relative = false
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="SearchBox" type="LineEdit" parent="Control" unique_id=216032336]
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 4.925
-anchor_bottom = 0.77500004
-offset_left = 1.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 36.0
+offset_bottom = 68.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/separation = 6
 
-[node name="SearchButton" type="Button" parent="Control" unique_id=201390636]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 5.0
-anchor_right = 6.55
-anchor_bottom = 0.77500004
+[node name="SearchBox" type="LineEdit" parent="FilterBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 0
+placeholder_text = "Search cards..."
+
+[node name="SearchButton" type="Button" parent="FilterBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+mouse_filter = 0
 text = "Search"
 
-[node name="ApplyFiltersButton" type="Button" parent="Control" unique_id=401992615]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 6.6250005
-anchor_right = 8.125
-anchor_bottom = 0.77500004
-offset_left = -3.0517578e-05
+[node name="ApplyFiltersButton" type="Button" parent="FilterBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+mouse_filter = 0
 text = "Apply"
 
-[node name="ClearButton" type="Button" parent="Control" unique_id=683721255]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 6.3
-anchor_top = 0.87500006
-anchor_right = 8.125
-anchor_bottom = 1.6500001
+[node name="ClearButton" type="Button" parent="FilterBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+mouse_filter = 0
 text = "Clear"
 
-[node name="ColorDropdown" type="OptionButton" parent="Control" unique_id=963379556]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.025
-anchor_top = 0.87500006
-anchor_right = 3.15
-anchor_bottom = 1.6500001
-tooltip_text = "Color"
-item_count = 6
-popup/item_0/text = "Red"
-popup/item_0/id = 1
-popup/item_1/text = "Blue"
-popup/item_1/id = 2
-popup/item_2/text = "Green"
-popup/item_2/id = 3
-popup/item_3/text = "Purple"
-popup/item_3/id = 4
-popup/item_4/text = "Black"
-popup/item_4/id = 5
-popup/item_5/text = "Yellow"
-popup/item_5/id = 6
-
-[node name="CategoryDropdown" type="OptionButton" parent="Control" unique_id=1977245446]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 3.2250001
-anchor_top = 0.87500006
-anchor_right = 6.2250004
-anchor_bottom = 1.6500001
-offset_right = -1.5258789e-05
-
-[node name="DeckField" parent="." unique_id=2078501973 instance=ExtResource("2_qxohf")]
+[node name="ColorDropdown" type="OptionButton" parent="FilterBar"]
 unique_name_in_owner = true
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_right = 1123.0
-offset_bottom = 560.0
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+mouse_filter = 0
+tooltip_text = "Color"
+item_count = 7
+popup/item_0/text = "All Colors"
+popup/item_0/id = 0
+popup/item_1/text = "Red"
+popup/item_1/id = 1
+popup/item_2/text = "Blue"
+popup/item_2/id = 2
+popup/item_3/text = "Green"
+popup/item_3/id = 3
+popup/item_4/text = "Purple"
+popup/item_4/id = 4
+popup/item_5/text = "Black"
+popup/item_5/id = 5
+popup/item_6/text = "Yellow"
+popup/item_6/id = 6
 
-[node name="DeckStatsLabel" type="Label" parent="." unique_id=1345275924]
-z_index = 10
+[node name="CategoryDropdown" type="OptionButton" parent="FilterBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+mouse_filter = 0
+item_count = 5
+popup/item_0/text = "All Types"
+popup/item_0/id = 0
+popup/item_1/text = "Leader"
+popup/item_1/id = 1
+popup/item_2/text = "Character"
+popup/item_2/id = 2
+popup/item_3/text = "Event"
+popup/item_3/id = 3
+popup/item_4/text = "Stage"
+popup/item_4/id = 4
+
+[node name="DeckField" parent="." instance=ExtResource("2_qxohf")]
+unique_name_in_owner = true
+z_index = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="DeckStatsLabel" type="Label" parent="."]
+z_index = 200
 z_as_relative = false
-layout_mode = 0
-offset_left = 333.0
-offset_top = 31.0
-offset_right = 1147.0
-offset_bottom = 54.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 36.0
+offset_bottom = 56.0
+grow_horizontal = 2
+horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="HeaderBar/DeckDropdown" to="." method="_on_deck_dropdown_pressed"]
+[connection signal="item_selected" from="HeaderBar/DeckDropdown" to="." method="_on_deck_selected"]
+[connection signal="item_selected" from="HeaderBar/StarterToggle" to="." method="_on_deck_filter_toggled"]
 [connection signal="pressed" from="HeaderBar/RenameButton" to="." method="_on_rename_button_pressed"]
 [connection signal="pressed" from="HeaderBar/SaveDeckButton" to="." method="_on_save_deck_button_pressed"]
 [connection signal="pressed" from="HeaderBar/DeleteButton" to="." method="_on_delete_button_pressed"]
-[connection signal="pressed" from="HeaderBar/ExportButton" to="." method="_on_export_button_pressed"]
 [connection signal="pressed" from="HeaderBar/ClearMainDeckButton" to="." method="_on_clear_main_deck_button_pressed"]
+[connection signal="pressed" from="HeaderBar/ExportButton" to="." method="_on_export_button_pressed"]
+[connection signal="pressed" from="HeaderBar/BackButton" to="." method="_on_back_pressed"]
+[connection signal="id_pressed" from="HeaderBar/SaveMenu" to="." method="_on_save_menu_id_pressed"]
+[connection signal="id_pressed" from="HeaderBar/ImportExportMenu" to="." method="_on_import_export_menu_id_pressed"]
+[connection signal="id_pressed" from="HeaderBar/ClearMenu" to="." method="_on_clear_menu_id_pressed"]
+[connection signal="id_pressed" from="HeaderBar/SaveConflictMenu" to="." method="_on_save_conflict_menu_id_pressed"]
 [connection signal="confirmed" from="SaveAsDialog" to="." method="_on_save_as_dialog_confirmed"]
-[connection signal="editing_toggled" from="Control/SearchBox" to="." method="_on_search_box_editing_toggled"]
-[connection signal="pressed" from="Control/SearchButton" to="." method="_on_search_button_pressed"]
-[connection signal="pressed" from="Control/ApplyFiltersButton" to="." method="_on_apply_filters_button_pressed"]
-[connection signal="pressed" from="Control/ClearButton" to="." method="_on_clear_button_pressed"]
-[connection signal="pressed" from="Control/ColorDropdown" to="." method="_on_color_dropdown_pressed"]
-[connection signal="pressed" from="Control/CategoryDropdown" to="." method="_on_category_dropdown_pressed"]
+[connection signal="text_submitted" from="FilterBar/SearchBox" to="." method="_on_search_submitted"]
+[connection signal="pressed" from="FilterBar/SearchButton" to="." method="_on_search_button_pressed"]
+[connection signal="pressed" from="FilterBar/ApplyFiltersButton" to="." method="_on_apply_filters_button_pressed"]
+[connection signal="pressed" from="FilterBar/ClearButton" to="." method="_on_clear_button_pressed"]
+[connection signal="item_selected" from="FilterBar/ColorDropdown" to="." method="_on_color_selected"]
+[connection signal="item_selected" from="FilterBar/CategoryDropdown" to="." method="_on_category_selected"]

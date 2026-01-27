@@ -3,7 +3,7 @@ extends Control
 @onready var deck_item_scene: PackedScene = preload("res://scenes/ui/DeckItem.tscn")
 @onready var deck_grid: GridContainer = %DeckGrid
 @onready var deck_tabs: TabBar = %DeckTabs
-@onready var back_button: Button = $MainLayout/TopBar/Back
+@onready var back_button: Button = %BackButton
 
 var previous_scene_path: String = ""
 const FALLBACK_PREVIOUS_SCENE := "res://scenes/ui/PostLogin.tscn"
@@ -13,8 +13,10 @@ const TAB_META := 1
 const TAB_CUSTOM := 2
 
 func _ready() -> void:
-	deck_tabs.tab_changed.connect(_on_tab_changed)
-	back_button.pressed.connect(_on_back_pressed)
+	if deck_tabs and not deck_tabs.tab_changed.is_connected(_on_tab_changed):
+		deck_tabs.tab_changed.connect(_on_tab_changed)
+	if back_button and not back_button.pressed.is_connected(_on_back_pressed):
+		back_button.pressed.connect(_on_back_pressed)
 	_connect_button_sounds(back_button)
 	_refresh_grid()
 
@@ -35,6 +37,8 @@ func _get_ui_manager() -> Node:
 	return null
 
 func _connect_button_sounds(button: Button) -> void:
+	if button == null:
+		return
 	var root := get_tree().root
 	if root == null:
 		return
@@ -48,13 +52,14 @@ func _on_back_pressed() -> void:
 	if ui_manager:
 		ui_manager.switch_scene(target)
 	else:
-		# Allow running DeckSelection as a standalone scene (no Main/UIContainer).
 		get_tree().change_scene_to_file(target)
 
 func _on_tab_changed(_tab_index: int) -> void:
 	_refresh_grid()
 
 func _refresh_grid() -> void:
+	if deck_grid == null:
+		return
 	for child in deck_grid.get_children():
 		child.queue_free()
 
@@ -62,23 +67,22 @@ func _refresh_grid() -> void:
 	for d in decks:
 		_create_deck_button(d, false)
 
-	# Always show a "New Deck" tile as the last item.
 	_create_deck_button({}, true)
 
 func _create_deck_button(data: Dictionary, is_new: bool) -> void:
+	if deck_item_scene == null:
+		push_error("DeckSelection: deck_item_scene is null")
+		return
 	var item: Button = deck_item_scene.instantiate()
 	deck_grid.add_child(item)
-	# Store data on the node so we can always handle clicks via `pressed`.
 	item.set_meta("deck_data", data)
 	item.set_meta("is_new", is_new)
 	if item.has_method("setup"):
 		item.call("setup", data, is_new)
-	# Robust click wiring: use built-in pressed signal.
-	if not item.pressed.is_connected(Callable(self, "_on_tile_pressed")):
-		item.pressed.connect(Callable(self, "_on_tile_pressed").bind(item))
-	# Also support the custom signal if present.
-	if item.has_signal("deck_selected") and not item.is_connected("deck_selected", Callable(self, "_on_deck_clicked")):
-		item.connect("deck_selected", Callable(self, "_on_deck_clicked").bind(is_new))
+	if not item.pressed.is_connected(_on_tile_pressed.bind(item)):
+		item.pressed.connect(_on_tile_pressed.bind(item))
+	if item.has_signal("deck_selected") and not item.is_connected("deck_selected", _on_deck_clicked.bind(is_new)):
+		item.connect("deck_selected", _on_deck_clicked.bind(is_new))
 
 
 func _on_tile_pressed(item: Node) -> void:
@@ -110,13 +114,11 @@ func _open_deck_editor(deck_id: String, is_new: bool) -> void:
 				decks_instance.set_previous_scene(get_scene_file_path())
 			ui_manager.switch_scene_with_instance(decks_instance)
 	else:
-		# Standalone fallback.
 		get_tree().change_scene_to_file("res://scenes/DeckEdit.tscn")
 
 func _collect_decks(tab_index: int) -> Array:
 	var decks: Array = []
 
-	# Directory sources by category
 	if tab_index == TAB_STARTER:
 		decks.append_array(_scan_dir_for_decks("res://output/decks/starter/", "starter"))
 	elif tab_index == TAB_META:
@@ -125,7 +127,6 @@ func _collect_decks(tab_index: int) -> Array:
 		decks.append_array(_scan_dir_for_decks("user://cache/data/decks/", "custom"))
 		decks.append_array(_scan_dir_for_decks("res://data/decks/", "custom"))
 
-	# De-dup by deck_id, keep first (prefer cache over res)
 	var seen := {}
 	var unique: Array = []
 	for d in decks:
@@ -135,7 +136,6 @@ func _collect_decks(tab_index: int) -> Array:
 		seen[did] = true
 		unique.append(d)
 
-	# Sort by display name
 	unique.sort_custom(func(a, b):
 		return str(a.get("display_name", a.get("deck_id", ""))) < str(b.get("display_name", b.get("deck_id", "")))
 	)
@@ -155,7 +155,6 @@ func _scan_dir_for_decks(dir_path: String, kind: String) -> Array:
 		if deck_id == "deck_export":
 			continue
 		if kind == "custom" and deck_id.begins_with("ST"):
-			# Avoid duplicating starters in Custom.
 			continue
 
 		var full_path := dir_path + f
@@ -222,7 +221,6 @@ func _deck_summary(deck_id: String, deck_path: String, deck_json: Dictionary) ->
 			if s2 != "":
 				colors.append(s2)
 
-	# Override known edge cases where color data is missing/incorrect in JSON.
 	if deck_id.begins_with("ST-29") and colors.is_empty():
 		colors.append("yellow")
 
