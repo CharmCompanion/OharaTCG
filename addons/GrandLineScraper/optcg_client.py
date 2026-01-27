@@ -1,11 +1,21 @@
 import re
+import os
 import time
 from typing import Dict, List, Any, Optional
 import requests
 import streamlit as st
 
 class OPTcgClient:
-    """Client for OPTCG API (English TCG data + images)"""
+    """Client for OPTCG API (English TCG data + images)
+    
+    Note: OPTCG API is open and does not require authentication.
+    Available data:
+    - All booster sets (OP-01 through current)
+    - All starter decks (ST-01 through current)
+    - Promo cards (900+ tracked, some missing images)
+    
+    Tournament variants and alt-arts are included within their respective sets.
+    """
 
     def __init__(self):
         self.api_root = "https://optcgapi.com/api"

@@ -79,19 +79,14 @@ def main():
     with st.sidebar:
         st.markdown('<h2 class="section-header">⚙️ Configuration</h2>', unsafe_allow_html=True)
         
-        # API Key input
-        api_key = st.text_input(
-            "APITCG API Key",
-            value=os.getenv("APITCG_API_KEY", ""),
-            type="password",
-            help="Enter your APITCG API key"
-        )
+        # OPTCG API info - no authentication required
+        st.info("ℹ️ OPTCG API is open - no API key required. Covers all English TCG cards.")
         
         # Data source selection
         st.markdown("### Data Sources")
-        include_apitcg = st.checkbox("APITCG (Vegapull) Data", value=True, help="Fetch data from vegapull GitHub data")
-        include_github = st.checkbox("GitHub Repository", value=True, help="Fetch data from one-piece-tcg-data repository")
-        include_optcg = st.checkbox("OPTCG API (English Overlay)", value=True, help="Overlay OPTCG English text + image URLs")
+        include_optcg = st.checkbox("OPTCG API (Primary - English TCG)", value=True, help="Fetch all English TCG cards from OPTCG API with images")
+        include_apitcg = st.checkbox("APITCG (Vegapull) Data", value=False, help="Fetch additional data from vegapull GitHub data")
+        include_github = st.checkbox("GitHub Repository", value=False, help="Fetch data from one-piece-tcg-data repository")
         include_topdecks = st.checkbox("OnePieceTopDecks (Leaks/Translated)", value=False, help="Scrape fan-translated leaks and set galleries")
 
         topdecks_extra_urls = ""
@@ -135,8 +130,6 @@ def main():
         st.markdown('<h2 class="section-header">📊 Scraping Dashboard</h2>', unsafe_allow_html=True)
         
         # Validation and start button
-        if not api_key and include_apitcg:
-            st.warning("⚠️ No API key provided. Current vegapull data source does not require a key.")
         
         if not any([include_apitcg, include_github, include_optcg, include_topdecks]):
             st.error("⚠️ Please select at least one data source")
@@ -148,7 +141,7 @@ def main():
         
         # Start scraping button
         if st.button("🚀 Start Scraping", type="primary", use_container_width=True):
-            start_scraping(api_key, include_apitcg, include_github, include_optcg, include_topdecks,
+            start_scraping(include_apitcg, include_github, include_optcg, include_topdecks,
                           topdecks_extra_urls, card_types,
                           include_ocg, include_tcg, translate_ocg, download_images, 
                           export_format, output_dir, auto_copy_decks)
@@ -161,7 +154,7 @@ def main():
     if st.session_state.scraping_complete:
         display_results()
 
-def start_scraping(api_key, include_apitcg, include_github, include_optcg, include_topdecks,
+def start_scraping(include_apitcg, include_github, include_optcg, include_topdecks,
                    topdecks_extra_urls, card_types, include_ocg, include_tcg, translate_ocg, download_images,
                    export_format, output_dir, auto_copy_decks):
     """Start the scraping process"""
@@ -175,7 +168,7 @@ def start_scraping(api_key, include_apitcg, include_github, include_optcg, inclu
     
     try:
         # Initialize clients and processors
-        api_client = APITCGClient(api_key) if (include_apitcg or include_optcg) else None
+        api_client = APITCGClient("") if (include_apitcg or include_github) else None
         optcg_client = OPTcgClient() if include_optcg else None
         topdecks_client = OnePieceTopDecksClient() if include_topdecks else None
         data_processor = DataProcessor()
@@ -228,44 +221,30 @@ def start_scraping(api_key, include_apitcg, include_github, include_optcg, inclu
                 st.warning(f"Failed to fetch GitHub data: {str(e)}")
                 st.session_state.scraped_data['github'] = {}
 
-        # Step 3: Fetch OPTCG data (English overlay)
+        # Step 3: Fetch OPTCG data (Primary source for all cards)
         if include_optcg:
             current_step += 1
-            update_progress(progress_container, current_step, total_steps, "Fetching OPTCG English overlay...")
+            update_progress(progress_container, current_step, total_steps, "Fetching all cards from OPTCG API...")
 
             try:
                 if optcg_client:
-                    set_list = []
-                    if include_apitcg and 'apitcg' in st.session_state.scraped_data:
-                        set_list = st.session_state.scraped_data['apitcg'].get('sets', [])
-                    elif api_client:
-                        set_list = api_client.fetch_set_list(False, True)
-
-                    # Filter to TCG sets using current card type selections
-                    set_ids = []
-                    for pack in set_list:
-                        if not pack or pack.get('language') != 'tcg':
-                            continue
-                        pack_type = pack.get('type', 'unknown')
-                        if pack_type == 'booster_pack' and not card_types.get('Sets', True):
-                            continue
-                        if pack_type == 'starter_deck' and not card_types.get('Decks', True):
-                            continue
-                        if pack_type == 'promo' and not card_types.get('Promos', True):
-                            continue
-                        if pack_type == 'other' and not card_types.get('Alt Arts', True):
-                            continue
-                        set_ids.append(pack.get('label', pack.get('id', '')))
-
+                    st.write("📡 Querying OPTCG API for available sets and decks...")
+                    
                     optcg_data = optcg_client.fetch_cards_for_sets(
-                        set_ids,
+                        [],
                         include_sets=card_types.get('Sets', True),
                         include_decks=card_types.get('Decks', True),
                         include_promos=card_types.get('Promos', True),
                         include_optcg_catalog=True,
                     )
                     st.session_state.scraped_data['optcg'] = optcg_data
-                    st.session_state.current_progress['optcg'] = f"✅ Fetched {len(optcg_data.get('cards', []))} OPTCG cards"
+                    
+                    total_cards = len(optcg_data.get('cards', []))
+                    total_sets = len(optcg_data.get('sets', []))
+                    metadata = optcg_data.get('metadata', {})
+                    
+                    st.write(f"📊 Summary: {total_cards} cards from {metadata.get('sets_fetched', 0)} sets, {metadata.get('decks_fetched', 0)} starter decks, {metadata.get('promos_fetched', 0)} promos")
+                    st.session_state.current_progress['optcg'] = f"✅ Fetched {total_cards} cards from OPTCG API"
                 else:
                     st.error("OPTCG client not initialized")
             except Exception as e:
