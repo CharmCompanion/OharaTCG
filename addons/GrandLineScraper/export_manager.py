@@ -60,6 +60,10 @@ class ExportManager:
         banlist_files = self._export_banlist_filters(processed_data)
         exported_files.extend(banlist_files)
         
+        # Export recipe format (.txt deck lists)
+        recipe_files = self._export_recipes(processed_data)
+        exported_files.extend(recipe_files)
+        
         return exported_files
     
     def _create_export_structure(self):
@@ -72,6 +76,7 @@ class ExportManager:
             'sets/special',
             'decks/starter',
             'decks/ultra',
+            'decks/recipes',
             'databases',
             'bulk/complete',
             'bulk/sets-only',
@@ -297,6 +302,77 @@ class ExportManager:
             self._copy_starter_decks_to_project()
         
         return exported_files
+
+    def _export_recipes(self, data: Dict[str, Any]) -> List[str]:
+        """Export starter decks in recipe format (.txt files matching data/recipes format)
+        
+        Recipe format:
+        - Line 1: # <Deck Name> recipe
+        - Lines 2+: <count>x<card_code> (e.g., 4xST01-002)
+        """
+        exported_files = []
+        
+        starter_decks = self._extract_starter_decks(data.get('cards', []))
+        recipes_folder = self.output_dir / 'decks' / 'recipes'
+        recipes_folder.mkdir(parents=True, exist_ok=True)
+        
+        for deck_id in sorted(starter_decks.keys(), key=self._deck_sort_key):
+            deck_info = starter_decks[deck_id]
+            recipe_file = recipes_folder / f"{deck_id}.txt"
+            
+            lines = []
+            deck_name = deck_info.get('name', deck_id)
+            lines.append(f"# {deck_name} recipe")
+            
+            card_counts: Dict[str, int] = {}
+            
+            leader = deck_info.get('leader')
+            if leader:
+                card_code = self._get_recipe_card_code(leader)
+                if card_code:
+                    card_counts[card_code] = card_counts.get(card_code, 0) + 1
+            
+            for card in deck_info.get('main_deck', []):
+                card_code = self._get_recipe_card_code(card)
+                if card_code:
+                    copies = int(card.get('copies', 1))
+                    card_counts[card_code] = card_counts.get(card_code, 0) + copies
+            
+            sorted_codes = sorted(card_counts.keys(), key=self._recipe_card_sort_key)
+            for card_code in sorted_codes:
+                count = card_counts[card_code]
+                lines.append(f"{count}x{card_code}")
+            
+            with open(recipe_file, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(lines) + '\n')
+            exported_files.append(str(recipe_file))
+        
+        if exported_files:
+            st.write(f"✅ Exported {len(exported_files)} deck recipes")
+        
+        return exported_files
+    
+    def _get_recipe_card_code(self, card: Dict[str, Any]) -> str:
+        """Get card code in recipe format (e.g., ST01-002)"""
+        card_code = card.get('card_code', '')
+        if card_code:
+            return card_code.replace('-', '').upper() if '-' not in card_code else card_code
+        
+        set_code = card.get('set_code', '')
+        number = card.get('number', '')
+        if set_code and number:
+            return f"{set_code}-{number}"
+        
+        return ''
+    
+    def _recipe_card_sort_key(self, card_code: str):
+        """Sort cards in recipe format: Leaders first, then by set, then by number"""
+        match = re.match(r'^([A-Z]+)-?(\d+)-(\d+)$', card_code.upper())
+        if match:
+            prefix, set_num, card_num = match.groups()
+            is_leader = card_num == '001'
+            return (0 if is_leader else 1, prefix, int(set_num), int(card_num))
+        return (2, card_code, 0, 0)
 
     def _copy_starter_decks_to_project(self) -> None:
         """Copy exported starter decks into res://data/decks for in-game use"""
