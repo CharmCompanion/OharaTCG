@@ -108,6 +108,55 @@ def main():
             "Alt Arts": st.checkbox("Alt Arts", value=True)
         }
         
+        # Filtered search options (OPTCG only)
+        if include_optcg:
+            with st.expander("🔍 Filtered Search (Optional)", expanded=False):
+                st.caption("Leave blank to fetch all cards, or set filters to narrow results")
+                
+                filter_color = st.selectbox(
+                    "Color",
+                    ["All", "Red", "Green", "Blue", "Purple", "Black", "Yellow"],
+                    index=0
+                )
+                
+                filter_type = st.selectbox(
+                    "Card Type",
+                    ["All", "Leader", "Character", "Event", "Stage", "DON!!"],
+                    index=0
+                )
+                
+                filter_rarity = st.selectbox(
+                    "Rarity",
+                    ["All", "C", "UC", "R", "SR", "SEC", "L", "SP", "P", "TR"],
+                    index=0
+                )
+                
+                col_cost1, col_cost2 = st.columns(2)
+                with col_cost1:
+                    filter_cost_min = st.number_input("Cost Min", min_value=0, max_value=10, value=0)
+                with col_cost2:
+                    filter_cost_max = st.number_input("Cost Max", min_value=0, max_value=10, value=10)
+                
+                col_power1, col_power2 = st.columns(2)
+                with col_power1:
+                    filter_power_min = st.number_input("Power Min", min_value=0, max_value=15000, value=0, step=1000)
+                with col_power2:
+                    filter_power_max = st.number_input("Power Max", min_value=0, max_value=15000, value=15000, step=1000)
+                
+                filter_search_text = st.text_input("Search Text (name/effect)", value="")
+                
+                use_filters = st.checkbox("Use these filters instead of fetching all cards", value=False)
+        else:
+            use_filters = False
+            filter_color = "All"
+            filter_type = "All"
+            filter_rarity = "All"
+            filter_cost_min = 0
+            filter_cost_max = 10
+            filter_power_min = 0
+            filter_power_max = 15000
+            filter_search_text = ""
+        
         # Language options
         st.markdown("### Language Options")
         include_ocg = st.checkbox("OCG (Japanese)", value=True)
@@ -141,10 +190,21 @@ def main():
         
         # Start scraping button
         if st.button("🚀 Start Scraping", type="primary", use_container_width=True):
+            filter_options = {
+                "use_filters": use_filters,
+                "color": filter_color if filter_color != "All" else None,
+                "card_type": filter_type if filter_type != "All" else None,
+                "rarity": filter_rarity if filter_rarity != "All" else None,
+                "cost_min": filter_cost_min if filter_cost_min > 0 else None,
+                "cost_max": filter_cost_max if filter_cost_max < 10 else None,
+                "power_min": filter_power_min if filter_power_min > 0 else None,
+                "power_max": filter_power_max if filter_power_max < 15000 else None,
+                "search_text": filter_search_text if filter_search_text else None,
+            }
             start_scraping(include_apitcg, include_github, include_optcg, include_topdecks,
                           topdecks_extra_urls, card_types,
                           include_ocg, include_tcg, translate_ocg, download_images, 
-                          export_format, output_dir, auto_copy_decks)
+                          export_format, output_dir, auto_copy_decks, filter_options)
     
     with col2:
         st.markdown('<h2 class="section-header">📈 Progress</h2>', unsafe_allow_html=True)
@@ -156,8 +216,10 @@ def main():
 
 def start_scraping(include_apitcg, include_github, include_optcg, include_topdecks,
                    topdecks_extra_urls, card_types, include_ocg, include_tcg, translate_ocg, download_images,
-                   export_format, output_dir, auto_copy_decks):
+                   export_format, output_dir, auto_copy_decks, filter_options=None):
     """Start the scraping process"""
+    if filter_options is None:
+        filter_options = {"use_filters": False}
     
     # Create output directories
     create_directories(output_dir)
@@ -224,27 +286,58 @@ def start_scraping(include_apitcg, include_github, include_optcg, include_topdec
         # Step 3: Fetch OPTCG data (Primary source for all cards)
         if include_optcg:
             current_step += 1
-            update_progress(progress_container, current_step, total_steps, "Fetching all cards from OPTCG API...")
-
+            
             try:
                 if optcg_client:
-                    st.write("📡 Querying OPTCG API for available sets and decks...")
-                    
-                    optcg_data = optcg_client.fetch_cards_for_sets(
-                        [],
-                        include_sets=card_types.get('Sets', True),
-                        include_decks=card_types.get('Decks', True),
-                        include_promos=card_types.get('Promos', True),
-                        include_optcg_catalog=True,
-                    )
-                    st.session_state.scraped_data['optcg'] = optcg_data
-                    
-                    total_cards = len(optcg_data.get('cards', []))
-                    total_sets = len(optcg_data.get('sets', []))
-                    metadata = optcg_data.get('metadata', {})
-                    
-                    st.write(f"📊 Summary: {total_cards} cards from {metadata.get('sets_fetched', 0)} sets, {metadata.get('decks_fetched', 0)} starter decks, {metadata.get('promos_fetched', 0)} promos")
-                    st.session_state.current_progress['optcg'] = f"✅ Fetched {total_cards} cards from OPTCG API"
+                    # Check if using filtered search
+                    if filter_options.get("use_filters", False):
+                        update_progress(progress_container, current_step, total_steps, "Fetching filtered cards from OPTCG API...")
+                        st.write("🔍 Using filtered search on OPTCG API...")
+                        
+                        filtered_cards = optcg_client.fetch_filtered_cards(
+                            card_type=filter_options.get("card_type"),
+                            color=filter_options.get("color"),
+                            rarity=filter_options.get("rarity"),
+                            cost_min=filter_options.get("cost_min"),
+                            cost_max=filter_options.get("cost_max"),
+                            power_min=filter_options.get("power_min"),
+                            power_max=filter_options.get("power_max"),
+                            search_text=filter_options.get("search_text"),
+                            source="both",
+                        )
+                        
+                        optcg_data = {
+                            "cards": filtered_cards,
+                            "sets": [],
+                            "metadata": {
+                                "source": "optcg_filtered",
+                                "total_cards": len(filtered_cards),
+                                "filters_used": {k: v for k, v in filter_options.items() if v and k != "use_filters"},
+                            },
+                        }
+                        st.session_state.scraped_data['optcg'] = optcg_data
+                        st.write(f"📊 Found {len(filtered_cards)} cards matching filters")
+                        st.session_state.current_progress['optcg'] = f"✅ Fetched {len(filtered_cards)} filtered cards from OPTCG API"
+                    else:
+                        # Fetch all cards (original behavior)
+                        update_progress(progress_container, current_step, total_steps, "Fetching all cards from OPTCG API...")
+                        st.write("📡 Querying OPTCG API for available sets and decks...")
+                        
+                        optcg_data = optcg_client.fetch_cards_for_sets(
+                            [],
+                            include_sets=card_types.get('Sets', True),
+                            include_decks=card_types.get('Decks', True),
+                            include_promos=card_types.get('Promos', True),
+                            include_optcg_catalog=True,
+                        )
+                        st.session_state.scraped_data['optcg'] = optcg_data
+                        
+                        total_cards = len(optcg_data.get('cards', []))
+                        total_sets = len(optcg_data.get('sets', []))
+                        metadata = optcg_data.get('metadata', {})
+                        
+                        st.write(f"📊 Summary: {total_cards} cards from {metadata.get('sets_fetched', 0)} sets, {metadata.get('decks_fetched', 0)} starter decks, {metadata.get('promos_fetched', 0)} promos")
+                        st.session_state.current_progress['optcg'] = f"✅ Fetched {total_cards} cards from OPTCG API"
                 else:
                     st.error("OPTCG client not initialized")
             except Exception as e:

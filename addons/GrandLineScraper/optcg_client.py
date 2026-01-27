@@ -142,6 +142,98 @@ class OPTcgClient:
         data = response.json()
         return data if isinstance(data, list) else []
 
+    def fetch_filtered_cards(
+        self,
+        *,
+        card_type: Optional[str] = None,
+        color: Optional[str] = None,
+        rarity: Optional[str] = None,
+        cost_min: Optional[int] = None,
+        cost_max: Optional[int] = None,
+        power_min: Optional[int] = None,
+        power_max: Optional[int] = None,
+        counter_min: Optional[int] = None,
+        counter_max: Optional[int] = None,
+        search_text: Optional[str] = None,
+        source: str = "both",
+    ) -> List[Dict[str, Any]]:
+        """Fetch cards using OPTCG's filtered search endpoints.
+        
+        Args:
+            card_type: Filter by type (Leader, Character, Event, Stage, DON!!)
+            color: Filter by color (Red, Green, Blue, Purple, Black, Yellow)
+            rarity: Filter by rarity (C, UC, R, SR, SEC, L, SP, etc.)
+            cost_min/cost_max: Filter by cost range
+            power_min/power_max: Filter by power range
+            counter_min/counter_max: Filter by counter range
+            search_text: Search in card name or effect text
+            source: "sets", "decks", or "both"
+        
+        Returns:
+            List of normalized card dictionaries
+        """
+        all_cards: List[Dict[str, Any]] = []
+        
+        params = {}
+        if card_type:
+            params["card_type"] = card_type
+        if color:
+            params["card_color"] = color
+        if rarity:
+            params["rarity"] = rarity
+        if cost_min is not None:
+            params["card_cost__gte"] = cost_min
+        if cost_max is not None:
+            params["card_cost__lte"] = cost_max
+        if power_min is not None:
+            params["card_power__gte"] = power_min
+        if power_max is not None:
+            params["card_power__lte"] = power_max
+        if counter_min is not None:
+            params["counter_amount__gte"] = counter_min
+        if counter_max is not None:
+            params["counter_amount__lte"] = counter_max
+        if search_text:
+            params["search"] = search_text
+        
+        if source in ("sets", "both"):
+            try:
+                url = f"{self.api_root}/sets/filtered/"
+                response = self.session.get(url, params=params, timeout=30)
+                response.raise_for_status()
+                data = response.json()
+                cards_raw = data.get("value", []) if isinstance(data, dict) else data
+                for card in cards_raw:
+                    normalized = self._normalize_optcg_card(card)
+                    if normalized:
+                        all_cards.append(normalized)
+            except Exception as e:
+                st.warning(f"Filtered sets search failed: {str(e)}")
+        
+        if source in ("decks", "both"):
+            try:
+                url = f"{self.api_root}/decks/filtered/"
+                response = self.session.get(url, params=params, timeout=30)
+                response.raise_for_status()
+                data = response.json()
+                cards_raw = data.get("value", []) if isinstance(data, dict) else data
+                for card in cards_raw:
+                    normalized = self._normalize_optcg_card(card)
+                    if normalized:
+                        all_cards.append(normalized)
+            except Exception as e:
+                st.warning(f"Filtered decks search failed: {str(e)}")
+        
+        return all_cards
+
+    def get_available_filters(self) -> Dict[str, List[str]]:
+        """Return available filter options for the UI."""
+        return {
+            "card_types": ["Leader", "Character", "Event", "Stage", "DON!!"],
+            "colors": ["Red", "Green", "Blue", "Purple", "Black", "Yellow"],
+            "rarities": ["C", "UC", "R", "SR", "SEC", "L", "SP", "P", "TR"],
+        }
+
     def _fetch_set_cards(self, set_id: str) -> List[Dict[str, Any]]:
         """Fetch cards from OPTCG API for a specific set"""
         url = f"{self.api_root}/sets/{set_id}/"
