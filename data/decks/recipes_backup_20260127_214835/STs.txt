@@ -1,0 +1,676 @@
+GUIDE:
+R = Red
+G = Green
+B = Blue
+Y = Yellow
+P = Purple
+BK = Black
+
+
+
+# ST-01 R Luffy (Starter Deck 01) recipe
+1 ST01-001 Monkey.D.Luffy
+4 ST01-007 Nami
+4 ST01-006 Tony Tony.Chopper
+4 ST01-003 Karoo
+4 ST01-002 Usopp
+2 ST01-011 Brook
+4 ST01-009 Nefeltari Vivi
+4 ST01-004 Sanji
+4 ST01-005 Jinbe
+4 ST01-008 Nico Robin
+2 ST01-013 Roronoa Zoro
+4 ST01-010 Franky
+2 ST01-012 Monkey.D.Luffy
+2 ST01-016 Diable Jambe
+2 ST01-014 Guard Point
+2 ST01-015 Gum-Gum Jet Pistol
+2 ST01-017 Thousand Sunny
+
+# ST-02 G Kid (Starter Deck 02) recipe
+1 ST02-001 Eustass"Captain"Kid
+4 ST02-004 Capone"Gang"Bege
+4 ST02-007 Jewelry Bonney
+4 ST02-012 Bepo
+4 ST02-008 Scratchmen Apoo
+2 ST02-003 Urouge
+4 ST02-011 Heat
+2 ST02-005 Killer
+4 ST02-002 Vito
+4 ST02-014 X.Drake
+4 ST02-006 Koby
+2 ST02-010 Basil Hawkins
+2 ST02-009 Trafalgar Law
+2 ST02-013 Eustass"Captain"Kid
+2 ST02-015 Scalpel
+4 ST02-016 Repel
+2 ST02-017 Straw Sword
+
+# ST-03 B Crocodile (Starter Deck 03) recipe
+1 ST03-001 Crocodile
+4 ST03-008 Trafalgar Law
+4 ST03-011 Buggy
+4 ST03-010 Bartholomew Kuma
+4 ST03-006 Jinbe
+4 ST03-013 Boa Hancock
+2 ST03-007 Sentomaru
+4 ST03-002 Edward Weevil
+2 ST03-014 Marshall.D.Teach
+2 ST03-005 Dracule Mihawk
+2 ST03-004 Gecko Moria
+4 ST03-012 Pacifista
+2 ST03-003 Crocodile
+2 ST03-009 Donquixote Doflamingo
+2 ST03-017 Love-Love Mellow
+4 ST03-016 Thrust Pad Cannon
+4 ST03-015 Sables
+
+# ST-04 P Kaido (Starter Deck 04) recipe
+1 ST04-001 Kaido
+4 ST04-009 Ginrummy
+4 ST04-011 Black Maria
+4 ST04-007 Sheepshead
+2 ST04-010 Who's.Who
+2 ST04-008 Jack
+4 ST04-006 Sasaki
+4 ST04-013 X.Drake
+4 ST04-002 Ulti
+4 ST04-012 Page One
+2 ST04-005 Queen
+2 ST04-004 King
+2 ST04-003 Kaido
+4 ST04-016 Blast Breath
+2 ST04-014 Lead Performer "Disaster"
+2 ST04-015 Brachio Bomber
+4 ST04-017 Onigashima Island
+
+# ST-05 R Shanks (Starter Deck 05) recipe
+1 ST05-001 Shanks
+4 ST05-014 Buena Festa
+4 ST05-007 Gordon
+4 ST05-003 Ann
+2 ST05-005 Carina
+4 ST05-009 Scarlet
+4 ST05-015 Dr. Indigo
+4 ST05-012 Baccarat
+4 ST05-002 Ain
+2 ST05-004 Uta
+4 ST05-013 Bins
+2 ST05-006 Gild Tesoro
+2 ST05-008 Shiki
+2 ST05-010 Zephyr
+2 ST05-011 Douglas Bullet
+4 ST05-017 Union Armada
+2 ST05-016 Lion's Threat Imperial Earth Bind
+
+# ST-06 BK Sakazuki (Starter Deck 06) recipe
+1 ST06-001 Sakazuki
+2 ST06-002 Koby
+4 ST06-003 Jango
+4 ST06-007 Tsuru
+4 ST06-010 Helmeppo
+4 ST06-009 Fullbody
+4 ST06-006 Tashigi
+2 ST06-008 Hina
+4 ST06-013 T-Bone
+4 ST06-011 Momonga
+2 ST06-012 Monkey.D.Garp
+4 ST06-005 Sengoku
+2 ST06-004 Smoker
+2 ST06-015 Great Eruption
+4 ST06-016 White Out
+2 ST06-014 Shockwave
+2 ST06-017 Navy HQ
+
+# ST-07 Y Charlotte Linlin (Starter Deck 07) recipe
+1 ST07-001 Charlotte Linlin
+4 ST07-002 Charlotte Anana
+4 ST07-008 Charlotte Pudding
+4 ST07-006 Charlotte Flampe
+2 ST07-007 Charlotte Brulee
+4 ST07-013 Prometheus
+4 ST07-011 Zeus
+2 ST07-009 Charlotte Mont-d'or
+4 ST07-014 Pekoms
+2 ST07-005 Charlotte Daifuku
+4 ST07-012 Baron Tamago
+2 ST07-003 Charlotte Katakuri
+4 ST07-004 Charlotte Snack
+2 ST07-010 Charlotte Linlin
+2 ST07-016 Power Mochi
+4 ST07-015 Soul Pocus
+2 ST07-017 Queen Mama Chanter
+
+# ST-08 BK Luffy (Starter Deck 08) recipe
+1 ST08-001 Monkey.D.Luffy
+4 ST08-008 Higuma
+4 ST08-009 Makino
+2 ST08-002 Uta
+4 ST08-003 Gaimon
+4 ST08-007 Nefeltari Vivi
+4 ST08-011 Monkey.D.Luffy
+4 ST08-006 Shirahoshi
+4 ST08-004 Koby
+4 ST08-012 Laboon
+4 ST08-013 Mr.2.Bon.Kurei(Bentham)
+4 ST08-010 Monkey.D.Garp
+2 ST08-005 Shanks
+4 ST08-014 Gum-Gum Bell
+2 ST08-015 Gum-Gum Pistol
+
+# ST-09 Y Yamato(Starter Deck 09) recipe
+1 ST09-001 Yamato
+4 ST09-006 Kouzuki Momonosuke
+4 ST09-007 Shinobu
+4 ST09-012 Yamato
+4 ST09-009 Fugetsu Omusubi
+4 ST09-011 Monkey.D.Luffy
+4 ST09-004 Kaido
+4 ST09-002 Uzuki Tempura
+4 ST09-003 Ulti
+4 ST09-008 Shimotsuki Ushimaru
+4 ST09-013 Yamato
+2 ST09-010 Portgas.D.Ace
+2 ST09-005 Kouzuki Oden
+2 ST09-014 Narikabura Arrow
+4 ST09-015 Thunder Bagua
+
+# ST-10 R/P Luffy (Starter Deck 10) recipe
+1 ST10-002 Monkey.D.Luffy
+4 OP01-016 Nami
+2 ST10-005 Jinbe
+4 ST10-014 Wire
+4 ST10-011 Heat
+4 OP01-025 Roronoa Zoro
+4 ST10-012 Bepo
+4 ST10-009 Jean Bart
+4 ST10-008 Shachi & Penguin
+2 ST10-010 Trafalgar Law
+4 ST10-007 Killer
+4 ST10-004 Sanji
+2 ST10-013 Eustass"Captain"Kid
+2 ST10-006 Monkey.D.Luffy
+2 ST10-015 Gum-Gum Giant Sumo Slap
+2 ST10-017 Punk Vise
+2 ST10-016 Gum-Gum Kong Gatling
+
+# ST-10 R/P Law (Starter Deck 10) recipe
+4xOP01-016_p3
+4xOP01-025_p2
+1xST10-001
+4xST10-004
+2xST10-005
+2xST10-006
+4xST10-007
+4xST10-008
+4xST10-009
+2xST10-010
+4xST10-011
+4xST10-012
+2xST10-013
+4xST10-014
+2xST10-015
+2xST10-016
+2xST10-017
+
+# ST-10 R/P Kid (Starter Deck 10) recipe
+4xOP01-016
+4xOP01-025
+1xST10-003
+4xST10-004
+2xST10-005
+2xST10-006
+4xST10-007
+4xST10-008
+4xST10-009
+2xST10-010
+4xST10-011
+4xST10-012
+2xST10-013
+4xST10-014
+2xST10-015
+2xST10-016
+2xST10-017
+
+# ST-11 G Uta(Starter Deck 11) recipe
+4xOP02-028
+4xOP02-033
+4xOP02-034
+4xOP02-035
+4xOP02-037
+4xOP02-039
+4xOP02-040
+4xOP02-041
+4xOP02-043
+4xOP02-045
+1xST11-001
+2xST11-002
+2xST11-003
+2xST11-004_p1
+4xST11-005
+
+# ST-12 G/B Roronoa Zoro & Sanji (Starter Deck 12) recipe
+1 ST12-001 Roronoa Zoro & Sanji
+4 ST12-009 Elephant True Bluefin
+4 ST12-007 Rika
+2 ST12-014 Duval
+4 ST12-012 Charlotte Pudding
+2 ST12-011 Sanji
+4 ST12-006 Yosaku & Johnny
+4 ST12-015 Patty & Carne
+4 ST12-002 Kuina
+2 ST12-003 Dracule Mihawk
+2 ST12-010 Emporio.Ivankov
+4 ST12-004 Humandrill
+4 ST12-005 Perona
+2 ST12-008 Roronoa Zoro
+4 ST12-013 Zeff
+2 ST12-017 Plastic Surgery Shot
+2 ST12-016 Lion Strike
+
+# ST-13.1 B/Y Luffy(Starter Deck 13) recipe
+1 ST13-001 Monkey.D.Luffy
+4 ST13-012 Makino
+2 ST13-013 Monkey.D.Garp
+4 ST13-014 Monkey.D.Luffy
+4 ST13-010 Portgas.D.Ace
+4 ST13-007 Sabo
+2 ST13-005 Emporio.Ivankov
+4 ST13-006 Curly.Dadan
+4 ST13-016 Yamato
+2 ST13-015 Monkey.D.Luffy
+2 ST13-008 Sabo
+2 ST13-011 Portgas.D.Ace
+4 ST13-004 Edward.Newgate
+4 ST13-009 Shanks
+2 ST13-018 Gum-Gum Jet Spear
+4 ST13-019 The Three Brothers' Bond
+2 ST13-017 Flame Dragon King
+
+# ST-13.2 B/Y Ace(Starter Deck 13) recipe
+3xEB02-028
+4xOP07-053
+4xOP11-104
+3xOP11-106
+4xOP12-100
+1xOP13-042
+2xOP13-051
+1xOP13-054
+2xOP13-057
+4xP-073
+4xPRB02-018
+1xST13-002
+4xST13-007
+3xST13-008
+4xST13-010
+3xST13-012
+4xST13-019_p1
+
+# ST-13.3 R/Y Sabo(Starter Deck 13) recipe
+1xST13-001
+4xST13-004
+2xST13-005
+4xST13-006
+4xST13-007
+2xST13-008
+4xST13-009
+4xST13-010
+2xST13-011
+4xST13-012
+2xST13-013
+4xST13-014
+2xST13-015
+4xST13-016
+2xST13-017
+2xST13-018
+4xST13-019
+
+# ST-14 B Luffy (Starter Deck 14) recipe
+1 ST14-001 Monkey.D.Luffy
+4 ST14-008 Haredas
+4 ST14-011 Heracles
+2 ST14-006 Nami
+4 ST14-004 Jinbe
+4 ST14-002 Usopp
+4 ST14-005 Tony Tony.Chopper
+4 ST14-009 Franky
+2 ST14-003 Sanji
+4 ST14-010 Brook
+4 ST14-007 Nico Robin
+4 ST14-013 Roronoa Zoro
+2 ST14-012 Monkey.D.Luffy
+2 ST14-014 Gum-Gum Giant Rifle
+2 ST14-016 I Have My Crew!!
+2 ST14-015 Gum-Gum Diable Three-Swords Style Mouten Jet Six Hundred Pound Phoenix Cannon
+2 ST14-017 Thousand Sunny
+
+# ST-15 R Whitebeard (Starter Deck 15) recipe
+1 OP02-001 Edward.Newgate
+4 OP03-003 Izo
+2 ST15-004 Thatch
+4 OP03-010 Fossa
+4 OP03-009 Haruta
+4 ST15-003 Kingdew
+4 OP02-019 Rakuyo
+4 OP03-007 Namule
+4 OP02-008 Jozu
+4 ST15-001 Atmos
+4 OP02-018 Marco
+4 OP03-006 Speed Jil
+2 ST15-005 Portgas.D.Ace
+2 ST15-002 Edward.Newgate
+4 OP02-023 You May Be a Fool...but I Still Love You
+
+# ST-16 G Uta (Starter Deck 16) recipe
+1 ST11-001 Uta
+4 ST16-002 Gordon
+4 P-029 Bartolomeo
+2 ST16-005 Monkey.D.Luffy
+4 ST16-003 Charlotte Katakuri
+2 ST16-001 Uta
+4 P-061 Monkey.D.Luffy
+2 ST16-004 Shanks
+4 ST11-004 New Genesis
+4 ST11-003 Backlight
+4 P-059 The World's Continuation
+4 P-060 Tot Musica
+4 P-058 Where the Wind Blows
+4 P-057 Fleeting Lullaby
+4 ST11-005 I'm invincible
+
+# ST-17 B Doflamingo (Starter Deck 17) recipe
+1 OP01-060 Donquixote Doflamingo
+4 ST03-008 Trafalgar Law
+2 ST17-003 Buggy
+4 ST17-005 Marshall.D.Teach
+4 OP02-057 Bartholomew Kuma
+4 OP01-073 Donquixote Doflamingo
+4 ST03-002 Edward Weevil
+4 ST17-001 Crocodile
+4 ST03-005 Dracule Mihawk
+4 ST03-004 Gecko Moria
+4 P-030 Jinbe
+2 ST17-002 Trafalgar Law
+2 ST17-004 Boa Hancock
+4 OP02-054 Gecko Moria
+4 OP01-086 Overheat
+
+# ST-18 P Luffy (Starter Deck 18) recipe
+1 OP05-060 Monkey.D.Luffy
+4 OP05-068 Chopa-Emon
+2 ST18-001 Uso-Hachi
+4 OP05-061 Uso-Hachi
+4 OP05-067 Zoro-Juurou
+4 ST18-002 O-Nami
+4 OP05-063 O-Robi
+4 OP05-072 Hone-Kichi
+2 ST18-004 Zoro-Juurou
+4 OP05-070 Fra-Nosuke
+4 OP05-066 Jinbe
+4 ST18-003 San-Gorou
+2 ST18-005 Luffy-Tarou
+4 P-041 Monkey.D.Luffy
+4 OP05-076 When You're at Sea You Fight against Pirates!!
+
+# ST-19 B Smoker (Starter Deck 19) recipe
+1 OP02-093 Smoker
+4 OP02-106 Tsuru
+2 ST19-002 Sengoku
+4 OP02-108 Donquixote Rosinante
+4 OP03-089 Brannew
+4 OP02-113 Helmeppo
+4 OP02-098 Koby
+4 ST19-005 Monkey.D.Garp
+4 OP02-116 Yamakaji
+2 ST19-004 Hina
+4 OP02-109 Jaguar.D.Saul
+4 OP03-079 Vergo
+2 ST19-003 Tashigi
+4 ST19-001 Smoker
+4 OP02-117 Ice Age
+
+# ST-20 Y Katakuri (Starter Deck 20) recipe
+1 OP03-099 Charlotte Katakuri
+4 OP03-115 Streusen
+4 OP03-112 Charlotte Pudding
+4 OP03-107 Charlotte Galette
+2 ST20-004 Charlotte Pudding
+4 ST20-003 Charlotte Brulee
+4 ST07-014 Pekoms
+4 ST20-002 Charlotte Cracker
+4 ST07-005 Charlotte Daifuku
+4 OP03-110 Charlotte Smoothie
+4 OP03-106 Charlotte Opera
+2 ST20-001 Charlotte Katakuri
+2 ST20-005 Charlotte Linlin
+4 OP03-118 Ikoku Sovereignty
+4 OP03-121 Thunder Bolt
+
+# ST-21 R Luffy (Starter Deck 21) recipe
+1 ST21-001 Monkey.D.Luffy
+4 ST21-004 Jewelry Bonney
+4 ST21-013 Vegapunk
+4 ST21-007 Sentomaru
+2 ST21-003 Sanji
+2 ST21-002 Usopp
+4 ST21-005 Jinbe
+4 ST21-009 Nami
+4 ST21-012 Brook
+4 ST21-011 Franky
+2 ST21-010 Nico Robin
+4 ST21-006 Stussy
+2 ST21-015 Roronoa Zoro
+4 ST21-008 Tony Tony.Chopper
+2 ST21-014 Monkey.D.Luffy
+2 ST21-016 Gum-Gum Dawn Whip
+2 ST21-017 Gum-Gum Mole Pistol
+
+# ST-22 B Ace & Newgate (Starter Deck 22) recipe
+1 ST22-001 Ace & Newgate
+2 ST22-002 Izo
+2 ST22-009 Vista
+4 ST22-011 Whitey Bay
+4 ST22-007 Squard
+4 ST22-008 Decalvan Brothers
+4 ST22-004 Elmy
+4 ST22-012 Marco
+4 ST22-014 A.O.
+4 ST22-010 Portgas.D.Ace
+4 ST22-013 LittleOars Jr.
+4 ST22-006 Jozu
+2 ST22-005 Kouzuki Oden
+2 ST22-003 Edward.Newgate
+2 ST22-016 Take That Back!! Take Back What You Said!!
+2 ST22-017 Fire Fist
+2 ST22-015 I Am Whitebeard!!
+
+# ST-23 R Shanks (Starter Deck 23) recipe
+1 OP09-001 Shanks
+4 ST23-005 Yasopp
+4 ST23-004 Monkey.D.Luffy
+4 OP09-011 Hongo
+4 OP09-014 Limejuice
+4 OP09-012 Monster
+2 ST23-003 Benn.Beckman
+4 OP09-010 Bonk Punch
+4 OP09-015 Lucky.Roux
+4 OP09-016 Rockstar
+4 OP09-013 Yasopp
+4 OP09-006 Howling Gab
+2 ST23-001 Uta
+2 ST23-002 Shanks
+4 OP09-020 Come On!! We'll Fight You!!
+
+# ST-24 G Bonney (Starter Deck 24) recipe
+1 OP07-019 Jewelry Bonney
+4 EB01-015 Scratchmen Apoo
+4 OP07-034 Roronoa Zoro
+4 ST24-001 Capone"Gang"Bege
+2 ST24-002 Kid & Killer
+4 OP07-025 Coribou
+4 OP07-031 Bartolomeo
+2 ST24-003 Basil Hawkins
+4 OP07-023 Caribou
+4 OP07-021 Urouge
+4 ST24-005 X.Drake
+4 OP07-033 Monkey.D.Luffy
+2 ST24-004 Law & Bepo
+4 OP07-037 More Pizza!!
+4 OP07-036 Demonic Aura Nine-Sword Style Asura Demon Nine Flash
+
+# ST-25 B Buggy (Starter Deck 25) recipe
+1 OP09-042 Buggy
+4 OP09-056 Mr.3(Galdino)
+4 OP09-054 Richie
+2 ST25-004 Buggy
+4 ST25-002 Cabaji
+4 ST25-005 Mohji
+2 ST25-001 Alvida
+4 OP09-045 Cabaji
+4 OP09-053 Mohji
+4 OP09-043 Alvida
+4 OP09-055 Mr.1(Daz.Bonez)
+4 P-084 Buggy
+2 ST25-003 Crocodile & Mihawk
+4 OP09-051 Buggy
+4 OP09-057 Cross Guild
+
+# ST-26 P/BK Luffy (Starter Deck 26) recipe
+1 OP09-061 Monkey.D.Luffy
+4 OP09-070 Nami
+2 ST26-003 Nico Robin
+4 ST26-002 Tony Tony.Chopper
+4 OP09-076 Roronoa Zoro
+4 OP09-063 Usopp
+4 OP05-070 Fra-Nosuke
+4 OP05-066 Jinbe
+4 ST14-010 Brook
+2 ST26-005 Monkey.D.Luffy
+4 OP05-065 San-Gorou
+4 ST26-001 Soba Mask
+4 ST26-004 General Franky
+2 OP09-078 Gum-Gum Giant
+4 OP09-077 Gum-Gum Lightning
+
+# ST-27 BK Blackbeard (Starter Deck 27) recipe
+1 OP09-081 Marshall.D.Teach
+4 OP09-089 Stronger
+4 ST27-001 Avalo Pizarro
+2 ST27-002 Catarina Devon
+4 OP09-095 Laffitte
+4 OP09-090 Doc Q
+4 OP09-091 Vasco Shot
+4 OP09-088 Shiryu
+4 OP09-086 Jesus Burgess
+4 ST27-004 Sanjuan.Wolf
+4 OP09-083 Van Augur
+4 OP10-084 Sanjuan.Wolf
+2 ST27-003 Kuzan
+2 ST27-005 Marshall.D.Teach
+4 OP09-099 Fullalead
+
+# ST-28 G/Y Yamato(Starter Deck 28) recipe
+1 OP06-022 Yamato
+2 ST28-005 Yamato
+4 ST28-002 Izo
+4 ST28-001 Ashura Doji
+4 OP06-112 Raizo
+4 OP06-103 Kawamatsu
+4 OP06-100 Inuarashi
+2 ST28-003 Kin'emon
+4 OP06-110 Nekomamushi
+4 OP06-104 Kikunojo
+4 ST13-016 Yamato
+4 OP09-035 Portgas.D.Ace
+4 OP06-109 Denjiro
+2 ST28-004 Kouzuki Momonosuke
+4 OP07-116 Blaze Slice
+
+# ST-29 Y Egghead Luffy (Starter Deck 29) recipe
+1xST29-001
+4xST29-002
+4xST29-003
+2xST29-004_p1
+2xST29-005
+4xST29-006
+2xST29-007
+2xST29-008
+2xST29-009
+4xST29-010
+4xST29-011
+4xST29-012
+4xST29-013
+2xST29-014_p1
+4xST29-015
+2xST29-016
+4xST29-017
+
+
+# ST-L2P:Luffy (Starter Deck L2P:Luffy) recipe
+1 ST21-001 Monkey.D.Luffy
+4 P-069 Koala
+4 OP01-016 Nami
+4 ST21-003 Sanji
+4 ST21-010 Nico Robin
+1 OP11-012 Franky
+4 OP10-011 Tony Tony.Chopper
+1 EB01-003 Kid & Killer
+2 ST21-015 Roronoa Zoro
+4 ST21-008 Tony Tony.Chopper
+2 ST21-014 Monkey.D.Luffy
+4 OP11-016 Roronoa Zoro
+4 OP09-005 Silvers Rayleigh
+4 OP11-003 Usopp
+4 OP10-013 Nami
+1 ST10-004 Sanji
+1 OP07-015 Monkey.D.Dragon
+2 OP10-019 Divine Departure
+2 OP06-018 Gum-Gum King Kong Gatling
+1 OP10-020 Gum-Gum UFO
+2 ST21-017 Gum-Gum Mole Pistol
+
+
+# ST-L2P:Zoro (Starter Deck L2P:Zoro) recipe
+1 OP12-020 Roronoa Zoro
+4 OP12-028 Kouzuki Hiyori
+4 OP12-027 Koushirou
+4 OP12-029 Shimotsuki Kouzaburou
+4 OP12-036 Roronoa Zoro
+4 EB02-019 Roronoa Zoro
+1 OP06-023 Arlong
+1 ST12-008 Roronoa Zoro
+4 OP06-036 Ryuma
+2 EB01-012 Cavendish
+4 OP12-023 Kawamatsu
+1 OP08-028 Nekomamushi
+2 OP10-030 Smoker
+4 OP12-031 Tashigi
+4 OP12-032 Nekomamushi
+4 OP12-025 Kin'emon
+1 OP06-118 Roronoa Zoro
+1 OP06-038 The Billion-fold World Trichiliocosm
+2 EB02-021 Gum-Gum Giant Pistol
+4 OP12-039 Luffy Is the Man Who Will Become the King of Pirates!!!
+
+
+# ST-L2P:Nami (Starter Deck L2P:Nami) recipe
+1 OP11-041 Nami
+4 P-053 Nami
+4 OP11-048 Capone"Gang"Bege
+4 OP11-056 Brook
+1 OP10-109 Basil Hawkins
+4 EB02-022 Usopp
+4 P-056 Roronoa Zoro
+4 OP11-105 Charlotte Chiffon
+1 OP11-054 Nami
+4 OP11-053 Tony Tony.Chopper
+2 OP11-052 Charlotte Lola
+4 OP11-058 Monkey.D.Luffy
+4 OP09-107 Nico Robin
+1 ST13-004 Edward.Newgate
+2 OP11-051 Sanji
+2 OP11-118 Monkey.D.Luffy
+1 OP07-044 Dracule Mihawk
+4 OP11-114 Gum-Gum Fire-Fist Pistol Red Hawk
+4 OP11-060 Let's Crash This Wedding!!!
+1 OP11-061 Gum-Gum Jet Culverin
