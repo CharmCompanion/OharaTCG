@@ -66,6 +66,7 @@ The Streamlit-based GrandLineScraper app runs in Replit. The Godot game project 
 
 ## Recent Changes
 
+- 2026-01-27: Added game mechanics extractor - exports keywords, triggers, and actions for dueling implementation
 - 2026-01-27: Reorganized output folder structure by category (sets, decks, promos, tournaments, don, alt_arts)
 - 2026-01-27: Moved data/recipes into data/decks/recipes for better organization
 - 2026-01-27: Added recipe export format (.txt deck lists matching data/recipes format)

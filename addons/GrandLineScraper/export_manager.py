@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 import streamlit as st
+from game_mechanics import GameMechanicsExtractor
 
 class ExportManager:
     """Manage data export in various formats"""
@@ -64,6 +65,10 @@ class ExportManager:
         recipe_files = self._export_recipes(processed_data)
         exported_files.extend(recipe_files)
         
+        # Export game mechanics database for dueling
+        mechanics_files = self._export_game_mechanics(processed_data)
+        exported_files.extend(mechanics_files)
+        
         return exported_files
     
     def _create_export_structure(self):
@@ -72,7 +77,6 @@ class ExportManager:
         folders = [
             'sets',
             'decks',
-            'decks/recipes',
             'promos',
             'tournaments',
             'don',
@@ -312,7 +316,7 @@ class ExportManager:
         exported_files = []
         
         starter_decks = self._extract_starter_decks(data.get('cards', []))
-        recipes_folder = self.output_dir / 'decks' / 'recipes'
+        recipes_folder = self.output_dir / 'decks'
         recipes_folder.mkdir(parents=True, exist_ok=True)
         
         for deck_id in sorted(starter_decks.keys(), key=self._deck_sort_key):
@@ -372,6 +376,35 @@ class ExportManager:
             is_leader = card_num == '001'
             return (0 if is_leader else 1, prefix, int(set_num), int(card_num))
         return (2, card_code, 0, 0)
+
+    def _export_game_mechanics(self, data: Dict[str, Any]) -> List[str]:
+        """Export game mechanics database for dueling implementation"""
+        exported_files = []
+        cards = data.get('cards', [])
+        
+        if not cards:
+            return exported_files
+        
+        try:
+            extractor = GameMechanicsExtractor()
+            mechanics_folder = self.output_dir / 'databases'
+            mechanics_folder.mkdir(parents=True, exist_ok=True)
+            
+            mechanics_file = mechanics_folder / 'game_mechanics.json'
+            exported_path = extractor.export_mechanics_database(cards, mechanics_file)
+            exported_files.append(exported_path)
+            
+            dueling_terms_file = mechanics_folder / 'dueling_terms.json'
+            dueling_terms = extractor.get_mechanics_for_dueling()
+            with open(dueling_terms_file, 'w', encoding='utf-8') as f:
+                import json
+                json.dump(dueling_terms, f, ensure_ascii=False, indent=2)
+            exported_files.append(str(dueling_terms_file))
+            
+        except Exception as e:
+            st.warning(f"Failed to export game mechanics: {str(e)}")
+        
+        return exported_files
 
     def _copy_starter_decks_to_project(self) -> None:
         """Copy exported starter decks into res://data/decks for in-game use"""
