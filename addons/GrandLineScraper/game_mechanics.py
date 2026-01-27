@@ -26,6 +26,11 @@ KEYWORD_EFFECTS = {
         "trigger": "life_damage",
         "action": "trash_life_card",
     },
+    "Triple Attack": {
+        "description": "This card deals 3 damage instead of 1.",
+        "trigger": "damage_dealt",
+        "action": "triple_damage",
+    },
 }
 
 TRIGGER_KEYWORDS = {
@@ -94,6 +99,19 @@ TRIGGER_KEYWORDS = {
         "description": "This effect can only be activated once per turn.",
         "timing": "once_per_turn",
         "limit": 1,
+    },
+    "[On Your Opponent's Attack]": {
+        "description": "Activates when your opponent declares an attack.",
+        "timing": "opponent_attack_declaration",
+    },
+    "[On Damage]": {
+        "description": "Activates when this card takes damage.",
+        "timing": "on_damage",
+    },
+    "[All Turns]": {
+        "description": "Active during both players' turns.",
+        "timing": "all_turns",
+        "duration": "continuous",
     },
 }
 
@@ -181,6 +199,70 @@ GAME_ACTIONS = {
     "trash_from_hand": {
         "description": "Discard cards from hand to trash.",
         "patterns": [r"trash.*from.*hand", r"discard (\d+)"],
+    },
+    "prevent_active": {
+        "description": "Prevent a card from becoming active (don't untap during refresh).",
+        "patterns": [r"cannot become active", r"can't become active", r"doesn't become active", r"don't set.*active"],
+    },
+    "set_active": {
+        "description": "Set a rested card to active state.",
+        "patterns": [r"set.*active", r"becomes? active"],
+    },
+    "flip_life_face_up": {
+        "description": "Flip a Life card face up to reveal it.",
+        "patterns": [r"turn.*life.*face.?up", r"flip.*life", r"reveal.*life"],
+    },
+    "add_life": {
+        "description": "Add cards to your Life area.",
+        "patterns": [r"add.*to.*life", r"place.*in.*life", r"gains? (\d+) life"],
+    },
+    "remove_life": {
+        "description": "Remove cards from Life area.",
+        "patterns": [r"remove.*from.*life", r"trash.*life", r"lose (\d+) life"],
+    },
+    "win_game": {
+        "description": "Win the game immediately.",
+        "patterns": [r"you win", r"win the game", r"wins? the match"],
+    },
+    "lose_game": {
+        "description": "Lose the game immediately.",
+        "patterns": [r"you lose", r"lose the game", r"loses? the match"],
+    },
+    "negate_effect": {
+        "description": "Negate or cancel an effect.",
+        "patterns": [r"negate", r"cancel", r"that effect doesn't activate"],
+    },
+    "copy_effect": {
+        "description": "Copy an effect from another card.",
+        "patterns": [r"copy", r"gains? the effect", r"treat.*as having"],
+    },
+    "shuffle_deck": {
+        "description": "Shuffle your deck.",
+        "patterns": [r"shuffle.*deck"],
+    },
+    "mill": {
+        "description": "Send cards from the top of your deck to trash.",
+        "patterns": [r"trash.*from.*top.*deck", r"send.*from.*deck.*to.*trash"],
+    },
+    "return_don": {
+        "description": "Return DON!! cards to DON!! deck or cost area.",
+        "patterns": [r"return.*don", r"don.*return"],
+    },
+    "remove_from_game": {
+        "description": "Remove a card from the game entirely (exile).",
+        "patterns": [r"remove.*from.*game", r"removed from the game"],
+    },
+    "cannot_activate_effects": {
+        "description": "Prevent effects from activating.",
+        "patterns": [r"effects? (cannot|can't) be activated", r"negate.*effects?"],
+    },
+    "reduce_damage": {
+        "description": "Reduce incoming damage.",
+        "patterns": [r"reduce.*damage", r"damage.*reduced"],
+    },
+    "prevent_damage": {
+        "description": "Prevent all damage.",
+        "patterns": [r"prevent.*damage", r"takes? no damage", r"cannot.*take damage"],
     },
 }
 
