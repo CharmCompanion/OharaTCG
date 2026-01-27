@@ -450,7 +450,7 @@ class ExportManager:
         These files are the user's hard backups and are NEVER modified by the export system.
         Returns empty dict if recipe file doesn't exist.
         """
-        recipes_dir = self.project_root / 'data' / 'decks' / 'recipes'
+        recipes_dir = self.project_root / 'data' / 'recipes'
         recipe_file = recipes_dir / f"{deck_id}.txt"
         
         if not recipe_file.exists():

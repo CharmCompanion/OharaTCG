@@ -68,7 +68,7 @@ The Streamlit-based GrandLineScraper app runs in Replit. The Godot game project 
 
 - 2026-01-27: Added game mechanics extractor - exports keywords, triggers, and actions for dueling implementation
 - 2026-01-27: Reorganized output folder structure by category (sets, decks, promos, tournaments, don, alt_arts)
-- 2026-01-27: Moved data/recipes into data/decks/recipes for better organization
+- 2026-01-27: Recipe files stored in data/recipes/ (hard backups for deck compositions)
 - 2026-01-27: Added recipe export format (.txt deck lists matching data/recipes format)
 - 2026-01-27: Added filtered search capabilities to OPTCG client (color, type, rarity, cost, power, text search)
 - 2026-01-27: Updated OPTCG client to use open API (no authentication required) - covers all English TCG cards
