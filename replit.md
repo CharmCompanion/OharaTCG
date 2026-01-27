@@ -66,6 +66,9 @@ The Streamlit-based GrandLineScraper app runs in Replit. The Godot game project 
 
 ## Recent Changes
 
+- 2026-01-27: Updated OPTCG client to use open API (no authentication required) - covers all English TCG cards
+- 2026-01-27: OPTCG API now the primary data source - fetches OP-01 to OP-14, ST-01 to ST-28, and 900+ promos
+- 2026-01-27: Fixed GitHub data source dependency - APITCGClient created when either APITCG or GitHub is enabled
 - 2026-01-27: Fixed duplicate signal connection bug in Decks.gd - removed redundant signal hookups from _ready() that were already wired in the scene file
 - 2026-01-27: Refactored DeckEdit.tscn HeaderBar from anchor-based positioning to HBoxContainer layout for proper button click handling
 - 2026-01-27: Updated DeckSelection.tscn with proper mouse filter settings and signal connections for clickable deck tiles
