@@ -129,7 +129,11 @@ class ExportManager:
         return exported_files
     
     def _export_organized_decks(self, data: Dict[str, Any]) -> List[str]:
-        """Export deck files in organized structure"""
+        """Export deck files in organized structure.
+        
+        Uses recipe files from data/decks/recipes/ as the source of truth for deck compositions.
+        Recipe files are NEVER modified - they serve as hard backups for cross-checking.
+        """
         exported_files = []
         
         # Export starter decks
@@ -137,12 +141,19 @@ class ExportManager:
         decks_folder = self.output_dir / 'decks'
         decks_folder.mkdir(parents=True, exist_ok=True)
         
+        # Build card lookup by card_code for fast access
+        card_lookup = self._build_card_lookup(data.get('cards', []))
+        
         for deck_id in sorted(starter_decks.keys(), key=self._deck_sort_key):
             deck_info = starter_decks[deck_id]
+            
+            # Load recipe quantities from data/decks/recipes/ (NEVER modified)
+            recipe_quantities = self._load_recipe_from_file(deck_id)
+            
             # YDL file for dueling simulators
             ydl_file = decks_folder / f"{deck_id}.ydl"
             with open(ydl_file, 'w', encoding='utf-8') as f:
-                f.write(self._format_deck_list(deck_info))
+                f.write(self._format_deck_list_from_recipe(deck_info, recipe_quantities, card_lookup))
             exported_files.append(str(ydl_file))
             
             # Optional JSON file with complete deck info (can be very noisy across runs)
@@ -167,65 +178,121 @@ class ExportManager:
                     }, f, ensure_ascii=False, indent=2)
                 exported_files.append(str(json_file))
 
-            # Godot-friendly deck file (matches res://data/decks format)
+            # Godot-friendly deck file with proper quantities from recipe
             godot_file = decks_folder / f"{deck_id}.json"
             godot_main = []
-            leader_data = deck_info.get('leader')
-            godot_leader = None
-            if leader_data:
-                leader_code = leader_data.get('card_code')
-                leader_set_code = leader_data.get('set_code')
-                leader_number = leader_data.get('number', '')
-                if not leader_code and leader_set_code and leader_number:
-                    leader_code = f"{leader_set_code}-{leader_number}"
-                godot_leader = {
-                    'id': leader_data.get('id'),
-                    'name': leader_data.get('name'),
-                    'type': leader_data.get('type'),
-                    'color': leader_data.get('colors', []),
-                    'cost': leader_data.get('cost', 0),
-                    'power': leader_data.get('power', 0),
-                    'life': leader_data.get('life', 0),
-                    'counter': leader_data.get('counter', 0),
-                    'rarity': leader_data.get('rarity', ''),
-                    'attribute': leader_data.get('attribute', ''),
-                    'traits': leader_data.get('traits', []),
-                    'effect': leader_data.get('effect', ''),
-                    'set_code': leader_set_code,
-                    'number': leader_number,
-                    'card_code': leader_code,
-                    'count': 1,
-                    'zone': 'main'
-                }
-            for card in deck_info.get('main_deck', []):
-                card_code = card.get('card_code')
-                set_code = card.get('set_code')
-                number = card.get('number', '')
-                if not card_code and set_code and number:
-                    card_code = f"{set_code}-{number}"
+            
+            # If we have recipe quantities, use them; otherwise fall back to API data
+            if recipe_quantities:
+                # Build deck from recipe quantities + card lookup
+                for card_code, qty in sorted(recipe_quantities.items(), key=lambda x: self._recipe_card_sort_key(x[0])):
+                    card_data = card_lookup.get(card_code.upper())
+                    if not card_data:
+                        # Try without hyphen normalization
+                        card_data = card_lookup.get(card_code.replace('-', '').upper())
+                    
+                    if card_data:
+                        card_type = card_data.get('type', '')
+                        zone = 'main'
+                        if card_type == 'Leader':
+                            zone = 'main'  # Leader goes in main but count is always 1
+                            qty = 1
+                        
+                        godot_main.append({
+                            'id': card_data.get('id'),
+                            'name': card_data.get('name'),
+                            'type': card_type,
+                            'color': card_data.get('colors', []),
+                            'cost': card_data.get('cost', 0),
+                            'power': card_data.get('power', 0),
+                            'life': card_data.get('life', 0),
+                            'counter': card_data.get('counter', 0),
+                            'rarity': card_data.get('rarity', ''),
+                            'attribute': card_data.get('attribute', ''),
+                            'traits': card_data.get('traits', []),
+                            'effect': card_data.get('effect', ''),
+                            'set_code': card_data.get('set_code', ''),
+                            'number': card_data.get('number', ''),
+                            'card_code': card_code,
+                            'count': qty,
+                            'zone': zone
+                        })
+                    else:
+                        # Card not found in API data - add placeholder
+                        godot_main.append({
+                            'id': card_code,
+                            'name': f"Unknown ({card_code})",
+                            'type': 'Unknown',
+                            'color': [],
+                            'cost': 0,
+                            'power': 0,
+                            'life': 0,
+                            'counter': 0,
+                            'rarity': '',
+                            'attribute': '',
+                            'traits': [],
+                            'effect': '',
+                            'set_code': '',
+                            'number': '',
+                            'card_code': card_code,
+                            'count': qty,
+                            'zone': 'main'
+                        })
+            else:
+                # No recipe file - fall back to API data (original behavior)
+                leader_data = deck_info.get('leader')
+                if leader_data:
+                    leader_code = leader_data.get('card_code')
+                    leader_set_code = leader_data.get('set_code')
+                    leader_number = leader_data.get('number', '')
+                    if not leader_code and leader_set_code and leader_number:
+                        leader_code = f"{leader_set_code}-{leader_number}"
+                    godot_main.append({
+                        'id': leader_data.get('id'),
+                        'name': leader_data.get('name'),
+                        'type': leader_data.get('type'),
+                        'color': leader_data.get('colors', []),
+                        'cost': leader_data.get('cost', 0),
+                        'power': leader_data.get('power', 0),
+                        'life': leader_data.get('life', 0),
+                        'counter': leader_data.get('counter', 0),
+                        'rarity': leader_data.get('rarity', ''),
+                        'attribute': leader_data.get('attribute', ''),
+                        'traits': leader_data.get('traits', []),
+                        'effect': leader_data.get('effect', ''),
+                        'set_code': leader_set_code,
+                        'number': leader_number,
+                        'card_code': leader_code,
+                        'count': 1,
+                        'zone': 'main'
+                    })
+                
+                for card in deck_info.get('main_deck', []):
+                    card_code = card.get('card_code')
+                    set_code = card.get('set_code')
+                    number = card.get('number', '')
+                    if not card_code and set_code and number:
+                        card_code = f"{set_code}-{number}"
 
-                godot_main.append({
-                    'id': card.get('id'),
-                    'name': card.get('name'),
-                    'type': card.get('type'),
-                    'color': card.get('colors', []),
-                    'cost': card.get('cost', 0),
-                    'power': card.get('power', 0),
-                    'life': card.get('life', 0),
-                    'counter': card.get('counter', 0),
-                    'rarity': card.get('rarity', ''),
-                    'attribute': card.get('attribute', ''),
-                    'traits': card.get('traits', []),
-                    'effect': card.get('effect', ''),
-                    'set_code': set_code,
-                    'number': number,
-                    'card_code': card_code,
-                    'count': card.get('copies', 1),
-                    'zone': 'main'
-                })
-
-            if godot_leader:
-                godot_main.insert(0, godot_leader)
+                    godot_main.append({
+                        'id': card.get('id'),
+                        'name': card.get('name'),
+                        'type': card.get('type'),
+                        'color': card.get('colors', []),
+                        'cost': card.get('cost', 0),
+                        'power': card.get('power', 0),
+                        'life': card.get('life', 0),
+                        'counter': card.get('counter', 0),
+                        'rarity': card.get('rarity', ''),
+                        'attribute': card.get('attribute', ''),
+                        'traits': card.get('traits', []),
+                        'effect': card.get('effect', ''),
+                        'set_code': set_code,
+                        'number': number,
+                        'card_code': card_code,
+                        'count': card.get('copies', 1),
+                        'zone': 'main'
+                    })
 
             don_grouped = {}
             for card in deck_info.get('don_cards', []):
@@ -376,6 +443,118 @@ class ExportManager:
             is_leader = card_num == '001'
             return (0 if is_leader else 1, prefix, int(set_num), int(card_num))
         return (2, card_code, 0, 0)
+
+    def _load_recipe_from_file(self, deck_id: str) -> Dict[str, int]:
+        """Load a recipe from data/decks/recipes/ and return card_code -> quantity mapping.
+        
+        These files are the user's hard backups and are NEVER modified by the export system.
+        Returns empty dict if recipe file doesn't exist.
+        """
+        recipes_dir = self.project_root / 'data' / 'decks' / 'recipes'
+        recipe_file = recipes_dir / f"{deck_id}.txt"
+        
+        if not recipe_file.exists():
+            return {}
+        
+        card_quantities: Dict[str, int] = {}
+        try:
+            with open(recipe_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith('#'):
+                        continue
+                    # Parse format: 4xST01-002 or 4xST01002
+                    match = re.match(r'^(\d+)x(.+)$', line)
+                    if match:
+                        qty = int(match.group(1))
+                        card_code = match.group(2).strip()
+                        # Normalize card code (ensure hyphen format like ST01-002)
+                        normalized = self._normalize_card_code(card_code)
+                        card_quantities[normalized] = qty
+        except Exception as e:
+            st.warning(f"Failed to load recipe {deck_id}: {e}")
+        
+        return card_quantities
+
+    def _normalize_card_code(self, card_code: str) -> str:
+        """Normalize card code to standard format (e.g., ST01-002)"""
+        # Already has hyphen in correct format
+        if re.match(r'^[A-Z]+-?\d+-\d+$', card_code.upper()):
+            return card_code.upper()
+        # Format like ST01002 -> ST01-002
+        match = re.match(r'^([A-Z]+)(\d{2})(\d{3})$', card_code.upper())
+        if match:
+            return f"{match.group(1)}{match.group(2)}-{match.group(3)}"
+        return card_code.upper()
+
+    def _build_card_lookup(self, cards: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+        """Build a lookup dictionary from card_code -> card data for fast access."""
+        lookup = {}
+        for card in cards:
+            # Get card code in various formats
+            card_code = card.get('card_code', '')
+            set_code = card.get('set_code', '')
+            number = card.get('number', '')
+            
+            if not card_code and set_code and number:
+                card_code = f"{set_code}-{number}"
+            
+            if card_code:
+                # Store with normalized format (uppercase with hyphen)
+                normalized = card_code.upper()
+                lookup[normalized] = card
+                
+                # Also store without hyphen for fallback lookups
+                no_hyphen = normalized.replace('-', '')
+                if no_hyphen not in lookup:
+                    lookup[no_hyphen] = card
+        
+        return lookup
+
+    def _format_deck_list_from_recipe(
+        self, 
+        deck_info: Dict[str, Any], 
+        recipe_quantities: Dict[str, int],
+        card_lookup: Dict[str, Dict[str, Any]]
+    ) -> str:
+        """Format deck list for YDL export using recipe quantities."""
+        lines = []
+        deck_name = deck_info.get('name', 'Unknown Deck')
+        lines.append(f"# {deck_name}")
+        lines.append("")
+        
+        if recipe_quantities:
+            # Use recipe quantities as source of truth
+            for card_code, qty in sorted(recipe_quantities.items(), key=lambda x: self._recipe_card_sort_key(x[0])):
+                card_data = card_lookup.get(card_code.upper())
+                if not card_data:
+                    card_data = card_lookup.get(card_code.replace('-', '').upper())
+                
+                if card_data:
+                    name = card_data.get('name', card_code)
+                    lines.append(f"{qty}x {card_code} - {name}")
+                else:
+                    lines.append(f"{qty}x {card_code} - Unknown")
+        else:
+            # Fall back to original deck_info
+            leader = deck_info.get('leader')
+            if leader:
+                code = self._get_recipe_card_code(leader)
+                name = leader.get('name', 'Leader')
+                lines.append(f"1x {code} - {name}")
+            
+            for card in deck_info.get('main_deck', []):
+                code = self._get_recipe_card_code(card)
+                name = card.get('name', 'Unknown')
+                qty = card.get('copies', 1)
+                lines.append(f"{qty}x {code} - {name}")
+        
+        # Add DON!! cards
+        lines.append("")
+        lines.append("# DON!! Deck")
+        lines.append("10x DON!!")
+        
+        return '\n'.join(lines)
 
     def _export_game_mechanics(self, data: Dict[str, Any]) -> List[str]:
         """Export game mechanics database for dueling implementation"""
