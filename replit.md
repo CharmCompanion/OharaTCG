@@ -66,4 +66,7 @@ The Streamlit-based GrandLineScraper app runs in Replit. The Godot game project 
 
 ## Recent Changes
 
+- 2026-01-27: Fixed duplicate signal connection bug in Decks.gd - removed redundant signal hookups from _ready() that were already wired in the scene file
+- 2026-01-27: Refactored DeckEdit.tscn HeaderBar from anchor-based positioning to HBoxContainer layout for proper button click handling
+- 2026-01-27: Updated DeckSelection.tscn with proper mouse filter settings and signal connections for clickable deck tiles
 - 2026-01-27: Set up Replit environment with Streamlit workflow
