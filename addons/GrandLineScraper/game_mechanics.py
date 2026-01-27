@@ -264,6 +264,118 @@ GAME_ACTIONS = {
         "description": "Prevent all damage.",
         "patterns": [r"prevent.*damage", r"takes? no damage", r"cannot.*take damage"],
     },
+    "trash_this_card": {
+        "description": "Trash this card as a cost or effect.",
+        "patterns": [r"trash this (card|character)", r"you may trash this"],
+    },
+    "return_this_card": {
+        "description": "Return this card to hand or deck.",
+        "patterns": [r"return this (card|character)", r"return it to"],
+    },
+    "is_trashed": {
+        "description": "Trigger when this card is trashed.",
+        "patterns": [r"is trashed", r"was trashed", r"when.*trashed", r"if.*trashed"],
+    },
+    "is_ko": {
+        "description": "Trigger when this card is K.O.'d.",
+        "patterns": [r"is k\.?o\.?", r"was k\.?o\.?", r"when.*k\.?o\.?", r"if.*k\.?o\.?"],
+    },
+    "removed_from_field": {
+        "description": "When a card is removed from the field by any means.",
+        "patterns": [r"removed from the field", r"would be removed", r"leaves the field"],
+    },
+    "place_on_top_deck": {
+        "description": "Place a card on top of a deck.",
+        "patterns": [r"top of.*deck", r"place.*on top", r"return.*to.*top"],
+    },
+    "place_on_bottom_deck": {
+        "description": "Place a card on the bottom of a deck.",
+        "patterns": [r"bottom of.*deck", r"place.*at.*bottom", r"return.*to.*bottom"],
+    },
+    "owners_hand": {
+        "description": "Return to the owner's hand (not necessarily yours).",
+        "patterns": [r"owner's hand", r"to the owner's hand"],
+    },
+    "battle_effect": {
+        "description": "Effect that applies during battle.",
+        "patterns": [r"during this battle", r"this battle", r"in battle"],
+    },
+    "battles_character": {
+        "description": "When this card battles another card.",
+        "patterns": [r"battles your", r"battles a character", r"battling"],
+    },
+    "cannot_activate": {
+        "description": "Prevent effect activation.",
+        "patterns": [r"cannot activate", r"can't activate", r"doesn't activate"],
+    },
+    "turn_face_up": {
+        "description": "Turn a card face-up.",
+        "patterns": [r"face-up", r"turn.*face up", r"face up"],
+    },
+    "turn_face_down": {
+        "description": "Turn a card face-down.",
+        "patterns": [r"face-down", r"turn.*face down", r"face down"],
+    },
+    "treat_as_name": {
+        "description": "Treat this card as having a different name.",
+        "patterns": [r"treat.*name as", r"treat this card's name"],
+    },
+    "same_name": {
+        "description": "Cards with the same name restriction.",
+        "patterns": [r"same name", r"with that name"],
+    },
+    "choose_effect": {
+        "description": "Choose one of multiple effects.",
+        "patterns": [r"choose one", r"choose:", r"select one"],
+    },
+    "target_card": {
+        "description": "Target a specific card.",
+        "patterns": [r"target", r"choose up to", r"select up to"],
+    },
+    "all_characters": {
+        "description": "Affect all characters.",
+        "patterns": [r"all.*characters", r"all of your characters", r"each.*character"],
+    },
+    "per_turn_limit": {
+        "description": "Limit effect to once per turn.",
+        "patterns": [r"once per turn", r"twice per turn", r"per turn"],
+    },
+    "end_of_turn": {
+        "description": "At the end of the turn.",
+        "patterns": [r"end of.*turn", r"at the end of this turn", r"until end of turn"],
+    },
+    "this_turn_only": {
+        "description": "Effect lasts only this turn.",
+        "patterns": [r"this turn", r"during this turn", r"until the end of.*turn"],
+    },
+    "next_turn": {
+        "description": "Effect applies on next turn.",
+        "patterns": [r"next turn", r"your next turn", r"opponent's next turn"],
+    },
+    "you_may": {
+        "description": "Optional effect that you can choose to activate.",
+        "patterns": [r"you may"],
+    },
+    "conditional_if": {
+        "description": "Conditional effect based on a requirement.",
+        "patterns": [r"if you", r"if your", r"if the"],
+    },
+    "attribute_check": {
+        "description": "Check card attributes/types.",
+        "patterns": [r"attribute", r"type including", r"with.*type"],
+    },
+    "cost_payment": {
+        "description": "Pay a cost to activate effect.",
+        "patterns": [r"you may rest", r"you may trash", r"don!! -(\d+)"],
+    },
+    "additional_effect": {
+        "description": "Apply an additional effect.",
+        "patterns": [r"additional", r"also", r"then,"],
+    },
+    "instead_replacement": {
+        "description": "Replace one effect with another.",
+        "patterns": [r"instead", r"instead of", r"rather than"],
+    },
 }
 
 CARD_ZONES = {
