@@ -1,0 +1,368 @@
+{
+  "main": [
+    {
+      "id": "OP09-081_p2",
+      "name": "Marshall.D.Teach (OP09-081)",
+      "type": "Leader",
+      "color": [
+        "Black"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates The Four Emperors"
+      ],
+      "effect": "Your [On Play] effects are negated. [Activate: Main] You may trash 1 card from your hand: Your opponent's [On Play] effects are negated until the end of your opponent's next turn.",
+      "set_code": "ST27",
+      "number": "081",
+      "card_code": "ST27-081",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST27-005",
+      "name": "Marshall.D.Teach (ST27-005)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 7,
+      "power": 8000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates The Four Emperors"
+      ],
+      "effect": "[Activate:Main] You may rest this Character: K.O. up to 1 Character with a cost of 3 or less. [On K.O.] Add up to 1 black card from your trash to your hand.",
+      "set_code": "ST27",
+      "number": "005",
+      "card_code": "ST27-005",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST27-003",
+      "name": "Kuzan",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 6,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates Former Navy"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On K.O.] Play up to 1 \"Blackbeard Pirates\" type Character card with a cost of 5 or less from your trash rested.",
+      "set_code": "ST27",
+      "number": "003",
+      "card_code": "ST27-003",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST27-002",
+      "name": "Catarina Devon",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 1000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "[Activate:Main] You may trash this Character: If your Leader has the \"Blackbeard Pirates\" type, give up to 1 of your opponent's Characters -1 cost during this turn. [On K.O.] Draw 1 card.",
+      "set_code": "ST27",
+      "number": "002",
+      "card_code": "ST27-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST27-004",
+      "name": "Sanjuan.Wolf",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Blackbeard Pirates Giant"
+      ],
+      "effect": "If your Leader has the \"Blackbeard Pirates\" type, this Character gains [Blocker] and +1 cost for every 4 cards in your trash. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] Trash 1 card from your hand.",
+      "set_code": "ST27",
+      "number": "004",
+      "card_code": "ST27-004",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST27-001",
+      "name": "Avalo Pizarro",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 1000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "[Activate:Main] [Once Per Turn] You may rest 1 of your [Fullalead] cards: If your Leader has the \"Blackbeard Pirates\" type, this Character gains +4000 power during this turn. [On K.O.] Draw 1 card.",
+      "set_code": "ST27",
+      "number": "001",
+      "card_code": "ST27-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-095_r1",
+      "name": "Laffitte (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 1000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "R",
+      "attribute": "Strike",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "[Activate: Main] You may rest 1 of your DON!! cards and this Character: Look at 5 cards from the top of your deck; reveal up to 1 \"Blackbeard Pirates\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "095",
+      "card_code": "ST27-095",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-090_r1",
+      "name": "Doc Q (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "[Activate: Main] You may rest this Character: If your Leader has the \"Blackbeard Pirates\" type, K.O. up to 1 of your opponent's Characters with a cost of 1 or less.[On K.O.] Draw 1 card.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "090",
+      "card_code": "ST27-090",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-089_r1",
+      "name": "Stronger (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "UC",
+      "attribute": "Wisdom",
+      "traits": [
+        "Animal Blackbeard Pirates"
+      ],
+      "effect": "[Activate: Main] You may trash 1 card from your hand and trash this Character: If your Leader has the \"Blackbeard Pirates\" type, draw 1 card. Then, give up to 1 of your opponent's Characters –2 cost during this turn.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "089",
+      "card_code": "ST27-089",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-099_r1",
+      "name": "Fullalead (Reprint)",
+      "type": "Stage",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [],
+      "effect": "[Activate: Main] You may trash 1 card from your hand and rest this Stage: Look at 3 cards from the top of your deck; reveal up to 1 \"Blackbeard Pirates\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order. DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "099",
+      "card_code": "ST27-099",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-083_r1",
+      "name": "Van Augur (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "R",
+      "attribute": "Ranged",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "[Activate: Main] You may rest this Character: If your Leader has the \"Blackbeard Pirates\" type, give up to 1 of your opponent's Characters 3 cost during this turn.[On K.O.] Draw 1 card.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "083",
+      "card_code": "ST27-083",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-086_r1",
+      "name": "Jesus Burgess (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 4,
+      "power": 5000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "R",
+      "attribute": "Strike",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "This Character cannot be K.O.'d by your opponent's effects.If your Leader has the \"Blackbeard Pirates\" type, this Character gains +1000 power for every 4 cards in your trash.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "086",
+      "card_code": "ST27-086",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-088_r1",
+      "name": "Shiryu (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "UC",
+      "attribute": "Slash",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "[DON!! x1] [When Attacking] You may trash 2 cards from your hand: Draw 2 cards.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "088",
+      "card_code": "ST27-088",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP09-091_r1",
+      "name": "Vasco Shot (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "091",
+      "card_code": "ST27-091",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP10-084_r1",
+      "name": "Sanjuan.Wolf (Reprint)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 5,
+      "power": 7000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Blackbeard Pirates Giant"
+      ],
+      "effect": "DISCLAIMER: This card is a reprint of the pre-existing card in the OP10 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "set_code": "ST27",
+      "number": "084",
+      "card_code": "ST27-084",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

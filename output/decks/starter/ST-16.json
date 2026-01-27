@@ -1,0 +1,301 @@
+{
+  "main": [
+    {
+      "id": "ST11-001_p1",
+      "name": "Uta (ST11-001)",
+      "type": "Leader",
+      "color": [
+        "Green"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Special",
+      "traits": [
+        "FILM"
+      ],
+      "effect": "[DON!! x1] [When Attacking] [Once Per Turn] Reveal 1 card from the top of your deck and add up to 1 \"FILM\" type card to your hand. Then, place the rest at the bottom of your deck.",
+      "set_code": "ST16",
+      "number": "001",
+      "card_code": "ST16-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST16-004",
+      "name": "Shanks",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 9,
+      "power": 11000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Slash",
+      "traits": [
+        "FILM The Four Emperors Red-Haired Pirates"
+      ],
+      "effect": "[On Play] K.O. up to 1 of your opponent's rested Characters.",
+      "set_code": "ST16",
+      "number": "004",
+      "card_code": "ST16-004",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST16-001",
+      "name": "Uta (ST16-001)",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "FILM"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [Activate: Main] [Once Per Turn] You may trash 1 \"FILM\" type card from your hand: Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+      "set_code": "ST16",
+      "number": "001",
+      "card_code": "ST16-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "P-029_r1",
+      "name": "Bartolomeo",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "PR",
+      "attribute": "Special",
+      "traits": [
+        "FILM Supernovas Barto Club"
+      ],
+      "effect": "[End of Your Turn] You may rest this Character: Set up to 1 of your \"FILM\" type Characters other than [Bartolomeo] as active.",
+      "set_code": "ST16",
+      "number": "029_r1",
+      "card_code": "ST16-029_r1",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "P-061_r1",
+      "name": "Monkey.D.Luffy (P-061)",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 8,
+      "power": 10000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "PR",
+      "attribute": "Strike",
+      "traits": [
+        "FILM Straw Hat Crew"
+      ],
+      "effect": "",
+      "set_code": "ST16",
+      "number": "061_r1",
+      "card_code": "ST16-061_r1",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST16-005",
+      "name": "Monkey.D.Luffy (ST16-005)",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "FILM Straw Hat Crew Supernovas"
+      ],
+      "effect": "If you have a rested [Uta], this Character gains +1000 power.",
+      "set_code": "ST16",
+      "number": "005",
+      "card_code": "ST16-005",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "ST16-003",
+      "name": "Charlotte Katakuri",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "FILM Big Mom Pirates"
+      ],
+      "effect": "If your Leader has the \"FILM\" type and you have 6 or more rested cards, this Character gains +2000 power.",
+      "set_code": "ST16",
+      "number": "003",
+      "card_code": "ST16-003",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST16-002",
+      "name": "Gordon",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "FILM"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Your Opponent's Attack] You may trash any number of \"Music\" type cards from your hand. Your Leader or 1 of your Characters gains +1000 power during this battle for every card trashed.",
+      "set_code": "ST16",
+      "number": "002",
+      "card_code": "ST16-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "P-059_p1",
+      "name": "The World's Continuation",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "PR",
+      "attribute": "",
+      "traits": [
+        "FILM Music"
+      ],
+      "effect": "[Counter] If your Leader is [Uta], you may return any number of Characters on your field to the owner's hand. Up to 1 of your Leader or Character cards gains +2000 power during this battle for every returned Character.",
+      "set_code": "ST16",
+      "number": "059_p1",
+      "card_code": "ST16-059_p1",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "P-057_p1",
+      "name": "Fleeting Lullaby",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "PR",
+      "attribute": "",
+      "traits": [
+        "FILM Music"
+      ],
+      "effect": "[Main] If your Leader is [Uta], up to 2 of your opponent's rested Characters with a cost of 4 or less will not become active in your opponent's next Refresh Phase. [Trigger] Activate this card's [Main] effect.",
+      "set_code": "ST16",
+      "number": "057_p1",
+      "card_code": "ST16-057_p1",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "P-060_p1",
+      "name": "Tot Musica",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "PR",
+      "attribute": "",
+      "traits": [
+        "FILM Music"
+      ],
+      "effect": "[Main] You may rest 1 of your [Uta] cards: Rest up to 2 of your opponent's DON!! cards.",
+      "set_code": "ST16",
+      "number": "060_p1",
+      "card_code": "ST16-060_p1",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "P-058_p1",
+      "name": "Where the Wind Blows",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "PR",
+      "attribute": "",
+      "traits": [
+        "FILM Music"
+      ],
+      "effect": "[Main] If your Leader is [Uta], set all of your \"FILM\" type Characters as active at the end of this turn. [Trigger] Set all of your \"FILM\" type Characters as active.",
+      "set_code": "ST16",
+      "number": "058_p1",
+      "card_code": "ST16-058_p1",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

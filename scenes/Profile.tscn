@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2nxfo7c4igrw"]
+
+[ext_resource type="Script" uid="uid://b2appvkwu0reb" path="res://scripts/Profile.gd" id="1_rvn83"]
+
+[node name="Profile" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_rvn83")

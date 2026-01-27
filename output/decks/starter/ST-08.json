@@ -1,0 +1,370 @@
+{
+  "main": [
+    {
+      "id": "ST08-001",
+      "name": "Monkey.D.Luffy (001)",
+      "type": "Leader",
+      "color": [
+        "Black"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Your Turn] When a Character is K.O.'d, give up to 1 rested DON!! card to this Leader.",
+      "set_code": "ST08",
+      "number": "001",
+      "card_code": "ST08-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-002",
+      "name": "Uta",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "FILM"
+      ],
+      "effect": "This Character cannot be K.O.'d in battle by Leaders. [Activate:Main] You may rest this Character: Give up to 1 of your opponent's Characters -2 cost during this turn.",
+      "set_code": "ST08",
+      "number": "002",
+      "card_code": "ST08-002",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-014",
+      "name": "Gum-Gum Bell",
+      "type": "Event",
+      "color": [
+        "Black"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Main] You may add 1 card from the top of your Life cards to your hand: Give up to 1 of your opponent's Characters -7 cost during this turn. [Trigger] Add up to 1 black Character card with a cost of 2 or less from your trash to your hand.",
+      "set_code": "ST08",
+      "number": "014",
+      "card_code": "ST08-014",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-005",
+      "name": "Shanks",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 9,
+      "power": 10000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Slash",
+      "traits": [
+        "Red-Haired Pirates"
+      ],
+      "effect": "[On Play] You may trash 1 card from your hand: K.O. all Characters with a cost of 1 or less.",
+      "set_code": "ST08",
+      "number": "005",
+      "card_code": "ST08-005",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-006",
+      "name": "Shirahoshi",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 4,
+      "power": 0,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Merfolk"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] Give up to 1 of your opponent's Characters -4 cost during this turn.",
+      "set_code": "ST08",
+      "number": "006",
+      "card_code": "ST08-006",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-007",
+      "name": "Nefeltari Vivi",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 3,
+      "power": 1000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Alabasta"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [Trigger] Play this card.",
+      "set_code": "ST08",
+      "number": "007",
+      "card_code": "ST08-007",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-015",
+      "name": "Gum-Gum Pistol",
+      "type": "Event",
+      "color": [
+        "Black"
+      ],
+      "cost": 3,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Main] K.O. up to 1 of your opponent's Characters with a cost of 2 or less. [Trigger] Draw 1 card.",
+      "set_code": "ST08",
+      "number": "015",
+      "card_code": "ST08-015",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-012",
+      "name": "Laboon",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Animal"
+      ],
+      "effect": "",
+      "set_code": "ST08",
+      "number": "012",
+      "card_code": "ST08-012",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-004",
+      "name": "Koby",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 4,
+      "power": 1000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Navy"
+      ],
+      "effect": "[Activate:Main] You may rest this Character: K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+      "set_code": "ST08",
+      "number": "004",
+      "card_code": "ST08-004",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-003",
+      "name": "Gaimon",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 2,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "East Blue"
+      ],
+      "effect": "",
+      "set_code": "ST08",
+      "number": "003",
+      "card_code": "ST08-003",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-010",
+      "name": "Monkey.D.Garp",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 5,
+      "power": 7000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Navy"
+      ],
+      "effect": "",
+      "set_code": "ST08",
+      "number": "010",
+      "card_code": "ST08-010",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-013",
+      "name": "Mr.2.Bon.Kurei (Bentham)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Former Baroque Works"
+      ],
+      "effect": "[DON!! x1] At the end of a battle in which this Character battles your opponent's Character, you may K.O. the opponent's Character you battled with. If you do, K.O. this Character.",
+      "set_code": "ST08",
+      "number": "013",
+      "card_code": "ST08-013",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-011",
+      "name": "Monkey.D.Luffy (011)",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 3,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "",
+      "set_code": "ST08",
+      "number": "011",
+      "card_code": "ST08-011",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-009",
+      "name": "Makino",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Windmill Village"
+      ],
+      "effect": "[On Play] If there is a Character with a cost of 0, draw 1 card.",
+      "set_code": "ST08",
+      "number": "009",
+      "card_code": "ST08-009",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST08-008",
+      "name": "Higuma",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Mountain Bandits"
+      ],
+      "effect": "[On Play] Give up to 1 of your opponent's Characters -2 cost during this turn.",
+      "set_code": "ST08",
+      "number": "008",
+      "card_code": "ST08-008",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

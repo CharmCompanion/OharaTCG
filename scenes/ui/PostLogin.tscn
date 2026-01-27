@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvhoo8e20ackl"]
+
+[ext_resource type="Script" uid="uid://vx6psbr4c58" path="res://scripts/ui/PostLogin.gd" id="1_vlti6"]
+[ext_resource type="Texture2D" path="res://assets/OharaTCG.png" id="2_a00bq"]
+
+[node name="PostLogin" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vlti6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(570.424, 174)
+scale = Vector2(0.113953, 0.113953)
+texture = ExtResource("2_a00bq")
+offset = Vector2(50, 0)

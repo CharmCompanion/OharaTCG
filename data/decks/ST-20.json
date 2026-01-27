@@ -1,0 +1,255 @@
+{
+  "main": [
+    {
+      "id": "OP03-099_p2",
+      "name": "Charlotte Katakuri (OP03-099)",
+      "type": "Leader",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Strike",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[DON!! x1] [When Attacking] Look at up to 1 card from the top of your or your opponent's Life cards, and place it at the top or bottom of the Life cards. Then, this Leader gains +1000 power during this battle.",
+      "set_code": "ST20",
+      "number": "099",
+      "card_code": "ST20-099",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST20-005",
+      "name": "Charlotte Linlin",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 6,
+      "power": 7000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "The Four Emperors Big Mom Pirates"
+      ],
+      "effect": "[On Play] You may trash 1 card from your hand: Your opponent chooses one: • Your opponent trashes 2 cards from their hand. • Trash 1 card from the top of your opponent's Life cards.",
+      "set_code": "ST20",
+      "number": "005",
+      "card_code": "ST20-005",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST20-001",
+      "name": "Charlotte Katakuri (ST20-001)",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Strike",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [Activate: Main] [Once Per Turn] You may turn 1 card from the top of your Life cards face-up: Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+      "set_code": "ST20",
+      "number": "001",
+      "card_code": "ST20-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST20-003",
+      "name": "Charlotte Brulee",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 3,
+      "power": 3000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[Trigger] Look at up to 1 card from the top of your or your opponent's Life cards, and place it at the top or bottom of the Life cards. Then, add this card to your hand.",
+      "set_code": "ST20",
+      "number": "003",
+      "card_code": "ST20-003",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST20-004",
+      "name": "Charlotte Pudding (ST20-004)",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 3,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[On Play] You may add 1 card from the top of your Life cards to your hand: Set up to 1 of your \"Big Mom Pirates\" type Characters with a cost of 3 or less as active. [Trigger] Rest up to 1 of your opponent's Characters with a cost of 3 or less.",
+      "set_code": "ST20",
+      "number": "004",
+      "card_code": "ST20-004",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP03-112_r1",
+      "name": "Charlotte Pudding (OP03-112)",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 1,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "R",
+      "attribute": "Wisdom",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 [Sanji] or \"Big Mom Pirates\" type card other than [Charlotte Pudding] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+      "set_code": "ST20",
+      "number": "112",
+      "card_code": "ST20-112",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST20-002",
+      "name": "Charlotte Cracker",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 4,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[Once Per Turn] If this Character would be K.O.'d by an effect, you may trash 1 card from the top of your Life cards instead. [Trigger] You may trash 1 card from your hand: Play this card.",
+      "set_code": "ST20",
+      "number": "002",
+      "card_code": "ST20-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP03-107_r1",
+      "name": "Charlotte Galette",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+      "set_code": "ST20",
+      "number": "107",
+      "card_code": "ST20-107",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP03-110_r1",
+      "name": "Charlotte Smoothie",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 4,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[When Attacking] You may add 1 card from the top or bottom of your Life cards to your hand: This Character gains +2000 power during this battle. [Trigger] You may trash 1 card from your hand: Play this card.",
+      "set_code": "ST20",
+      "number": "110",
+      "card_code": "ST20-110",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP03-106_r1",
+      "name": "Charlotte Opera",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "",
+      "set_code": "ST20",
+      "number": "106",
+      "card_code": "ST20-106",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

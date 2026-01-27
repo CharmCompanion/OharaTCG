@@ -1,0 +1,301 @@
+{
+  "main": [
+    {
+      "id": "ST14-001",
+      "name": "Monkey.D.Luffy (001)",
+      "type": "Leader",
+      "color": [
+        "Black"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x1] All of your Characters gain +1 cost. If you have a Character with a cost of 8 or more, this Leader gains +1000 power.",
+      "set_code": "ST14",
+      "number": "001",
+      "card_code": "ST14-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-003",
+      "name": "Sanji",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[On Play] If you have a Character with a cost of 6 or more, K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+      "set_code": "ST14",
+      "number": "003",
+      "card_code": "ST14-003",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-006",
+      "name": "Nami",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 3,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] If you have 6 or less cards in your hand and a Character with a cost of 8 or more, draw 1 card.",
+      "set_code": "ST14",
+      "number": "006",
+      "card_code": "ST14-006",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-007",
+      "name": "Nico Robin",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 6,
+      "power": 7000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[On Play] / [When Attacking] If you have a Character with a cost of 8 or more, give up to 1 of your opponent's Characters -5 cost during this turn.",
+      "set_code": "ST14",
+      "number": "007",
+      "card_code": "ST14-007",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-016",
+      "name": "I Have My Crew!!",
+      "type": "Event",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Main] Draw 1 card. Then, up to 1 of your Characters gains +3 cost until the end of your opponent's next turn. [Trigger] K.O. up to 1 of your opponent's Characters with a cost of 3 or less.",
+      "set_code": "ST14",
+      "number": "016",
+      "card_code": "ST14-016",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-013",
+      "name": "Roronoa Zoro",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 6,
+      "power": 8000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "",
+      "set_code": "ST14",
+      "number": "013",
+      "card_code": "ST14-013",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-009",
+      "name": "Franky",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x1] [Opponent's Turn] If you have a Character with a cost of 6 or more, this Character cannot be K.O.'d by your opponent's effects and gains +2000 power.",
+      "set_code": "ST14",
+      "number": "009",
+      "card_code": "ST14-009",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-005",
+      "name": "Tony Tony.Chopper",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Animal Straw Hat Crew"
+      ],
+      "effect": "",
+      "set_code": "ST14",
+      "number": "005",
+      "card_code": "ST14-005",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-017",
+      "name": "Thousand Sunny",
+      "type": "Stage",
+      "color": [
+        "Black"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "All of your black \"Straw Hat Crew\" type Characters gain +1 cost. [On Play] If your Leader has the \"Straw Hat Crew\" type, draw 1 card.",
+      "set_code": "ST14",
+      "number": "017",
+      "card_code": "ST14-017",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-002",
+      "name": "Usopp",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Ranged",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x1] [When Attacking] If you have a Character with a cost of 8 or more, K.O. up to 1 of your opponent's Characters with a cost of 4 or less.",
+      "set_code": "ST14",
+      "number": "002",
+      "card_code": "ST14-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-015",
+      "name": "Gum-Gum Diable Three-Swords Style Mouten Jet Six Hundred Pound Phoenix Cannon",
+      "type": "Event",
+      "color": [
+        "Black"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Main] Up to 1 of your Leader or Character cards gains +3000 power during this turn. Then, if you have a Character with a cost of 8 or more, K.O. up to 1 of your opponent's Characters with a cost of 2 or less. [Trigger] If you have a Character with a cost of 8 or more, K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+      "set_code": "ST14",
+      "number": "015",
+      "card_code": "ST14-015",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST14-010",
+      "name": "Brook",
+      "type": "Character",
+      "color": [
+        "Black"
+      ],
+      "cost": 5,
+      "power": 7000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "",
+      "set_code": "ST14",
+      "number": "010",
+      "card_code": "ST14-010",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

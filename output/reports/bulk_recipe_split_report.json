@@ -1,0 +1,309 @@
+{
+  "generated_at": 1769451213,
+  "input": "data/recipes/STs.txt",
+  "dest": "data/recipes/_split",
+  "overwrite": true,
+  "decks_detected": 33,
+  "written": [
+    "data/recipes/_split/ST-01.txt",
+    "data/recipes/_split/ST-02.txt",
+    "data/recipes/_split/ST-03.txt",
+    "data/recipes/_split/ST-04.txt",
+    "data/recipes/_split/ST-05.txt",
+    "data/recipes/_split/ST-06.txt",
+    "data/recipes/_split/ST-07.txt",
+    "data/recipes/_split/ST-08.txt",
+    "data/recipes/_split/ST-09.txt",
+    "data/recipes/_split/ST-10.1.txt",
+    "data/recipes/_split/ST-10.2.txt",
+    "data/recipes/_split/ST-10.3.txt",
+    "data/recipes/_split/ST-11.txt",
+    "data/recipes/_split/ST-12.txt",
+    "data/recipes/_split/ST-13.1.txt",
+    "data/recipes/_split/ST-13.2.txt",
+    "data/recipes/_split/ST-13.3.txt",
+    "data/recipes/_split/ST-14.txt",
+    "data/recipes/_split/ST-15.txt",
+    "data/recipes/_split/ST-16.txt",
+    "data/recipes/_split/ST-17.txt",
+    "data/recipes/_split/ST-18.txt",
+    "data/recipes/_split/ST-19.txt",
+    "data/recipes/_split/ST-20.txt",
+    "data/recipes/_split/ST-21.txt",
+    "data/recipes/_split/ST-22.txt",
+    "data/recipes/_split/ST-23.txt",
+    "data/recipes/_split/ST-24.txt",
+    "data/recipes/_split/ST-25.txt",
+    "data/recipes/_split/ST-26.txt",
+    "data/recipes/_split/ST-27.txt",
+    "data/recipes/_split/ST-28.txt",
+    "data/recipes/_split/ST-29.txt"
+  ],
+  "skipped": [],
+  "summaries": [
+    {
+      "deck_id": "ST-01",
+      "header": "ST-01 R Luffy (Starter Deck 01) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-01.txt"
+    },
+    {
+      "deck_id": "ST-02",
+      "header": "ST-02 G Kid (Starter Deck 02) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-02.txt"
+    },
+    {
+      "deck_id": "ST-03",
+      "header": "ST-03 B Crocodile (Starter Deck 03) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-03.txt"
+    },
+    {
+      "deck_id": "ST-04",
+      "header": "ST-04 P Kaido (Starter Deck 04) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-04.txt"
+    },
+    {
+      "deck_id": "ST-05",
+      "header": "ST-05 R Shanks (Starter Deck 05) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-05.txt"
+    },
+    {
+      "deck_id": "ST-06",
+      "header": "ST-06 BK Sakazuki (Starter Deck 06) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-06.txt"
+    },
+    {
+      "deck_id": "ST-07",
+      "header": "ST-07 Y Charlotte Linlin (Starter Deck 07) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-07.txt"
+    },
+    {
+      "deck_id": "ST-08",
+      "header": "ST-08 BK Luffy (Starter Deck 08) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-08.txt"
+    },
+    {
+      "deck_id": "ST-09",
+      "header": "ST-09 Y Yamato(Starter Deck 09) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-09.txt"
+    },
+    {
+      "deck_id": "ST-10.1",
+      "header": "ST-10 R/P Luffy (Starter Deck 10) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 8,
+      "path": "data/recipes/_split/ST-10.1.txt"
+    },
+    {
+      "deck_id": "ST-10.2",
+      "header": "ST-10 R/P Law (Starter Deck 10) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 8,
+      "path": "data/recipes/_split/ST-10.2.txt"
+    },
+    {
+      "deck_id": "ST-10.3",
+      "header": "ST-10 R/P Kid (Starter Deck 10) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 8,
+      "path": "data/recipes/_split/ST-10.3.txt"
+    },
+    {
+      "deck_id": "ST-11",
+      "header": "ST-11 G Uta(Starter Deck 11) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 40,
+      "path": "data/recipes/_split/ST-11.txt"
+    },
+    {
+      "deck_id": "ST-12",
+      "header": "ST-12 G/B Roronoa Zoro & Sanji (Starter Deck 12) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-12.txt"
+    },
+    {
+      "deck_id": "ST-13.1",
+      "header": "ST-13.1 B/Y Luffy(Starter Deck 13) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-13.1.txt"
+    },
+    {
+      "deck_id": "ST-13.2",
+      "header": "ST-13.2 B/Y Ace(Starter Deck 13) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 32,
+      "path": "data/recipes/_split/ST-13.2.txt"
+    },
+    {
+      "deck_id": "ST-13.3",
+      "header": "ST-13.3 R/Y Sabo(Starter Deck 13) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-13.3.txt"
+    },
+    {
+      "deck_id": "ST-14",
+      "header": "ST-14 B Luffy (Starter Deck 14) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-14.txt"
+    },
+    {
+      "deck_id": "ST-15",
+      "header": "ST-15 R Whitebeard (Starter Deck 15) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 37,
+      "path": "data/recipes/_split/ST-15.txt"
+    },
+    {
+      "deck_id": "ST-16",
+      "header": "ST-16 G Uta (Starter Deck 16) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 24,
+      "path": "data/recipes/_split/ST-16.txt"
+    },
+    {
+      "deck_id": "ST-17",
+      "header": "ST-17 B Doflamingo (Starter Deck 17) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 21,
+      "path": "data/recipes/_split/ST-17.txt"
+    },
+    {
+      "deck_id": "ST-18",
+      "header": "ST-18 P Luffy (Starter Deck 18) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 37,
+      "path": "data/recipes/_split/ST-18.txt"
+    },
+    {
+      "deck_id": "ST-19",
+      "header": "ST-19 B Smoker (Starter Deck 19) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 37,
+      "path": "data/recipes/_split/ST-19.txt"
+    },
+    {
+      "deck_id": "ST-20",
+      "header": "ST-20 Y Katakuri (Starter Deck 20) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 29,
+      "path": "data/recipes/_split/ST-20.txt"
+    },
+    {
+      "deck_id": "ST-21",
+      "header": "ST-21 R Luffy (Starter Deck 21) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-21.txt"
+    },
+    {
+      "deck_id": "ST-22",
+      "header": "ST-22 B Ace & Newgate (Starter Deck 22) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-22.txt"
+    },
+    {
+      "deck_id": "ST-23",
+      "header": "ST-23 R Shanks (Starter Deck 23) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 37,
+      "path": "data/recipes/_split/ST-23.txt"
+    },
+    {
+      "deck_id": "ST-24",
+      "header": "ST-24 G Bonney (Starter Deck 24) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 37,
+      "path": "data/recipes/_split/ST-24.txt"
+    },
+    {
+      "deck_id": "ST-25",
+      "header": "ST-25 B Buggy (Starter Deck 25) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 37,
+      "path": "data/recipes/_split/ST-25.txt"
+    },
+    {
+      "deck_id": "ST-26",
+      "header": "ST-26 P/BK Luffy (Starter Deck 26) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 31,
+      "path": "data/recipes/_split/ST-26.txt"
+    },
+    {
+      "deck_id": "ST-27",
+      "header": "ST-27 BK Blackbeard (Starter Deck 27) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 37,
+      "path": "data/recipes/_split/ST-27.txt"
+    },
+    {
+      "deck_id": "ST-28",
+      "header": "ST-28 G/Y Yamato(Starter Deck 28) recipe",
+      "cards_total": 51,
+      "unique_codes": 15,
+      "non_st_copies": 33,
+      "path": "data/recipes/_split/ST-28.txt"
+    },
+    {
+      "deck_id": "ST-29",
+      "header": "ST-29 Y Egghead Luffy (Starter Deck 29) recipe",
+      "cards_total": 51,
+      "unique_codes": 17,
+      "non_st_copies": 0,
+      "path": "data/recipes/_split/ST-29.txt"
+    }
+  ]
+}

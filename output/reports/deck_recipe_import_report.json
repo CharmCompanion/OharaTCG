@@ -1,0 +1,581 @@
+{
+  "generated_at": 1769451214,
+  "input": "data/recipes/_split",
+  "write": true,
+  "preview": false,
+  "destinations": [
+    "data",
+    "output"
+  ],
+  "results": [
+    {
+      "deck_id": "ST-01",
+      "input": "data/recipes/_split/ST-01.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST01-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-02",
+      "input": "data/recipes/_split/ST-02.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST02-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-03",
+      "input": "data/recipes/_split/ST-03.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST03-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-04",
+      "input": "data/recipes/_split/ST-04.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST04-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-05",
+      "input": "data/recipes/_split/ST-05.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST05-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-06",
+      "input": "data/recipes/_split/ST-06.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST06-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-07",
+      "input": "data/recipes/_split/ST-07.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST07-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-08",
+      "input": "data/recipes/_split/ST-08.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST08-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-09",
+      "input": "data/recipes/_split/ST-09.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST09-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-10.1",
+      "input": "data/recipes/_split/ST-10.1.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST10-002",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-10.2",
+      "input": "data/recipes/_split/ST-10.2.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST10-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-10.3",
+      "input": "data/recipes/_split/ST-10.3.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST10-003",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-11",
+      "input": "data/recipes/_split/ST-11.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST11-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-12",
+      "input": "data/recipes/_split/ST-12.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST12-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-13.1",
+      "input": "data/recipes/_split/ST-13.1.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST13-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-13.2",
+      "input": "data/recipes/_split/ST-13.2.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST13-002",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-13.3",
+      "input": "data/recipes/_split/ST-13.3.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST13-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-14",
+      "input": "data/recipes/_split/ST-14.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST14-001",
+      "missing_codes": [
+        "ST14-001",
+        "ST14-002",
+        "ST14-003",
+        "ST14-004",
+        "ST14-005",
+        "ST14-006",
+        "ST14-007",
+        "ST14-008",
+        "ST14-009",
+        "ST14-010",
+        "ST14-011",
+        "ST14-012",
+        "ST14-013",
+        "ST14-014",
+        "ST14-015",
+        "ST14-016",
+        "ST14-017"
+      ]
+    },
+    {
+      "deck_id": "ST-15",
+      "input": "data/recipes/_split/ST-15.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP02-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-16",
+      "input": "data/recipes/_split/ST-16.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST11-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-17",
+      "input": "data/recipes/_split/ST-17.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP01-060",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-18",
+      "input": "data/recipes/_split/ST-18.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP05-060",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-19",
+      "input": "data/recipes/_split/ST-19.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP02-093",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-20",
+      "input": "data/recipes/_split/ST-20.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP03-099",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-21",
+      "input": "data/recipes/_split/ST-21.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST21-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-22",
+      "input": "data/recipes/_split/ST-22.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST22-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-23",
+      "input": "data/recipes/_split/ST-23.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP09-001",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-24",
+      "input": "data/recipes/_split/ST-24.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP07-019",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-25",
+      "input": "data/recipes/_split/ST-25.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP09-042",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-26",
+      "input": "data/recipes/_split/ST-26.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP09-061",
+      "missing_codes": [
+        "ST14-010"
+      ]
+    },
+    {
+      "deck_id": "ST-27",
+      "input": "data/recipes/_split/ST-27.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP09-081",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-28",
+      "input": "data/recipes/_split/ST-28.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "OP06-022",
+      "missing_codes": []
+    },
+    {
+      "deck_id": "ST-29",
+      "input": "data/recipes/_split/ST-29.txt",
+      "ok": true,
+      "message": "OK",
+      "totals": {
+        "leader_total": 1,
+        "non_leader_total": 50,
+        "main_total_including_leader": 51,
+        "don_total": 10
+      },
+      "leader_code": "ST29-001",
+      "missing_codes": [
+        "ST29-001",
+        "ST29-002",
+        "ST29-003",
+        "ST29-004_P1",
+        "ST29-005",
+        "ST29-006",
+        "ST29-007",
+        "ST29-008",
+        "ST29-009",
+        "ST29-010",
+        "ST29-011",
+        "ST29-012",
+        "ST29-013",
+        "ST29-014_P1",
+        "ST29-015",
+        "ST29-016",
+        "ST29-017"
+      ]
+    }
+  ],
+  "written": [
+    "data/decks/ST-01.json",
+    "output/decks/starter/ST-01.json",
+    "data/decks/ST-02.json",
+    "output/decks/starter/ST-02.json",
+    "data/decks/ST-03.json",
+    "output/decks/starter/ST-03.json",
+    "data/decks/ST-04.json",
+    "output/decks/starter/ST-04.json",
+    "data/decks/ST-05.json",
+    "output/decks/starter/ST-05.json",
+    "data/decks/ST-06.json",
+    "output/decks/starter/ST-06.json",
+    "data/decks/ST-07.json",
+    "output/decks/starter/ST-07.json",
+    "data/decks/ST-08.json",
+    "output/decks/starter/ST-08.json",
+    "data/decks/ST-09.json",
+    "output/decks/starter/ST-09.json",
+    "data/decks/ST-10.1.json",
+    "output/decks/starter/ST-10.1.json",
+    "data/decks/ST-10.2.json",
+    "output/decks/starter/ST-10.2.json",
+    "data/decks/ST-10.3.json",
+    "output/decks/starter/ST-10.3.json",
+    "data/decks/ST-11.json",
+    "output/decks/starter/ST-11.json",
+    "data/decks/ST-12.json",
+    "output/decks/starter/ST-12.json",
+    "data/decks/ST-13.1.json",
+    "output/decks/starter/ST-13.1.json",
+    "data/decks/ST-13.2.json",
+    "output/decks/starter/ST-13.2.json",
+    "data/decks/ST-13.3.json",
+    "output/decks/starter/ST-13.3.json",
+    "data/decks/ST-14.json",
+    "output/decks/starter/ST-14.json",
+    "data/decks/ST-15.json",
+    "output/decks/starter/ST-15.json",
+    "data/decks/ST-16.json",
+    "output/decks/starter/ST-16.json",
+    "data/decks/ST-17.json",
+    "output/decks/starter/ST-17.json",
+    "data/decks/ST-18.json",
+    "output/decks/starter/ST-18.json",
+    "data/decks/ST-19.json",
+    "output/decks/starter/ST-19.json",
+    "data/decks/ST-20.json",
+    "output/decks/starter/ST-20.json",
+    "data/decks/ST-21.json",
+    "output/decks/starter/ST-21.json",
+    "data/decks/ST-22.json",
+    "output/decks/starter/ST-22.json",
+    "data/decks/ST-23.json",
+    "output/decks/starter/ST-23.json",
+    "data/decks/ST-24.json",
+    "output/decks/starter/ST-24.json",
+    "data/decks/ST-25.json",
+    "output/decks/starter/ST-25.json",
+    "data/decks/ST-26.json",
+    "output/decks/starter/ST-26.json",
+    "data/decks/ST-27.json",
+    "output/decks/starter/ST-27.json",
+    "data/decks/ST-28.json",
+    "output/decks/starter/ST-28.json",
+    "data/decks/ST-29.json",
+    "output/decks/starter/ST-29.json"
+  ],
+  "previews": []
+}

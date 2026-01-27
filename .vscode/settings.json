@@ -1,0 +1,9 @@
+{
+  // Helps VS Code pick the correct interpreter when running the Tasks above.
+  // If this path differs on your machine, change it once here.
+  "python.defaultInterpreterPath": "C:/Users/RY0M/AppData/Local/Programs/Python/Python312/python.exe",
+
+  // Reduce PowerShell terminal oddities by preferring a plain shell profile.
+  // You can switch this to PowerShell 7 (pwsh) if installed.
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}

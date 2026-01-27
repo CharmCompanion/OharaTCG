@@ -1,0 +1,417 @@
+{
+  "main": [
+    {
+      "id": "ST12-001",
+      "name": "Roronoa Zoro & Sanji",
+      "type": "Leader",
+      "color": [
+        "Blue",
+        "Green"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 4,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Slash Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x1][When Attacking][Once Per Turn] You may return 1 of your Characters with a cost of 2 or more to the owner's hand: Set up to 1 of your Characters with 7000 power or less as active.",
+      "set_code": "ST12",
+      "number": "001",
+      "card_code": "ST12-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-003",
+      "name": "Dracule Mihawk",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "SR",
+      "attribute": "Slash",
+      "traits": [
+        "The Seven Warlords of the Sea Muggy Kingdom"
+      ],
+      "effect": "[On Play] If you have 2 or less Characters, play up to 1 [Muggy Kingdom] type or \"Slash\" attribute Character card with a cost of 4 or less other than [Dracule Mihawk] from your hand rested.",
+      "set_code": "ST12",
+      "number": "003",
+      "card_code": "ST12-003",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-010",
+      "name": "Emporio.Ivankov",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "Revolutionary Army Impel Down"
+      ],
+      "effect": "[On Play] Reveal 1 card from the top of your deck and play up to 1 Character card with a cost of 2. Then, place the rest at the top or bottom of your deck. [When Attacking][Once Per Turn] Draw 1 card if you have 6 or less cards in your hand.",
+      "set_code": "ST12",
+      "number": "010",
+      "card_code": "ST12-010",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-012",
+      "name": "Charlotte Pudding",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Big Mom Pirates"
+      ],
+      "effect": "[Activate:Main] Return this Character to the owner's hand.",
+      "set_code": "ST12",
+      "number": "012",
+      "card_code": "ST12-012",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-014",
+      "name": "Duval",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 2,
+      "power": 1000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "The Flying Fish Riders"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] Look at 3 cards from the top of your deck and place them at the top or bottom of the deck in any order.",
+      "set_code": "ST12",
+      "number": "014",
+      "card_code": "ST12-014",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-008",
+      "name": "Roronoa Zoro",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x1][When Attacking] Rest up to 1 of your opponent's Characters with a cost of 6 or less.",
+      "set_code": "ST12",
+      "number": "008",
+      "card_code": "ST12-008",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-016",
+      "name": "Lion Strike",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Main] / [Counter] Rest up to 1 of your opponent's Leader or Character cards with a cost of 4 or less. [Trigger] Activate this card's [Main] effect.",
+      "set_code": "ST12",
+      "number": "016",
+      "card_code": "ST12-016",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-011",
+      "name": "Sanji",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x1][When Attacking] If you have 5 or less cards in your hand, this Character gains +2000 power until the start of your next turn.",
+      "set_code": "ST12",
+      "number": "011",
+      "card_code": "ST12-011",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-004",
+      "name": "Humandrill",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Animal Muggy Kingdom"
+      ],
+      "effect": "",
+      "set_code": "ST12",
+      "number": "004",
+      "card_code": "ST12-004",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-017",
+      "name": "Plastic Surgery Shot",
+      "type": "Event",
+      "color": [
+        "Blue"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, reveal 1 card from the top of your deck, play up to 1 Character card with a cost of 2, and place the rest at the top or bottom of your deck.",
+      "set_code": "ST12",
+      "number": "017",
+      "card_code": "ST12-017",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-005",
+      "name": "Perona",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Thriller Bark Pirates Muggy Kingdom"
+      ],
+      "effect": "",
+      "set_code": "ST12",
+      "number": "005",
+      "card_code": "ST12-005",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-002",
+      "name": "Kuina",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Frost Moon Village"
+      ],
+      "effect": "[Activate:Main] You may rest this Character: Rest up to 1 of your opponent's Characters with a cost of 4 or less. [Trigger] Play this card.",
+      "set_code": "ST12",
+      "number": "002",
+      "card_code": "ST12-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-013",
+      "name": "Zeff",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 5,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "East Blue"
+      ],
+      "effect": "[On Play] Look at 3 cards from the top of your deck and place them at the top or bottom of the deck in any order. [When Attacking] Reveal 1 card from the top of your deck and play up to 1 Character card with a cost of 2 rested. Then, place the rest at the top or bottom of your deck.",
+      "set_code": "ST12",
+      "number": "013",
+      "card_code": "ST12-013",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-015",
+      "name": "Patty & Carne",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 2,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "East Blue"
+      ],
+      "effect": "",
+      "set_code": "ST12",
+      "number": "015",
+      "card_code": "ST12-015",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-007",
+      "name": "Rika",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "East Blue"
+      ],
+      "effect": "[On Play] (2) (You may rest the specified number of DON!! cards in your cost area.): If your opponent has 3 or more Life cards, set up to 1 of your \"Slash\" attribute Characters with a cost of 4 or less as active.",
+      "set_code": "ST12",
+      "number": "007",
+      "card_code": "ST12-007",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-009",
+      "name": "Elephant True Bluefin",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 1,
+      "power": 3000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Animal"
+      ],
+      "effect": "",
+      "set_code": "ST12",
+      "number": "009",
+      "card_code": "ST12-009",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST12-006",
+      "name": "Yosaku & Johnny",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "East Blue"
+      ],
+      "effect": "[DON!! x1][When Attacking] Choose one: • Rest up to 1 of your opponent's Characters with a cost of 2 or less. • K.O. up to 1 of your opponent's rested Characters with a cost of 2 or less.",
+      "set_code": "ST12",
+      "number": "006",
+      "card_code": "ST12-006",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

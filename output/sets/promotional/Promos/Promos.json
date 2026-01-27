@@ -1,0 +1,107 @@
+{
+  "set_id": "PROMOS",
+  "set_name": "PROMOS",
+  "cards": [
+    {
+      "id": "PROMO-MONKEY-D-LUFFY-LEADER-PACK-LIVE-ACTION-SEALED-BA",
+      "name": "Monkey.D.Luffy (Leader Pack) (Sealed Battle 2023 Vol. 1)",
+      "name_english": "Monkey.D.Luffy (Leader Pack) (Sealed Battle 2023 Vol. 1)",
+      "name_japanese": "",
+      "set_id": "PROMOS",
+      "set_name": "One Piece Promotion Cards",
+      "set_code": "P",
+      "card_code": "PROMO-MONKEY-D-LUFFY-LEADER-PACK-SEALED-BATTLE-2023-VO",
+      "number": "000",
+      "rarity": "PR",
+      "type": "Leader",
+      "cost": 0,
+      "power": 5000,
+      "counter": 0,
+      "life": 5,
+      "effect": "This Leader can only be used in designated events according to the rules. This Leader is treated as a card with all card names, types, and attributes according to the rules.",
+      "effect_english": "This Leader can only be used in designated events according to the rules. This Leader is treated as a card with all card names, types, and attributes according to the rules.",
+      "effect_japanese": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "colors": [
+        "Red",
+        "Green",
+        "Blue",
+        "Purple",
+        "Black",
+        "Yellow"
+      ],
+      "attribute": "Strike",
+      "image_url": "",
+      "image_urls": {
+        "large": "",
+        "normal": ""
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2025-11-12",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": true,
+      "is_tournament": false,
+      "sources": [
+        "optcg"
+      ]
+    },
+    {
+      "id": "PROMO-MONKEY-D-LUFFY-SEALED-BATTLE-2024-VOL-2",
+      "name": "Monkey.D.Luffy (Sealed Battle 2024 Vol. 2)",
+      "name_english": "Monkey.D.Luffy (Sealed Battle 2024 Vol. 2)",
+      "name_japanese": "",
+      "set_id": "PROMOS",
+      "set_name": "One Piece Promotion Cards",
+      "set_code": "P",
+      "card_code": "PROMO-MONKEY-D-LUFFY-SEALED-BATTLE-2024-VOL-2",
+      "number": "000",
+      "rarity": "L",
+      "type": "Leader",
+      "cost": 0,
+      "power": 5000,
+      "counter": 0,
+      "life": 5,
+      "effect": "This Leader can only be used in designated events according to the rules. This Leader is treated as a card with all card names, types, and attributes according to the rules.",
+      "effect_english": "This Leader can only be used in designated events according to the rules. This Leader is treated as a card with all card names, types, and attributes according to the rules.",
+      "effect_japanese": "",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "colors": [
+        "Red",
+        "Green",
+        "Blue",
+        "Purple",
+        "Black",
+        "Yellow"
+      ],
+      "attribute": "Strike",
+      "image_url": "",
+      "image_urls": {
+        "large": "",
+        "normal": ""
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2025-11-12",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": true,
+      "is_tournament": false
+    }
+  ],
+  "card_count": 2,
+  "export_timestamp": "2026-01-26T17:23:08.910730"
+}

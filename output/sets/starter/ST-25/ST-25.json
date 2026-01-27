@@ -1,0 +1,619 @@
+{
+  "set_id": "ST-25",
+  "set_name": "ST-25",
+  "cards": [
+    {
+      "id": "ST25-001",
+      "name": "Alvida",
+      "name_english": "Alvida",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-001",
+      "number": "001",
+      "rarity": "C",
+      "type": "Character",
+      "cost": 4,
+      "power": 5000,
+      "counter": 1000,
+      "life": 0,
+      "effect": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains +1 cost. [On Play] If your Leader is [Buggy], draw 3 cards and trash 2 cards from your hand.",
+      "effect_english": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains +1 cost. [On Play] If your Leader is [Buggy], draw 3 cards and trash 2 cards from your hand.",
+      "effect_japanese": "",
+      "traits": [
+        "Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Strike",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/ST25-001_xelVoJm.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/ST25-001_xelVoJm.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/ST25-001_xelVoJm.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false,
+      "sources": [
+        "optcg"
+      ]
+    },
+    {
+      "id": "ST25-002",
+      "name": "Cabaji",
+      "name_english": "Cabaji",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-002",
+      "number": "002",
+      "rarity": "C",
+      "type": "Character",
+      "cost": 4,
+      "power": 1000,
+      "counter": 2000,
+      "life": 0,
+      "effect": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains [Blocker] and +1 cost. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [Opponent's Turn] This Character gains +5000 power.",
+      "effect_english": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains [Blocker] and +1 cost. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [Opponent's Turn] This Character gains +5000 power.",
+      "effect_japanese": "",
+      "traits": [
+        "Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Slash",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/ST25-002.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/ST25-002.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/ST25-002.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "ST25-003",
+      "name": "Crocodile & Mihawk",
+      "name_english": "Crocodile & Mihawk",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-003",
+      "number": "003",
+      "rarity": "SR",
+      "type": "Character",
+      "cost": 8,
+      "power": 7000,
+      "counter": 0,
+      "life": 0,
+      "effect": "[On Play] Draw 2 cards and trash 1 card from your hand. Then, play up to 1 \"Cross Guild\" type Character card with a cost of 4 or less from your hand. [Once Per Turn] If your \"Cross Guild\" type Character would be removed from the field by your opponent's effect, you may trash 1 card from your hand instead.",
+      "effect_english": "[On Play] Draw 2 cards and trash 1 card from your hand. Then, play up to 1 \"Cross Guild\" type Character card with a cost of 4 or less from your hand. [Once Per Turn] If your \"Cross Guild\" type Character would be removed from the field by your opponent's effect, you may trash 1 card from your hand instead.",
+      "effect_japanese": "",
+      "traits": [
+        "Former Baroque Works Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Slash Special",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/ST25-003_0QHazIj.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/ST25-003_0QHazIj.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/ST25-003_0QHazIj.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false,
+      "sources": [
+        "optcg"
+      ]
+    },
+    {
+      "id": "ST25-004",
+      "name": "Buggy",
+      "name_english": "Buggy",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-004",
+      "number": "004",
+      "rarity": "SR",
+      "type": "Character",
+      "cost": 4,
+      "power": 1000,
+      "counter": 1000,
+      "life": 0,
+      "effect": "[Activate:Main] You may trash 1 card from your hand and trash this Character: If your Leader is [Buggy], play up to 1 \"Cross Guild\" type Character card with a cost of 6 or less from your hand.",
+      "effect_english": "[Activate:Main] You may trash 1 card from your hand and trash this Character: If your Leader is [Buggy], play up to 1 \"Cross Guild\" type Character card with a cost of 6 or less from your hand.",
+      "effect_japanese": "",
+      "traits": [
+        "The Four Emperors Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Slash",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/ST25-004_8Zo1qx2.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/ST25-004_8Zo1qx2.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/ST25-004_8Zo1qx2.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false,
+      "sources": [
+        "optcg"
+      ]
+    },
+    {
+      "id": "ST25-005",
+      "name": "Mohji",
+      "name_english": "Mohji",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-005",
+      "number": "005",
+      "rarity": "C",
+      "type": "Character",
+      "cost": 4,
+      "power": 1000,
+      "counter": 2000,
+      "life": 0,
+      "effect": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains [Blocker] and +1 cost. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On K.O.] If your Leader is [Buggy] and you have 3 or less cards in your hand, draw 1 card.",
+      "effect_english": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains [Blocker] and +1 cost. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On K.O.] If your Leader is [Buggy] and you have 3 or less cards in your hand, draw 1 card.",
+      "effect_japanese": "",
+      "traits": [
+        "Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Wisdom",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/ST25-005.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/ST25-005.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/ST25-005.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-042_p2",
+      "name": "Buggy (OP09-042)",
+      "name_english": "Buggy (OP09-042)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-042",
+      "number": "042",
+      "rarity": "L",
+      "type": "Leader",
+      "cost": 0,
+      "power": 5000,
+      "counter": 0,
+      "life": 5,
+      "effect": "[Activate: Main] You may rest 5 of your DON!! cards and trash 1 card from your hand: Play up to 1 \"Cross Guild\" type Character card from your hand.",
+      "effect_english": "[Activate: Main] You may rest 5 of your DON!! cards and trash 1 card from your hand: Play up to 1 \"Cross Guild\" type Character card from your hand.",
+      "effect_japanese": "",
+      "traits": [
+        "The Four Emperors Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Slash",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-042_p2.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-042_p2.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-042_p2.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-043_r1",
+      "name": "Alvida (Reprint)",
+      "name_english": "Alvida (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-043",
+      "number": "043",
+      "rarity": "UC",
+      "type": "Character",
+      "cost": 5,
+      "power": 6000,
+      "counter": 1000,
+      "life": 0,
+      "effect": "[On K.O.] If your Leader has the \"Cross Guild\" type, play up to 1 Character card with a cost of 5 or less other than [Alvida] from your hand.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "[On K.O.] If your Leader has the \"Cross Guild\" type, play up to 1 Character card with a cost of 5 or less other than [Alvida] from your hand.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Strike",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-043_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-043_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-043_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-045_r1",
+      "name": "Cabaji (Reprint)",
+      "name_english": "Cabaji (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-045",
+      "number": "045",
+      "rarity": "UC",
+      "type": "Character",
+      "cost": 5,
+      "power": 5000,
+      "counter": 2000,
+      "life": 0,
+      "effect": "If you have a [Buggy] or [Mohji] Character, this Character cannot be K.O.'d in battle. DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "If you have a [Buggy] or [Mohji] Character, this Character cannot be K.O.'d in battle. DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Slash",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-045_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-045_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-045_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-051_r1",
+      "name": "Buggy (Reprint)",
+      "name_english": "Buggy (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-051",
+      "number": "051",
+      "rarity": "R",
+      "type": "Character",
+      "cost": 10,
+      "power": 12000,
+      "counter": 0,
+      "life": 0,
+      "effect": "[On Play] Place up to 1 of your opponent's Characters at the bottom of the owner's deck. Then, if you do not have 5 Characters with a cost of 5 or more, place this Character at the bottom of the owner's deck. DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "[On Play] Place up to 1 of your opponent's Characters at the bottom of the owner's deck. Then, if you do not have 5 Characters with a cost of 5 or more, place this Character at the bottom of the owner's deck. DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "The Four Emperors Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Slash",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-051_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-051_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-051_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-053_r1",
+      "name": "Mohji (Reprint)",
+      "name_english": "Mohji (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-053",
+      "number": "053",
+      "rarity": "UC",
+      "type": "Character",
+      "cost": 5,
+      "power": 5000,
+      "counter": 2000,
+      "life": 0,
+      "effect": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 [Richie] and add it to your hand. Then, place the rest at the bottom of your deck in any order and play up to 1 [Richie] from your hand.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 [Richie] and add it to your hand. Then, place the rest at the bottom of your deck in any order and play up to 1 [Richie] from your hand.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Wisdom",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-053_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-053_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-053_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-054_r1",
+      "name": "Richie (Reprint)",
+      "name_english": "Richie (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-054",
+      "number": "054",
+      "rarity": "C",
+      "type": "Character",
+      "cost": 2,
+      "power": 2000,
+      "counter": 1000,
+      "life": 0,
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "Animal Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Strike",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-054_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-054_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-054_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-055_r1",
+      "name": "Mr.1(Daz.Bonez) (Reprint)",
+      "name_english": "Mr.1(Daz.Bonez) (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-055",
+      "number": "055",
+      "rarity": "C",
+      "type": "Character",
+      "cost": 5,
+      "power": 7000,
+      "counter": 1000,
+      "life": 0,
+      "effect": "DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "Former Baroque Works Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Slash",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-055_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-055_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-055_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-056_r1",
+      "name": "Mr.3(Galdino) (Reprint)",
+      "name_english": "Mr.3(Galdino) (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-056",
+      "number": "056",
+      "rarity": "R",
+      "type": "Character",
+      "cost": 1,
+      "power": 2000,
+      "counter": 0,
+      "life": 0,
+      "effect": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 \"Cross Guild\" type card or card with a type including \"Baroque Works\" other than [Mr.3(Galdino)] and add it to your hand. Then, place the rest at the bottom of your deck in any order.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 \"Cross Guild\" type card or card with a type including \"Baroque Works\" other than [Mr.3(Galdino)] and add it to your hand. Then, place the rest at the bottom of your deck in any order.DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "Former Baroque Works Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "Special",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-056_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-056_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-056_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    },
+    {
+      "id": "OP09-057_r1",
+      "name": "Cross Guild (Reprint)",
+      "name_english": "Cross Guild (Reprint)",
+      "name_japanese": "",
+      "set_id": "ST-25",
+      "set_name": "Starter Deck 25: BLUE Buggy",
+      "set_code": "ST25",
+      "card_code": "ST25-057",
+      "number": "057",
+      "rarity": "R",
+      "type": "Event",
+      "cost": 1,
+      "power": 0,
+      "counter": 0,
+      "life": 0,
+      "effect": "[Main] Look at 4 cards from the top of your deck; reveal up to 1 \"Cross Guild\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order. [Trigger] Activate this card's [Main] effect. DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_english": "[Main] Look at 4 cards from the top of your deck; reveal up to 1 \"Cross Guild\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order. [Trigger] Activate this card's [Main] effect. DISCLAIMER: This card is a reprint of the pre-existing card in the OP09 set. The main difference between this card and the original print is the inclusion of \"EN\" on the right side, by the copyright information.",
+      "effect_japanese": "",
+      "traits": [
+        "Cross Guild"
+      ],
+      "colors": [
+        "Blue"
+      ],
+      "attribute": "",
+      "image_url": "https://optcgapi.com/media/static/Card_Images/OP09-057_r1.jpg",
+      "image_urls": {
+        "large": "https://optcgapi.com/media/static/Card_Images/OP09-057_r1.jpg",
+        "normal": "https://optcgapi.com/media/static/Card_Images/OP09-057_r1.jpg"
+      },
+      "language": "tcg",
+      "source": "optcg",
+      "card_type": "",
+      "deck_id": "",
+      "deck_name": "",
+      "release_date": "2026-01-25",
+      "artist": "",
+      "parallel_id": "",
+      "is_alternate_art": false,
+      "is_promo": false,
+      "is_tournament": false
+    }
+  ],
+  "card_count": 14,
+  "export_timestamp": "2026-01-26T17:23:08.600524"
+}

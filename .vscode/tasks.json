@@ -1,0 +1,79 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "catalogSources",
+      "type": "promptString",
+      "description": "Path to catalog_sources_*.json (output/catalog/...)"
+    }
+  ],
+  "tasks": [
+    {
+      "label": "OharaTCG: Build Local Catalog Report",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/build_local_catalog_report.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "OharaTCG: Dump Global Catalog Sources (network)",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/dump_catalog_sources.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "OharaTCG: Compare Global vs Local Catalog",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "tools/global_catalog_compare.py",
+        "--sources",
+        "${input:catalogSources}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "OharaTCG: Inventory OPTCGSim (offline)",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/optcgsim_inventory.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "OharaTCG: Sync OPTCGSim Images to assets/cards (dry-run)",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/sync_optcgsim_card_images_to_assets.py", "--dry-run"],
+      "problemMatcher": []
+    },
+    {
+      "label": "OharaTCG: Import OPTCGSim .deck files (dry-run)",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/import_optcgsim_decks.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "OharaTCG: Import .deck files -> data+output (WRITE)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "tools/import_optcgsim_decks.py",
+        "--write",
+        "--dest",
+        "data",
+        "--also",
+        "output"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "OharaTCG: Sync data/decks -> output/decks/starter",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/sync_data_decks_to_output.py"],
+      "problemMatcher": []
+    }
+  ]
+}

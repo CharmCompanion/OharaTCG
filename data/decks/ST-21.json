@@ -1,0 +1,370 @@
+{
+  "main": [
+    {
+      "id": "ST21-001",
+      "name": "Monkey.D.Luffy (001)",
+      "type": "Leader",
+      "color": [
+        "Red"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew The Four Emperors"
+      ],
+      "effect": "[DON!! x1] [Activate: Main] [Once Per Turn] Give up to 2 rested DON!! cards to 1 of your Characters.",
+      "set_code": "ST21",
+      "number": "001",
+      "card_code": "ST21-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-014",
+      "name": "Monkey.D.Luffy (014)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew The Four Emperors"
+      ],
+      "effect": "[Rush] (This card can attack on the turn in which it is played.) [When Attacking] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+      "set_code": "ST21",
+      "number": "014",
+      "card_code": "ST21-014",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-009_p1",
+      "name": "Nami (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 1000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[Activate: Main] [Once Per Turn] Give up to 2 rested DON!! cards to 1 of your {Straw Hat Crew} type Leader or Character cards.",
+      "set_code": "ST21",
+      "number": "009",
+      "card_code": "ST21-009",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-003_p1",
+      "name": "Sanji (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[On Play] Select up to 1 of your {Straw Hat Crew} type Characters with 6000 power or more. If the selected Character attacks during this turn, your opponent cannot activate [Blocker].",
+      "set_code": "ST21",
+      "number": "003",
+      "card_code": "ST21-003",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-015_p1",
+      "name": "Roronoa Zoro (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 4,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Slash",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x2] This Character gains [Rush]. [On K.O.] Play up to 1 red Character card with 6000 power or less other than [Roronoa Zoro] from your hand.",
+      "set_code": "ST21",
+      "number": "015",
+      "card_code": "ST21-015",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-010_p1",
+      "name": "Nico Robin (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x2] [When Attacking] K.O. up to 1 of your opponent's Characters with 4000 power or less.",
+      "set_code": "ST21",
+      "number": "010",
+      "card_code": "ST21-010",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-006_p1",
+      "name": "Stussy (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Egghead"
+      ],
+      "effect": "",
+      "set_code": "ST21",
+      "number": "006",
+      "card_code": "ST21-006",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-004_p1",
+      "name": "Jewelry Bonney (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 1,
+      "power": 3000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Bonney Pirates Egghead"
+      ],
+      "effect": "[DON!! x2] [On K.O.] Draw 1 card.",
+      "set_code": "ST21",
+      "number": "004",
+      "card_code": "ST21-004",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-008_p1",
+      "name": "Tony Tony.Chopper (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Animal Straw Hat Crew"
+      ],
+      "effect": "",
+      "set_code": "ST21",
+      "number": "008",
+      "card_code": "ST21-008",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-012_p1",
+      "name": "Brook (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[When Attacking] Give up to 2 rested DON!! cards to your Leader or 1 of your Characters.",
+      "set_code": "ST21",
+      "number": "012",
+      "card_code": "ST21-012",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-002_p1",
+      "name": "Usopp (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Ranged",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x2] [Opponent's Turn] This Character gains +2000 power.",
+      "set_code": "ST21",
+      "number": "002",
+      "card_code": "ST21-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-007_p1",
+      "name": "Sentomaru (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Navy Egghead"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+      "set_code": "ST21",
+      "number": "007",
+      "card_code": "ST21-007",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-013_p1",
+      "name": "Vegapunk (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 1,
+      "power": 3000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Scientist Egghead"
+      ],
+      "effect": "",
+      "set_code": "ST21",
+      "number": "013",
+      "card_code": "ST21-013",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-011_p1",
+      "name": "Franky (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Straw Hat Crew"
+      ],
+      "effect": "[DON!! x2] [Opponent's Turn] All of your {Straw Hat Crew} type Characters with 4000 base power or less gain +1000 power.",
+      "set_code": "ST21",
+      "number": "011",
+      "card_code": "ST21-011",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST21-005_p1",
+      "name": "Jinbe (Parallel)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 2,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Fish-Man Straw Hat Crew"
+      ],
+      "effect": "",
+      "set_code": "ST21",
+      "number": "005",
+      "card_code": "ST21-005",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

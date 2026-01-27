@@ -1,0 +1,301 @@
+{
+  "main": [
+    {
+      "id": "OP02-001_p2",
+      "name": "Edward.Newgate (OP02-001)",
+      "type": "Leader",
+      "color": [
+        "Red"
+      ],
+      "cost": 0,
+      "power": 6000,
+      "life": 6,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Special",
+      "traits": [
+        "The Four Emperors Whitebeard Pirates"
+      ],
+      "effect": "[End of Your Turn] Add 1 card from the top of your Life cards to your hand.",
+      "set_code": "ST15",
+      "number": "001",
+      "card_code": "ST15-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST15-002",
+      "name": "Edward.Newgate (ST15-002)",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 7,
+      "power": 8000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "The Four Emperors Whitebeard Pirates"
+      ],
+      "effect": "[On Play] Give up to 1 rested DON!! card to your Leader or 1 of your Characters. [Activate: Main] You may rest this Character: K.O. up to 1 of your opponent's Characters with 5000 power or less.",
+      "set_code": "ST15",
+      "number": "002",
+      "card_code": "ST15-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST15-005",
+      "name": "Portgas.D.Ace",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "If your Leader's type includes \"Whitebeard Pirates\", this Character gains [Rush].(This card can attack on the turn in which it is played.)[Once Per Turn] If this Character would be removed from the field by your opponent's effect, you may give this Character 2000 power during this turn instead.",
+      "set_code": "ST15",
+      "number": "005",
+      "card_code": "ST15-005",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST15-004",
+      "name": "Thatch",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 1,
+      "power": 2000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[On Play] If your Leader's type includes \"Whitebeard Pirates\", give up to 1 of your opponent's Characters 2000 power during this turn. Then, add 1 card from the top of your Life cards to your hand.",
+      "set_code": "ST15",
+      "number": "004",
+      "card_code": "ST15-004",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST15-003",
+      "name": "Kingdew",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [Opponent's Turn] When this Character is K.O.'d by an effect, up to 1 of your Leader gains +2000 power during this turn.",
+      "set_code": "ST15",
+      "number": "003",
+      "card_code": "ST15-003",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "OP02-008",
+      "name": "Jozu",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 4,
+      "power": 4000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "R",
+      "attribute": "Strike",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[DON!! x1] If you have 2 or less Life cards and your Leader's type includes \"Whitebeard Pirates\", this Character gains [Rush]. (This card can attack on the turn in which it is played.)",
+      "set_code": "ST15",
+      "number": "008",
+      "card_code": "ST15-008",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP03-010",
+      "name": "Fossa",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+      "set_code": "ST15",
+      "number": "010",
+      "card_code": "ST15-010",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP02-018",
+      "name": "Marco",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 4,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On K.O.] You may trash 1 card with a type including \"Whitebeard Pirates\" from your hand: If you have 2 or less Life cards, play this Character card from your trash rested.",
+      "set_code": "ST15",
+      "number": "018",
+      "card_code": "ST15-018",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST15-001",
+      "name": "Atmos",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 4,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[When Attacking] If your Leader is [Edward.Newgate], you cannot add Life cards to your hand using your own effects during this turn.",
+      "set_code": "ST15",
+      "number": "001",
+      "card_code": "ST15-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP02-019",
+      "name": "Rakuyo",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "UC",
+      "attribute": "Strike",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[DON!! x1] [Your Turn] All of your Characters with a type including \"Whitebeard Pirates\" gain +1000 power.",
+      "set_code": "ST15",
+      "number": "019",
+      "card_code": "ST15-019",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP03-007",
+      "name": "Namule",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 3,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Fish-Man Whitebeard Pirates"
+      ],
+      "effect": "",
+      "set_code": "ST15",
+      "number": "007",
+      "card_code": "ST15-007",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP03-006",
+      "name": "Speed Jil",
+      "type": "Character",
+      "color": [
+        "Red"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "",
+      "set_code": "ST15",
+      "number": "006",
+      "card_code": "ST15-006",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

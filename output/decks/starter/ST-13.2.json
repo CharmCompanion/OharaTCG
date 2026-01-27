@@ -1,0 +1,431 @@
+{
+  "deck_id": "ST-13.2",
+  "display_name": "ST-13.2 B/Y Ace",
+  "display_colors": "B/Y",
+  "display_title": "Ace",
+  "source_header": "ST-13.2 B/Y Ace(Starter Deck 13) recipe",
+  "source": "recipe_text",
+  "imported_at": 1769451213,
+  "recipe_file": "data/recipes/_split/ST-13.2.txt",
+  "main": [
+    {
+      "id": "ST13-002",
+      "name": "Portgas.D.Ace (002)",
+      "type": "Leader",
+      "color": [
+        "Blue",
+        "Yellow"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 4,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Special",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[DON!! x2][Activate: Main][Once Per Turn] Look at 5 cards from the top of your deck and add up to 1 Character card with a cost of 5 to the top of your Life cards face-up. Then, place the rest at the bottom of your deck in any order. [End of Your Turn] Trash all your face-up Life cards.",
+      "set_code": "ST13",
+      "number": "002",
+      "card_code": "ST13-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "EB02-028",
+      "name": "Portgas.D.Ace",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 5,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Alabasta Whitebeard Pirates"
+      ],
+      "effect": "[On Play] If your Leader's type includes \"Whitebeard Pirates\", look at 5 cards from the top of your deck; reveal up to 1 Character card with a cost of 2 and add it to your hand. Then, place the rest at the bottom of your deck in any order and play up to 1 Character card with a cost of 2 from your hand rested.",
+      "set_code": "EB02",
+      "number": "028",
+      "card_code": "EB02-028",
+      "count": 3,
+      "zone": "main"
+    },
+    {
+      "id": "OP07-053",
+      "name": "Portgas.D.Ace (053)",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] Draw 2 cards and place 2 cards from your hand at the top or bottom of your deck in any order.",
+      "set_code": "OP07",
+      "number": "053",
+      "card_code": "OP07-053",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "OP11-104",
+      "name": "Shirley",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "R",
+      "attribute": "Wisdom",
+      "traits": [
+        "Merfolk Fish-Man Island"
+      ],
+      "effect": "[Blocker] [On Play] You may turn 1 card from the top of your Life cards face-down: Look at 3 cards from the top of your deck; reveal up to 1 \"Fish-Man Island\" type card and add it to your hand. Then, place the rest at the top or bottom of the deck in any order.",
+      "set_code": "OP11",
+      "number": "104",
+      "card_code": "OP11-104",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "OP11-106",
+      "name": "Zeus",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Big Mom Pirates Homies"
+      ],
+      "effect": "[On Play] You may add 1 card from the top or bottom of your Life cards to your hand: K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+      "set_code": "OP11",
+      "number": "106",
+      "card_code": "OP11-106",
+      "count": 3,
+      "zone": "main"
+    },
+    {
+      "id": "OP12-100",
+      "name": "Sabo",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Revolutionary Army Dressrosa"
+      ],
+      "effect": "If you have 3 or less Life cards, this Character gains [Blocker] and +3 cost. [On Play] You may add 1 card from the top of your Life cards to your hand: Draw 2 cards and trash 1 card from your hand.",
+      "set_code": "OP12",
+      "number": "100",
+      "card_code": "OP12-100",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "OP13-042",
+      "name": "Edward.Newgate",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 10,
+      "power": 12000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "The Four Emperors Whitebeard Pirates"
+      ],
+      "effect": "[Blocker] [On Play] Draw 2 cards and trash 1 card from your hand. Then, give your Leader and 1 Character up to 2 rested DON!! cards each.",
+      "set_code": "OP13",
+      "number": "042",
+      "card_code": "OP13-042",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP13-051",
+      "name": "Boa Hancock",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 3,
+      "power": 5000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "R",
+      "attribute": "Special",
+      "traits": [
+        "Kuja Pirates The Seven Warlords of the Sea"
+      ],
+      "effect": "[On K.O.] If your Leader is [Boa Hancock] or multicolored, draw 2 cards.",
+      "set_code": "OP13",
+      "number": "051",
+      "card_code": "OP13-051",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "OP13-054",
+      "name": "Yamato",
+      "type": "Character",
+      "color": [
+        "Blue"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Strike",
+      "traits": [
+        "Land of Wano"
+      ],
+      "effect": "[On Play] If you have 3 or less Life cards, draw 2 cards. Then, give up to 1 rested DON!! card to your Leader.",
+      "set_code": "OP13",
+      "number": "054",
+      "card_code": "OP13-054",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "OP13-057",
+      "name": "If I Bowed Down to Power, What's the Point in Living?",
+      "type": "Event",
+      "color": [
+        "Blue"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "R",
+      "attribute": "",
+      "traits": [
+        "Whitebeard Pirates"
+      ],
+      "effect": "[Main] You may rest 1 of your DON!! cards: If you have 1 or less Life cards, your opponent cannot activate [Blocker] whenever your Leader attacks during this turn. [Counter] Your Leader gains +3000 power during this battle.",
+      "set_code": "OP13",
+      "number": "057",
+      "card_code": "OP13-057",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "P-073",
+      "name": "Sabo (Premium Card Collection -Best Selection Vol. 3-)",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 5,
+      "power": 5000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "PR",
+      "attribute": "Special",
+      "traits": [
+        "Revolutionary Army Dressrosa"
+      ],
+      "effect": "[Activate:Main][Once Per Turn] You may add 1 card from the top or bottom of your Life cards to your hand: This character gains +1000 power during this turn.",
+      "set_code": "P",
+      "number": "073",
+      "card_code": "P-073",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "PRB02-018",
+      "name": "Mountain God (Pirate Foil)",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 5,
+      "power": 7000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Animal Land of Wano"
+      ],
+      "effect": "",
+      "set_code": "PRB02",
+      "number": "018",
+      "card_code": "PRB02-018",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "ST13-007",
+      "name": "Sabo (007)",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Goa Kingdom"
+      ],
+      "effect": "[Activate: Main] You may trash this Character: Reveal 1 card from the top of your Life cards. If that card is a [Sabo] with a cost of 5, you may play that card. If you do, up to 1 of your Leader gains +2000 power until the end of your opponent's next turn.",
+      "set_code": "ST13",
+      "number": "007",
+      "card_code": "ST13-007",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "ST13-008",
+      "name": "Sabo (008)",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "Revolutionary Army Dressrosa"
+      ],
+      "effect": "[On Play]You may trash 1 card from the top or bottom of your Life cards: K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+      "set_code": "ST13",
+      "number": "008",
+      "card_code": "ST13-008",
+      "count": 3,
+      "zone": "main"
+    },
+    {
+      "id": "ST13-010",
+      "name": "Portgas.D.Ace (010)",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 2,
+      "power": 2000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Goa Kingdom"
+      ],
+      "effect": "[Activate: Main] You may trash this Character: Reveal 1 card from the top of your Life cards. If that card is a [Portgas.D.Ace] with a cost of 5, you may play that card. If you do, up to 1 of your Leader gains +2000 power until the end of your opponent's next turn.",
+      "set_code": "ST13",
+      "number": "010",
+      "card_code": "ST13-010",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "ST13-012",
+      "name": "Makino",
+      "type": "Character",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Wisdom",
+      "traits": [
+        "Windmill Village"
+      ],
+      "effect": "[On Play] You may add 1 card from the top or bottom of your Life cards to your hand: Look at all of your Life cards and place them back in your Life area in any order.",
+      "set_code": "ST13",
+      "number": "012",
+      "card_code": "ST13-012",
+      "count": 3,
+      "zone": "main"
+    },
+    {
+      "id": "ST13-019_P1",
+      "name": "3兄弟no絆",
+      "type": "Event",
+      "color": [
+        "Yellow"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "Common",
+      "attribute": "",
+      "traits": [
+        "ゴア王国"
+      ],
+      "effect": "【メイン】自分noデッキno上kara5枚wo見て Cost5以下no 「サボ」か「ポートガス・D・エース」か「モンキー・D・ルフィ」1枚まdewo公開し 手札ni加える そno後 残りwo好きな順番deデッキno下ni置く",
+      "set_code": "ST13",
+      "number": "019",
+      "card_code": "ST13-019_P1",
+      "count": 4,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ],
+  "_totals": {
+    "leader_total": 1,
+    "non_leader_total": 50,
+    "main_total_including_leader": 51,
+    "don_total": 10
+  }
+}

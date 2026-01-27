@@ -1,0 +1,416 @@
+{
+  "main": [
+    {
+      "id": "ST02-001",
+      "name": "Eustass\"Captain\"Kid (001)",
+      "type": "Leader",
+      "color": [
+        "Green"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Special",
+      "traits": [
+        "Kid Pirates Supernovas"
+      ],
+      "effect": "[Activate: Main] [Once Per Turn] (3) (You may rest the specified number of DON!! cards in your cost area.) You may trash 1 card from your hand: Set this Leader as active.",
+      "set_code": "ST02",
+      "number": "001",
+      "card_code": "ST02-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-007",
+      "name": "Jewelry Bonney",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 1,
+      "power": 1000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Bonney Pirates Supernovas"
+      ],
+      "effect": "[Activate: Main] (1) (You may rest the specified number of DON!! cards in your cost area.) You may rest this card: Look at 5 cards from the top of your deck; reveal up to 1 \"Supernovas\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+      "set_code": "ST02",
+      "number": "007",
+      "card_code": "ST02-007",
+      "count": 3,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-008",
+      "name": "Scratchmen Apoo",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 2000,
+      "rarity": "C",
+      "attribute": "Ranged",
+      "traits": [
+        "On-Air Pirates Supernovas"
+      ],
+      "effect": "[DON!! x1] [When Attacking] Rest up to 1 of your opponent's DON!! cards.",
+      "set_code": "ST02",
+      "number": "008",
+      "card_code": "ST02-008",
+      "count": 3,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-017",
+      "name": "Straw Sword",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Hawkins Pirates Supernovas"
+      ],
+      "effect": "[Main] Rest up to 1 of your opponent's Characters.",
+      "set_code": "ST02",
+      "number": "017",
+      "card_code": "ST02-017",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-005",
+      "name": "Killer",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 3000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Kid Pirates Supernovas"
+      ],
+      "effect": "[On Play] K.O. up to 1 of your opponent's rested Characters with a cost of 3 or less. [Trigger] Play this card.",
+      "set_code": "ST02",
+      "number": "005",
+      "card_code": "ST02-005",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-009",
+      "name": "Trafalgar Law",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Slash",
+      "traits": [
+        "Heart Pirates Supernovas"
+      ],
+      "effect": "[On Play] Set up to 1 of your \"Supernovas\" or \"Heart Pirates\" type rested Characters with a cost of 5 or less as active.",
+      "set_code": "ST02",
+      "number": "009",
+      "card_code": "ST02-009",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-013",
+      "name": "Eustass\"Captain\"Kid (013)",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 7,
+      "power": 7000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "Kid Pirates Supernovas"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [DON!! x1] [End of Your Turn] Set this card as active. This card has been officially errata'd.",
+      "set_code": "ST02",
+      "number": "013",
+      "card_code": "ST02-013",
+      "count": 4,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-004",
+      "name": "Capone\"Gang\"Bege",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 1,
+      "power": 1000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Firetank Pirates Supernovas"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+      "set_code": "ST02",
+      "number": "004",
+      "card_code": "ST02-004",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-010",
+      "name": "Basil Hawkins",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 5,
+      "power": 6000,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Hawkins Pirates Supernovas"
+      ],
+      "effect": "[DON!! x1] [Once Per Turn] [Your Turn] If this Character battles your opponent's Character, set this card as active.",
+      "set_code": "ST02",
+      "number": "010",
+      "card_code": "ST02-010",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-014",
+      "name": "X.Drake",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 4,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Slash",
+      "traits": [
+        "Drake Pirates Navy Supernovas"
+      ],
+      "effect": "[DON!! x1] [Your Turn] If this Character is rested, your \"Supernovas\" or \"Navy\" type Leaders and Characters gain +1000 power.",
+      "set_code": "ST02",
+      "number": "014",
+      "card_code": "ST02-014",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-015",
+      "name": "Scalpel",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Heart Pirates Supernovas"
+      ],
+      "effect": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, set up to 1 of your DON!! cards as active. [Trigger] Set up to 2 of your DON!! cards as active.",
+      "set_code": "ST02",
+      "number": "015",
+      "card_code": "ST02-015",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-003",
+      "name": "Urouge",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 3000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Fallen Monk Pirates Supernovas"
+      ],
+      "effect": "[DON!! x1] If you have 3 or more Characters, this card gains +2000 power.",
+      "set_code": "ST02",
+      "number": "003",
+      "card_code": "ST02-003",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-016",
+      "name": "Repel",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "Kid Pirates Supernovas"
+      ],
+      "effect": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, set up to 1 of your DON!! cards as active.",
+      "set_code": "ST02",
+      "number": "016",
+      "card_code": "ST02-016",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-012",
+      "name": "Bepo",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 1,
+      "power": 3000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Heart Pirates Minks"
+      ],
+      "effect": "",
+      "set_code": "ST02",
+      "number": "012",
+      "card_code": "ST02-012",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-006",
+      "name": "Koby",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 4,
+      "power": 6000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Strike",
+      "traits": [
+        "Navy"
+      ],
+      "effect": "",
+      "set_code": "ST02",
+      "number": "006",
+      "card_code": "ST02-006",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-002",
+      "name": "Vito",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 5000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Ranged",
+      "traits": [
+        "Firetank Pirates"
+      ],
+      "effect": "",
+      "set_code": "ST02",
+      "number": "002",
+      "card_code": "ST02-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST02-011",
+      "name": "Heat",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "C",
+      "attribute": "Special",
+      "traits": [
+        "Kid Pirates"
+      ],
+      "effect": "",
+      "set_code": "ST02",
+      "number": "011",
+      "card_code": "ST02-011",
+      "count": 1,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

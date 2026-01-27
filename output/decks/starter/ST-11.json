@@ -1,0 +1,140 @@
+{
+  "main": [
+    {
+      "id": "ST11-001",
+      "name": "Uta (001)",
+      "type": "Leader",
+      "color": [
+        "Green"
+      ],
+      "cost": 0,
+      "power": 5000,
+      "life": 5,
+      "counter": 0,
+      "rarity": "L",
+      "attribute": "Special",
+      "traits": [
+        "FILM"
+      ],
+      "effect": "[DON!! x1][When Attacking][Once Per Turn] Reveal 1 card from the top of your deck and add up to 1 [FILM] type card to your hand. Then, place the rest at the bottom of your deck.",
+      "set_code": "ST11",
+      "number": "001",
+      "card_code": "ST11-001",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST11-002",
+      "name": "Uta (002)",
+      "type": "Character",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 4000,
+      "life": 0,
+      "counter": 1000,
+      "rarity": "SR",
+      "attribute": "Special",
+      "traits": [
+        "FILM"
+      ],
+      "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [End of Your Turn] You may trash 1 Event from your hand: Set up to 1 of your [FILM] type Characters as active.",
+      "set_code": "ST11",
+      "number": "002",
+      "card_code": "ST11-002",
+      "count": 1,
+      "zone": "main"
+    },
+    {
+      "id": "ST11-004",
+      "name": "New Genesis",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 1,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "SR",
+      "attribute": "",
+      "traits": [
+        "FILM Music"
+      ],
+      "effect": "[Main] If your Leader is [Uta], look at 3 cards from the top of your deck, reveal up to 1 [FILM] type card other than [New Genesis] and add it to your hand. Then, place the rest at the bottom of your deck in any order and set up to 1 of your DON!! cards as active.",
+      "set_code": "ST11",
+      "number": "004",
+      "card_code": "ST11-004",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST11-005",
+      "name": "I'm invincible",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 3,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "FILM Music"
+      ],
+      "effect": "[Main] Set up to 1 of your [Uta] Leader as active. [Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+      "set_code": "ST11",
+      "number": "005",
+      "card_code": "ST11-005",
+      "count": 2,
+      "zone": "main"
+    },
+    {
+      "id": "ST11-003",
+      "name": "Backlight",
+      "type": "Event",
+      "color": [
+        "Green"
+      ],
+      "cost": 2,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "C",
+      "attribute": "",
+      "traits": [
+        "FILM Music"
+      ],
+      "effect": "[Main] If your Leader is [Uta], choose one: • Rest up to 1 of your opponent's Characters with a cost of 5 or less. • K.O. up to 1 of your opponent's rested Characters with a cost of 5 or less.",
+      "set_code": "ST11",
+      "number": "003",
+      "card_code": "ST11-003",
+      "count": 3,
+      "zone": "main"
+    }
+  ],
+  "don": [
+    {
+      "id": "DON!!",
+      "name": "DON!!",
+      "type": "DON!!",
+      "color": [],
+      "cost": 0,
+      "power": 0,
+      "life": 0,
+      "counter": 0,
+      "rarity": "",
+      "attribute": "",
+      "traits": [],
+      "effect": "",
+      "set_code": "DON",
+      "number": "001",
+      "card_code": "DON!!",
+      "count": 10,
+      "zone": "don"
+    }
+  ]
+}

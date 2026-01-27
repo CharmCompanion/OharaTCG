@@ -1,0 +1,41 @@
+{
+  "banned": [
+    {
+      "code": "OP06-086",
+      "name": "Gecko Moria"
+    },
+    {
+      "code": "OP07-045",
+      "name": "Jinbe"
+    },
+    {
+      "code": "OP02-117",
+      "name": "Ice Age"
+    },
+    {
+      "code": "EB01-059",
+      "name": "Kingdom Come"
+    },
+    {
+      "code": "ST10-001",
+      "name": "Trafalgar Law"
+    },
+    {
+      "code": "OP03-098",
+      "name": "Enies Lobby"
+    },
+    {
+      "code": "OP05-041",
+      "name": "Sakazuki"
+    },
+    {
+      "code": "ST06-015",
+      "name": "Great Eruption"
+    },
+    {
+      "code": "OP06-116",
+      "name": "Reject"
+    }
+  ],
+  "restricted": []
+}
