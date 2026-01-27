@@ -8,6 +8,31 @@ addons/Builds_Windows/
 # Python junk
 **/__pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.pythonlibs/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.egg-info/
+.installed.cfg
+*.egg
+.mypy_cache/
+.pytest_cache/
+
+# Replit
+.upm/
+.local/
 
 # Vendored plugin repo metadata (avoid nested git repo inside repo)
 addons/GrandLineScraper/.git/
