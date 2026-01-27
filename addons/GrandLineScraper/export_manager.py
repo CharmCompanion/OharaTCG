@@ -67,20 +67,18 @@ class ExportManager:
         return exported_files
     
     def _create_export_structure(self):
-        """Create organized export folder structure"""
-        # Main category folders
+        """Create organized export folder structure by card category"""
+        # Main category folders matching card types
         folders = [
-            'sets/booster',
-            'sets/starter', 
-            'sets/promotional',
-            'sets/special',
-            'decks/starter',
-            'decks/ultra',
+            'sets',
+            'decks',
             'decks/recipes',
+            'promos',
+            'tournaments',
+            'don',
+            'alt_arts',
             'databases',
-            'bulk/complete',
-            'bulk/sets-only',
-            'bulk/decks-only'
+            'bulk'
         ]
         
         for folder in folders:
@@ -132,7 +130,8 @@ class ExportManager:
         
         # Export starter decks
         starter_decks = self._extract_starter_decks(data.get('cards', []))
-        decks_folder = self.output_dir / 'decks' / 'starter'
+        decks_folder = self.output_dir / 'decks'
+        decks_folder.mkdir(parents=True, exist_ok=True)
         
         for deck_id in sorted(starter_decks.keys(), key=self._deck_sort_key):
             deck_info = starter_decks[deck_id]
@@ -377,7 +376,7 @@ class ExportManager:
     def _copy_starter_decks_to_project(self) -> None:
         """Copy exported starter decks into res://data/decks for in-game use"""
         try:
-            source_dir = self.output_dir / 'decks' / 'starter'
+            source_dir = self.output_dir / 'decks'
             target_dir = self.project_root / 'data' / 'decks'
             target_dir.mkdir(parents=True, exist_ok=True)
 
@@ -778,23 +777,21 @@ class ExportManager:
         return None
     
     def _get_set_folder_path(self, set_id: str) -> Path:
-        """Get appropriate folder path for a set"""
+        """Get appropriate folder path for a set based on category"""
         set_id_upper = set_id.upper()
         
-        if set_id_upper.startswith('OP-') or re.match(r'^OP\d', set_id_upper):
-            return self.output_dir / 'sets' / 'booster' / set_id
-        elif set_id_upper.startswith('ST-'):
-            return self.output_dir / 'sets' / 'starter' / set_id  
-        elif set_id_upper.startswith(('EB-', 'PRB-')):
-            return self.output_dir / 'sets' / 'booster' / set_id
-        elif set_id_upper == 'P' or set_id_upper.startswith(('P-', 'W-', 'SF-')):
-            return self.output_dir / 'sets' / 'promotional' / set_id
-        elif set_id_upper in ('PROMOS', 'PROMO'):
-            return self.output_dir / 'sets' / 'promotional' / 'Promos'
+        # Starter Decks go to decks folder
+        if set_id_upper.startswith('ST-') or re.match(r'^ST\d', set_id_upper):
+            return self.output_dir / 'decks'
+        # Promos
+        elif set_id_upper == 'P' or set_id_upper.startswith(('P-', 'W-', 'SF-')) or set_id_upper in ('PROMOS', 'PROMO'):
+            return self.output_dir / 'promos'
+        # Tournament cards
         elif set_id_upper.startswith(('TP-', 'PTP-')):
-            return self.output_dir / 'sets' / 'special' / set_id
+            return self.output_dir / 'tournaments'
+        # All booster sets (OP, EB, PRB)
         else:
-            return self.output_dir / 'sets' / 'special' / set_id
+            return self.output_dir / 'sets'
     
     def _get_set_name(self, set_id: str) -> str:
         """Get readable name for a set"""
