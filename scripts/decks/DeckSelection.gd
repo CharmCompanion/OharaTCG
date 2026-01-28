@@ -13,223 +13,269 @@ const TAB_META := 1
 const TAB_CUSTOM := 2
 
 func _ready() -> void:
-	if deck_tabs and not deck_tabs.tab_changed.is_connected(_on_tab_changed):
-		deck_tabs.tab_changed.connect(_on_tab_changed)
-	if back_button and not back_button.pressed.is_connected(_on_back_pressed):
-		back_button.pressed.connect(_on_back_pressed)
-	_connect_button_sounds(back_button)
-	_refresh_grid()
+        if deck_tabs and not deck_tabs.tab_changed.is_connected(_on_tab_changed):
+                deck_tabs.tab_changed.connect(_on_tab_changed)
+        if back_button and not back_button.pressed.is_connected(_on_back_pressed):
+                back_button.pressed.connect(_on_back_pressed)
+        _connect_button_sounds(back_button)
+        _refresh_grid()
 
 func set_previous_scene(path: String) -> void:
-	previous_scene_path = path
-	if previous_scene_path == "":
-		previous_scene_path = FALLBACK_PREVIOUS_SCENE
+        previous_scene_path = path
+        if previous_scene_path == "":
+                previous_scene_path = FALLBACK_PREVIOUS_SCENE
 
 func _get_ui_manager() -> Node:
-	var ui_manager := get_parent()
-	if ui_manager and ui_manager.has_method("switch_scene"):
-		return ui_manager
-	var root := get_tree().root
-	if root:
-		var from_root := root.get_node_or_null("Main/UIContainer")
-		if from_root and from_root.has_method("switch_scene"):
-			return from_root
-	return null
+        var ui_manager := get_parent()
+        if ui_manager and ui_manager.has_method("switch_scene"):
+                return ui_manager
+        var root := get_tree().root
+        if root:
+                var from_root := root.get_node_or_null("Main/UIContainer")
+                if from_root and from_root.has_method("switch_scene"):
+                        return from_root
+        return null
 
 func _connect_button_sounds(button: Button) -> void:
-	if button == null:
-		return
-	var root := get_tree().root
-	if root == null:
-		return
-	var ui_manager = root.get_node_or_null("Main/UIContainer")
-	if ui_manager and ui_manager.has_method("attach_sounds_to"):
-		ui_manager.attach_sounds_to(button)
+        if button == null:
+                return
+        var root := get_tree().root
+        if root == null:
+                return
+        var ui_manager = root.get_node_or_null("Main/UIContainer")
+        if ui_manager and ui_manager.has_method("attach_sounds_to"):
+                ui_manager.attach_sounds_to(button)
 
 func _on_back_pressed() -> void:
-	var ui_manager := _get_ui_manager()
-	var target := previous_scene_path if previous_scene_path != "" else FALLBACK_PREVIOUS_SCENE
-	if ui_manager:
-		ui_manager.switch_scene(target)
-	else:
-		get_tree().change_scene_to_file(target)
+        var ui_manager := _get_ui_manager()
+        var target := previous_scene_path if previous_scene_path != "" else FALLBACK_PREVIOUS_SCENE
+        if ui_manager:
+                ui_manager.switch_scene(target)
+        else:
+                get_tree().change_scene_to_file(target)
 
 func _on_tab_changed(_tab_index: int) -> void:
-	_refresh_grid()
+        _refresh_grid()
 
 func _refresh_grid() -> void:
-	if deck_grid == null:
-		return
-	for child in deck_grid.get_children():
-		child.queue_free()
+        if deck_grid == null:
+                return
+        for child in deck_grid.get_children():
+                child.queue_free()
 
-	var decks := _collect_decks(deck_tabs.current_tab)
-	for d in decks:
-		_create_deck_button(d, false)
+        var decks := _collect_decks(deck_tabs.current_tab)
+        for d in decks:
+                _create_deck_button(d, false)
 
-	_create_deck_button({}, true)
+        _create_deck_button({}, true)
 
 func _create_deck_button(data: Dictionary, is_new: bool) -> void:
-	if deck_item_scene == null:
-		push_error("DeckSelection: deck_item_scene is null")
-		return
-	var item: Button = deck_item_scene.instantiate()
-	deck_grid.add_child(item)
-	item.set_meta("deck_data", data)
-	item.set_meta("is_new", is_new)
-	if item.has_method("setup"):
-		item.call("setup", data, is_new)
-	if not item.pressed.is_connected(_on_tile_pressed.bind(item)):
-		item.pressed.connect(_on_tile_pressed.bind(item))
-	if item.has_signal("deck_selected") and not item.is_connected("deck_selected", _on_deck_clicked.bind(is_new)):
-		item.connect("deck_selected", _on_deck_clicked.bind(is_new))
+        if deck_item_scene == null:
+                push_error("DeckSelection: deck_item_scene is null")
+                return
+        var item: Button = deck_item_scene.instantiate()
+        deck_grid.add_child(item)
+        item.set_meta("deck_data", data)
+        item.set_meta("is_new", is_new)
+        if item.has_method("setup"):
+                item.call("setup", data, is_new)
+        if not item.pressed.is_connected(_on_tile_pressed.bind(item)):
+                item.pressed.connect(_on_tile_pressed.bind(item))
+        if item.has_signal("deck_selected") and not item.is_connected("deck_selected", _on_deck_clicked.bind(is_new)):
+                item.connect("deck_selected", _on_deck_clicked.bind(is_new))
 
 
 func _on_tile_pressed(item: Node) -> void:
-	var is_new := bool(item.get_meta("is_new", false))
-	var deck_data := item.get_meta("deck_data", {})
-	if typeof(deck_data) != TYPE_DICTIONARY:
-		deck_data = {}
-	_on_deck_clicked(deck_data, is_new)
+        var is_new := bool(item.get_meta("is_new", false))
+        var deck_data := item.get_meta("deck_data", {})
+        if typeof(deck_data) != TYPE_DICTIONARY:
+                deck_data = {}
+        _on_deck_clicked(deck_data, is_new)
 
 func _on_deck_clicked(deck_data: Dictionary, is_new: bool) -> void:
-	if is_new:
-		_open_deck_editor("", true)
-		return
-	var deck_id := str(deck_data.get("deck_id", ""))
-	_open_deck_editor(deck_id, false)
+        if is_new:
+                _open_deck_editor("", true)
+                return
+        var deck_id := str(deck_data.get("deck_id", ""))
+        _open_deck_editor(deck_id, false)
 
 func _open_deck_editor(deck_id: String, is_new: bool) -> void:
-	var root := get_tree().root
-	root.set_meta("selected_deck_id", deck_id)
-	root.set_meta("create_new_deck", is_new)
-	root.set_meta("return_scene", get_scene_file_path())
+        var root := get_tree().root
+        root.set_meta("selected_deck_id", deck_id)
+        root.set_meta("create_new_deck", is_new)
+        root.set_meta("return_scene", get_scene_file_path())
 
-	var ui_manager := _get_ui_manager()
-	if ui_manager:
-		var decks_scene = load("res://scenes/DeckEdit.tscn")
-		if decks_scene is PackedScene:
-			var decks_instance = decks_scene.instantiate()
-			if decks_instance.has_method("set_previous_scene"):
-				decks_instance.set_previous_scene(get_scene_file_path())
-			ui_manager.switch_scene_with_instance(decks_instance)
-	else:
-		get_tree().change_scene_to_file("res://scenes/DeckEdit.tscn")
+        var ui_manager := _get_ui_manager()
+        if ui_manager:
+                var decks_scene = load("res://scenes/DeckEdit.tscn")
+                if decks_scene is PackedScene:
+                        var decks_instance = decks_scene.instantiate()
+                        if decks_instance.has_method("set_previous_scene"):
+                                decks_instance.set_previous_scene(get_scene_file_path())
+                        ui_manager.switch_scene_with_instance(decks_instance)
+        else:
+                get_tree().change_scene_to_file("res://scenes/DeckEdit.tscn")
 
 func _collect_decks(tab_index: int) -> Array:
-	var decks: Array = []
+        var decks: Array = []
 
-	if tab_index == TAB_STARTER:
-		decks.append_array(_scan_dir_for_decks("res://output/decks/starter/", "starter"))
-	elif tab_index == TAB_META:
-		decks.append_array(_scan_dir_for_decks("res://output/decks/ultra/", "meta"))
-	elif tab_index == TAB_CUSTOM:
-		decks.append_array(_scan_dir_for_decks("user://cache/data/decks/", "custom"))
-		decks.append_array(_scan_dir_for_decks("res://data/decks/", "custom"))
+        if tab_index == TAB_STARTER:
+                decks.append_array(_scan_dir_for_decks("res://output/decks/starter/", "starter"))
+        elif tab_index == TAB_META:
+                decks.append_array(_scan_dir_for_decks("res://output/decks/ultra/", "meta"))
+        elif tab_index == TAB_CUSTOM:
+                decks.append_array(_scan_dir_for_decks("user://cache/data/decks/", "custom"))
+                decks.append_array(_scan_dir_for_decks("res://data/decks/", "custom"))
 
-	var seen := {}
-	var unique: Array = []
-	for d in decks:
-		var did := str(d.get("deck_id", ""))
-		if did == "" or seen.has(did):
-			continue
-		seen[did] = true
-		unique.append(d)
+        var seen := {}
+        var unique: Array = []
+        for d in decks:
+                var did := str(d.get("deck_id", ""))
+                if did == "" or seen.has(did):
+                        continue
+                seen[did] = true
+                unique.append(d)
 
-	unique.sort_custom(func(a, b):
-		return str(a.get("display_name", a.get("deck_id", ""))) < str(b.get("display_name", b.get("deck_id", "")))
-	)
+        unique.sort_custom(func(a, b):
+                return str(a.get("display_name", a.get("deck_id", ""))) < str(b.get("display_name", b.get("deck_id", "")))
+        )
 
-	return unique
+        return unique
 
 func _scan_dir_for_decks(dir_path: String, kind: String) -> Array:
-	var out: Array = []
-	var dir = DirAccess.open(dir_path)
-	if dir == null:
-		return out
+        var out: Array = []
+        var dir = DirAccess.open(dir_path)
+        if dir == null:
+                return out
 
-	for f in dir.get_files():
-		if not f.ends_with(".json"):
-			continue
-		var deck_id := f.get_basename()
-		if deck_id == "deck_export":
-			continue
-		if kind == "custom" and deck_id.begins_with("ST"):
-			continue
+        for f in dir.get_files():
+                if not f.ends_with(".json"):
+                        continue
+                var deck_id := f.get_basename()
+                if deck_id == "deck_export":
+                        continue
+                if kind == "custom" and deck_id.begins_with("ST"):
+                        continue
 
-		var full_path := dir_path + f
-		var data = DeckManager.load_json(full_path)
-		if typeof(data) != TYPE_DICTIONARY:
-			continue
+                var full_path := dir_path + f
+                var data = DeckManager.load_json(full_path)
+                if typeof(data) != TYPE_DICTIONARY:
+                        continue
 
-		var info := _deck_summary(deck_id, full_path, data)
-		out.append(info)
+                var info := _deck_summary(deck_id, full_path, data)
+                out.append(info)
 
-	return out
+        return out
 
 func _deck_summary(deck_id: String, deck_path: String, deck_json: Dictionary) -> Dictionary:
-	var main: Array = deck_json.get("main", [])
-	var don: Array = deck_json.get("don", [])
+        var main: Array = deck_json.get("main", [])
+        var don: Array = deck_json.get("don", [])
 
-	var leader_total := 0
-	var non_leader_total := 0
-	var leader_entry: Dictionary = {}
+        var leader_total := 0
+        var non_leader_total := 0
+        var leader_entry: Dictionary = {}
 
-	for e in main:
-		if typeof(e) != TYPE_DICTIONARY:
-			continue
-		var t := str(e.get("type", "")).strip_edges().to_lower()
-		var c := int(e.get("count", 1))
-		if t == "leader":
-			leader_total += c
-			leader_entry = e
-			continue
-		if t == "don" or t == "don!!":
-			continue
-		non_leader_total += c
+        # Try to get accurate count from recipe file first
+        var recipe_count := _get_recipe_card_count(deck_id)
+        
+        for e in main:
+                if typeof(e) != TYPE_DICTIONARY:
+                        continue
+                var t := str(e.get("type", "")).strip_edges().to_lower()
+                var c := int(e.get("count", 1))
+                if t == "leader":
+                        leader_total += c
+                        leader_entry = e
+                        continue
+                if t == "don" or t == "don!!":
+                        continue
+                non_leader_total += c
 
-	var don_total := 0
-	for d in don:
-		if typeof(d) != TYPE_DICTIONARY:
-			continue
-		don_total += int(d.get("count", 0))
+        var don_total := 0
+        for d in don:
+                if typeof(d) != TYPE_DICTIONARY:
+                        continue
+                don_total += int(d.get("count", 0))
 
-	var ok := (leader_total == 1 and non_leader_total == 50 and don_total == 10)
-	var main_total := leader_total + non_leader_total
+        # Use recipe count if available and valid, otherwise use JSON count
+        var main_total := leader_total + non_leader_total
+        if recipe_count > 0:
+                main_total = recipe_count
+                # Assume valid if recipe has 51 cards (1 leader + 50 main)
+                leader_total = 1
+                non_leader_total = 50
+                don_total = 10
+        
+        var ok := (leader_total == 1 and non_leader_total == 50 and don_total == 10)
 
-	var display_name := str(deck_json.get("display_name", "")).strip_edges()
-	if display_name == "":
-		display_name = deck_id
+        var display_name := str(deck_json.get("display_name", "")).strip_edges()
+        if display_name == "":
+                display_name = deck_id
 
-	var leader_tex: Texture2D = null
-	var colors: Array = []
-	if not leader_entry.is_empty():
-		var tmp := leader_entry.duplicate(true)
-		DeckManager.assign_card_image_path(tmp)
-		var ip := str(tmp.get("image_path", ""))
-		if ip != "" and ResourceLoader.exists(ip):
-			leader_tex = load(ip)
+        var leader_tex: Texture2D = null
+        var colors: Array = []
+        if not leader_entry.is_empty():
+                var tmp := leader_entry.duplicate(true)
+                DeckManager.assign_card_image_path(tmp)
+                var ip := str(tmp.get("image_path", ""))
+                if ip != "" and ResourceLoader.exists(ip):
+                        leader_tex = load(ip)
 
-		var raw_colors = tmp.get("colors", tmp.get("color", []))
-		if typeof(raw_colors) == TYPE_ARRAY:
-			for c in raw_colors:
-				var s = str(c).strip_edges()
-				if s != "":
-					colors.append(s)
-		elif typeof(raw_colors) == TYPE_STRING:
-			var s2 = str(raw_colors).strip_edges()
-			if s2 != "":
-				colors.append(s2)
+                var raw_colors = tmp.get("colors", tmp.get("color", []))
+                if typeof(raw_colors) == TYPE_ARRAY:
+                        for c in raw_colors:
+                                var s = str(c).strip_edges()
+                                if s != "":
+                                        colors.append(s)
+                elif typeof(raw_colors) == TYPE_STRING:
+                        var s2 = str(raw_colors).strip_edges()
+                        if s2 != "":
+                                colors.append(s2)
 
-	if deck_id.begins_with("ST-29") and colors.is_empty():
-		colors.append("yellow")
+        if deck_id.begins_with("ST-29") and colors.is_empty():
+                colors.append("yellow")
 
-	return {
-		"deck_id": deck_id,
-		"deck_path": deck_path,
-		"display_name": display_name,
-		"leader_texture": leader_tex,
-		"colors": colors,
-		"main_total": main_total,
-		"is_legal": ok,
-	}
+        return {
+                "deck_id": deck_id,
+                "deck_path": deck_path,
+                "display_name": display_name,
+                "leader_texture": leader_tex,
+                "colors": colors,
+                "main_total": main_total,
+                "is_legal": ok,
+        }
+
+
+func _get_recipe_card_count(deck_id: String) -> int:
+        """Load recipe file and count total cards. Returns 0 if no recipe found."""
+        # Try different recipe path formats
+        var recipe_paths := [
+                "res://data/recipes/" + deck_id + ".txt",
+                "res://data/recipes/" + deck_id.replace("-", "") + ".txt",
+        ]
+        
+        for recipe_path in recipe_paths:
+                if not FileAccess.file_exists(recipe_path):
+                        continue
+                
+                var file := FileAccess.open(recipe_path, FileAccess.READ)
+                if file == null:
+                        continue
+                
+                var total := 0
+                while not file.eof_reached():
+                        var line := file.get_line().strip_edges()
+                        if line == "" or line.begins_with("#"):
+                                continue
+                        # Parse format: 4xST01-001 or 4 ST01-001
+                        var regex := RegEx.new()
+                        regex.compile("^(\\d+)[x\\s]+")
+                        var result := regex.search(line)
+                        if result:
+                                total += int(result.get_string(1))
+                
+                file.close()
+                if total > 0:
+                        return total
+        
+        return 0
