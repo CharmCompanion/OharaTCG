@@ -66,6 +66,10 @@ The Streamlit-based GrandLineScraper app runs in Replit. The Godot game project 
 
 ## Recent Changes
 
+- 2026-01-28: Fixed GDScript syntax in recipe_compare_godot.gd - use .repeat() instead of string multiplication
+- 2026-01-28: Updated DeckSelection layout - tabs on left, removed title, Back on far right
+- 2026-01-28: Added recipe comparison tool (tools/recipe_compare.py + tools/recipe_compare_godot.gd)
+- 2026-01-28: Recipe comparison shows missing/extra cards between recipe files and API data
 - 2026-01-27: Added game mechanics extractor - exports keywords, triggers, and actions for dueling implementation
 - 2026-01-27: Reorganized output folder structure by category (sets, decks, promos, tournaments, don, alt_arts)
 - 2026-01-27: Recipe files stored in data/recipes/ (hard backups for deck compositions)
