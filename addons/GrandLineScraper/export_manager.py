@@ -508,6 +508,17 @@ class ExportManager:
                 no_hyphen = normalized.replace('-', '')
                 if no_hyphen not in lookup:
                     lookup[no_hyphen] = card
+                
+                # Store base code without suffix (e.g., ST01-006_r1 -> ST01-006)
+                # Prefer cards without suffix (base version) over alt arts
+                base_code = normalized.split('_')[0]
+                if base_code != normalized:
+                    # This card has a suffix - only add if base doesn't exist yet
+                    if base_code not in lookup:
+                        lookup[base_code] = card
+                else:
+                    # This is the base card (no suffix) - always use it
+                    lookup[base_code] = card
         
         return lookup
 
