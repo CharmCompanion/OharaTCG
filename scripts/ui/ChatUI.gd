@@ -13,11 +13,12 @@ var current_channel: String = "general"
 var chat_visible: bool = true  # Start expanded
 
 func _ready() -> void:
-	mouse_filter = Control.MOUSE_FILTER_PASS
 	set_anchors_preset(Control.PRESET_FULL_RECT)
 	build_ui()
 	setup_chat_logic()
 	update_chat_visibility()
+	if not ChatManager.message_received.is_connected(_on_remote_chat):
+		ChatManager.message_received.connect(_on_remote_chat)
 
 func build_ui() -> void:
 	# Chat Panel base
@@ -70,6 +71,10 @@ func build_ui() -> void:
 	chat_input.placeholder_text = "Type a message..."
 	chat_input.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	vbox.add_child(chat_input)
+	var report_b := Button.new()
+	report_b.text = "Report this chat"
+	report_b.pressed.connect(_on_report_chat)
+	vbox.add_child(report_b)
 
 func setup_chat_logic() -> void:
 	toggle_button.pressed.connect(_on_toggle_pressed)
@@ -78,8 +83,9 @@ func setup_chat_logic() -> void:
 
 	tab_bar.clear_tabs()
 	tab_bar.add_tab("General")
-	tab_bar.add_tab("Ranked")
-	tab_bar.add_tab("Private")
+	tab_bar.add_tab("Friends")
+	tab_bar.add_tab("Crew")
+	tab_bar.add_tab("Match")
 
 	set_chat_channel("general")
 
@@ -112,10 +118,13 @@ func _on_chat_submitted(text: String) -> void:
 	else:
 		var message = "[%s][%s]: %s" % [current_channel, player_name, text]
 		ChatManager.post_message(current_channel, message)
-		display_message(message)
 
 	chat_input.clear()
 	chat_input.grab_focus()
+
+func _on_remote_chat(channel: String, message: String) -> void:
+	if channel == current_channel:
+		display_message(message)
 
 func _on_tab_changed(tab_index: int) -> void:
 	var tab_name = tab_bar.get_tab_title(tab_index).to_lower()
@@ -132,6 +141,20 @@ func set_chat_channel(channel: String) -> void:
 func display_message(msg: String) -> void:
 	chat_log.append_text(msg + "\n")
 
+func _on_report_chat() -> void:
+	var social := get_node_or_null("/root/Social")
+	if social == null:
+		return
+	var line := ""
+	if current_channel == "match" and social.match_chat.size() > 0:
+		line = String((social.match_chat.back() as Dictionary).get("text", ""))
+	elif ChatManager.channels.has(current_channel) and ChatManager.channels[current_channel].size() > 0:
+		line = String(ChatManager.channels[current_channel].back())
+	social.file_report("chat", player_name, "Reported a chat line.", {
+		"channel": current_channel, "line": line,
+	})
+	display_message("Report saved.")
+
 func handle_command(cmd: String) -> void:
 	var parts = cmd.strip_edges().split(" ", false)
 	match parts[0]:
@@ -145,7 +168,8 @@ func handle_command(cmd: String) -> void:
 			if parts.size() >= 3:
 				var target = parts[1]
 				var msg_text = " ".join(parts.slice(2))
-				display_message("[whisper → %s]: %s" % [target, msg_text])
+				var line := "[whisper → %s][%s]: %s" % [target, player_name, msg_text]
+				ChatManager.post_message("friends", line)
 			else:
 				display_message("Usage: /whisper <name> <message>")
 		_:

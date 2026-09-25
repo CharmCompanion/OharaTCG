@@ -1,0 +1,314 @@
+[gd_scene load_steps=4 format=3 uid="uid://df7s2w3w0wacu"]
+
+[ext_resource type="Script" uid="uid://dveft3ujnhv0y" path="res://scripts/decks/Decks.gd" id="1_d0c6c"]
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0.18, 0.18, 0.18, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.22, 0.22, 0.22, 1)
+
+[sub_resource type="StyleBoxFlat" id="2"]
+content_margin_left = 8.0
+content_margin_top = 2.0
+content_margin_right = 8.0
+content_margin_bottom = 2.0
+bg_color = Color(0.18, 0.18, 0.18, 1)
+border_width_bottom = 1
+border_color = Color(0.22, 0.22, 0.22, 1)
+
+[node name="DeckEdit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d0c6c")
+name_search_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls/SearchBox")
+search_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls/SearchButton")
+filter_toggle_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls/FilterToggle")
+filters_row_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow")
+set_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/SetDropdown")
+color_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ColorDropdown")
+type_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/CategoryDropdown")
+card_type_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/CardTypeDropdown")
+filter_method_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/FilterMethodDropdown")
+archetype_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ArchetypeDropdown")
+alt_art_toggle_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/AltArtToggle")
+apply_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ApplyFiltersButton")
+clear_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ClearButton")
+search_grid_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/SearchScroll/SearchGrid")
+main_deck_grid_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DeckScroll/MainDeckGrid")
+don_deck_grid_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DonStrip/DonDeckGrid")
+leader_area_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DeckScroll/MainDeckGrid/MainDeckPanel")
+import_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/ImportButton")
+deck_stats_line1_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox/StatsLine1")
+deck_stats_line2_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox/StatsLine2")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.18, 0.18, 0.18, 1)
+
+[node name="CanvasClamp" type="CenterContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Frame1152x648" type="Control" parent="CanvasClamp"]
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 2
+
+[node name="BorderPanel" type="Panel" parent="CanvasClamp/Frame1152x648"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("1")
+
+[node name="Inset" type="MarginContainer" parent="CanvasClamp/Frame1152x648"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="RootVBox" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox"]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+theme_override_styles/panel = SubResource("2")
+
+[node name="HeaderBar" type="HBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="DeckDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="RenameButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Rename"
+
+[node name="SaveDeckButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Save"
+
+[node name="DeleteButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Delete"
+
+[node name="ExportButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Export"
+
+[node name="ImportButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Import"
+
+[node name="ClearMainDeckButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Clear Main Deck"
+
+[node name="ClearDonDeckButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Clear Don!!"
+
+[node name="StatsVBox" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="StatsLine1" type="Label" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "Character: 0    Event: 0    Stage: 0"
+horizontal_alignment = 2
+clip_text = true
+
+[node name="StatsLine2" type="Label" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "1000: 0    2000: 0    Blocker: 0    Trigger: 0"
+horizontal_alignment = 2
+clip_text = true
+
+[node name="Body" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="Whole" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="TopFrame" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Content" type="HBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="LeftSearch" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="LeftPanelVBox" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="FilterToolbar" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="TopControls" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 3
+
+[node name="SearchBox" type="LineEdit" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Search"
+
+[node name="SearchButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Search"
+
+[node name="FilterToggle" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls"]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+text = "Filters"
+
+[node name="FiltersRow" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 3
+
+[node name="SetDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CategoryDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CardTypeDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FilterMethodDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ArchetypeDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AltArtToggle" type="CheckBox" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Alt Arts"
+
+[node name="ApplyFiltersButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apply"
+
+[node name="ClearButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Clear"
+
+[node name="SearchScroll" type="ScrollContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="SearchGrid" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/SearchScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+
+[node name="RightCombined" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="DeckScroll" type="ScrollContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="MainDeckGrid" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DeckScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+
+[node name="MainDeckPanel" type="Panel" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DeckScroll/MainDeckGrid"]
+custom_minimum_size = Vector2(0, 420)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DonStrip" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DonDeckGrid" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DonStrip"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+columns = 10

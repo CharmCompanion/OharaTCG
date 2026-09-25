@@ -1,0 +1,168 @@
+{
+	"main": [
+		{
+			"name": "Hack",
+			"type": "Character",
+			"color": "Red",
+			"cost": 4,
+			"power": 4000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Strike",
+			"traits": [
+				"Fish-Man",
+				"Dressrosa",
+				"Revolutionary Army"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "",
+			"effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] K.O. up to 1 of your opponent's Characters with 2000 base power or less.",
+			"trigger": "",
+			"set_code": "ST35",
+			"set_name": "Starter Deck - RED/BLACK Sabo [ST-35]",
+			"number": "001",
+			"card_code": "ST35-001",
+			"variant_id": "ST35-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST35-001.png?260911"
+		},
+		{
+			"name": "Lindbergh",
+			"type": "Character",
+			"color": "Red",
+			"cost": 4,
+			"power": 4000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Special",
+			"traits": [
+				"Minks",
+				"Revolutionary Army"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "",
+			"effect": "[On Play] Give up to 1 of your opponent's Characters −3000 power during this turn.",
+			"trigger": "",
+			"set_code": "ST35",
+			"set_name": "Starter Deck - RED/BLACK Sabo [ST-35]",
+			"number": "002",
+			"card_code": "ST35-002",
+			"variant_id": "ST35-002",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST35-002.png?260911"
+		},
+		{
+			"name": "Karasu",
+			"type": "Character",
+			"color": "Black",
+			"cost": 3,
+			"power": 4000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Special",
+			"traits": [
+				"Revolutionary Army"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "",
+			"effect": "[When Attacking] You may trash 2 cards from the top of your deck: If your opponent has 7 or more cards in their hand, your opponent trashes 1 card from their hand.",
+			"trigger": "",
+			"set_code": "ST35",
+			"set_name": "Starter Deck - RED/BLACK Sabo [ST-35]",
+			"number": "003",
+			"card_code": "ST35-003",
+			"variant_id": "ST35-003",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST35-003.png?260911"
+		},
+		{
+			"name": "Koala",
+			"type": "Character",
+			"color": "Black",
+			"cost": 7,
+			"power": 6000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"Dressrosa",
+				"Revolutionary Army"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "",
+			"effect": "This Character gains [Blocker] and +1 cost. [On Play] Give up to 1 rested DON!! card to your Leader. Then, play up to 1 Character card with 4000 power or less and the {Revolutionary Army} type from your hand or trash.",
+			"trigger": "",
+			"set_code": "ST35",
+			"set_name": "Starter Deck - RED/BLACK Sabo [ST-35]",
+			"number": "004",
+			"card_code": "ST35-004",
+			"variant_id": "ST35-004",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST35-004.png?260911"
+		},
+		{
+			"name": "Bartholomew Kuma",
+			"type": "Character",
+			"color": "Black",
+			"cost": 5,
+			"power": 5000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"Revolutionary Army"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "",
+			"effect": "This Character gains +3 cost. [On Play] Give up to 1 rested DON!! card to your Leader. Then, play up to 1 Character card with 4000 power or less and the {Revolutionary Army} type from your hand or trash.",
+			"trigger": "",
+			"set_code": "ST35",
+			"set_name": "Starter Deck - RED/BLACK Sabo [ST-35]",
+			"number": "005",
+			"card_code": "ST35-005",
+			"variant_id": "ST35-005",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST35-005.png?260911"
+		}
+	]
+}

@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvhoo8e20ackl"]
+[gd_scene load_steps=4 format=3 uid="uid://bvhoo8e20ackl"]
 
 [ext_resource type="Script" uid="uid://vx6psbr4c58" path="res://scripts/ui/PostLogin.gd" id="1_vlti6"]
-[ext_resource type="Texture2D" path="res://assets/OharaTCG.png" id="2_a00bq"]
+[ext_resource type="Texture2D" uid="uid://cqikbvq4r4x3m" path="res://assets/OharaTCG.png" id="2_a00bq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_z7x5s"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="PostLogin" type="Control"]
 layout_mode = 3
@@ -12,8 +15,72 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vlti6")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(570.424, 174)
-scale = Vector2(0.113953, 0.113953)
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_z7x5s")
+
+[node name="MenuVBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -340.0
+offset_right = 220.0
+offset_bottom = 340.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="Logo" type="TextureRect" parent="MenuVBox"]
+custom_minimum_size = Vector2(0, 190)
+layout_mode = 2
 texture = ExtResource("2_a00bq")
-offset = Vector2(50, 0)
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlayButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Play"
+
+[node name="DeckBuilderButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Deck Builder"
+
+[node name="PuzzleButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Puzzle Mode"
+
+[node name="ProfileButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Profile"
+
+[node name="SettingsButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Settings"
+
+[node name="ShopButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Shop"
+
+[node name="ReplaysButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Replays"
+
+[node name="QuitButton" type="Button" parent="MenuVBox"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="MenuVBox/PlayButton" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MenuVBox/DeckBuilderButton" to="." method="_on_deck_builder_button_pressed"]
+[connection signal="pressed" from="MenuVBox/PuzzleButton" to="." method="_on_puzzle_pressed"]
+[connection signal="pressed" from="MenuVBox/ProfileButton" to="." method="_on_profile_pressed"]
+[connection signal="pressed" from="MenuVBox/QuitButton" to="." method="_on_quit_button_pressed"]

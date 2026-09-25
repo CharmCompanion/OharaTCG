@@ -1,0 +1,207 @@
+{
+	"main": [
+		{
+			"name": "Capone\"Gang\"Bege",
+			"type": "Character",
+			"color": "Green",
+			"cost": 2,
+			"power": 1000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Ranged",
+			"traits": [
+				"Supernovas",
+				"Firetank Pirates"
+			],
+			"tags": [
+				"Ranged"
+			],
+			"archetype": "Supernovas",
+			"effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] If you have 6 or more rested cards, draw 1 card and trash 1 card from your hand.",
+			"trigger": "",
+			"set_code": "ST24",
+			"set_name": "Starter Deck - GREEN Jewelry Bonney [ST-24]",
+			"number": "001",
+			"card_code": "ST24-001",
+			"variant_id": "ST24-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST24-001.png?260911"
+		},
+		{
+			"name": "Kid &amp; Killer",
+			"type": "Character",
+			"color": "Green",
+			"cost": 2,
+			"power": 2000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "SuperRare",
+			"attribute": "Slash",
+			"traits": [
+				"Supernovas",
+				"Kid Pirates"
+			],
+			"tags": [
+				"Slash",
+				"Special"
+			],
+			"archetype": "Supernovas",
+			"effect": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Supernovas} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order. [On Your Opponent's Attack] You may trash this Character: Set up to 1 of your DON!! cards as active.",
+			"trigger": "",
+			"set_code": "ST24",
+			"set_name": "Starter Deck - GREEN Jewelry Bonney [ST-24]",
+			"number": "002",
+			"card_code": "ST24-002",
+			"variant_id": "ST24-002",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST24-002.png?260911"
+		},
+		{
+			"name": "Basil Hawkins",
+			"type": "Character",
+			"color": "Green",
+			"cost": 4,
+			"power": 4000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Slash",
+			"traits": [
+				"Supernovas",
+				"Hawkins Pirates"
+			],
+			"tags": [
+				"Slash"
+			],
+			"archetype": "Supernovas",
+			"effect": "[End of Your Turn] Set up to 1 of your DON!! cards as active.",
+			"trigger": "",
+			"set_code": "ST24",
+			"set_name": "Starter Deck - GREEN Jewelry Bonney [ST-24]",
+			"number": "003",
+			"card_code": "ST24-003",
+			"variant_id": "ST24-003",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST24-003.png?260911"
+		},
+		{
+			"name": "Law &amp; Bepo",
+			"type": "Character",
+			"color": "Green",
+			"cost": 10,
+			"power": 11000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "SuperRare",
+			"attribute": "Slash",
+			"traits": [
+				"Minks",
+				"Supernovas",
+				"Heart Pirates"
+			],
+			"tags": [
+				"Slash",
+				"Strike"
+			],
+			"archetype": "Supernovas",
+			"effect": "[On Play] Rest up to 1 of your opponent's Characters and that Character will not become active in your opponent's next Refresh Phase. Then, if your opponent has 2 or more rested Characters, your Leader gains +2000 power until the end of your opponent's next End Phase.",
+			"trigger": "",
+			"set_code": "ST24",
+			"set_name": "Starter Deck - GREEN Jewelry Bonney [ST-24]",
+			"number": "004",
+			"card_code": "ST24-004",
+			"variant_id": "ST24-004",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST24-004.png?260911"
+		},
+		{
+			"name": "X.Drake",
+			"type": "Character",
+			"color": "Green",
+			"cost": 5,
+			"power": 5000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Slash",
+			"traits": [
+				"Supernovas",
+				"Navy",
+				"Drake Pirates"
+			],
+			"tags": [
+				"Slash"
+			],
+			"archetype": "Supernovas",
+			"effect": "[On Play] If your Leader has the {Supernovas} type, rest up to 1 of your opponent's Characters with a cost of 5 or less. Then, set up to 1 of your DON!! cards as active at the end of this turn.",
+			"trigger": "",
+			"set_code": "ST24",
+			"set_name": "Starter Deck - GREEN Jewelry Bonney [ST-24]",
+			"number": "005",
+			"card_code": "ST24-005",
+			"variant_id": "ST24-005",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST24-005.png?260911"
+		},
+		{
+			"name": "X.Drake",
+			"type": "Character",
+			"color": "Green",
+			"cost": 5,
+			"power": 5000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Slash",
+			"traits": [
+				"Supernovas",
+				"Navy",
+				"Drake Pirates"
+			],
+			"tags": [
+				"Slash"
+			],
+			"archetype": "Supernovas",
+			"effect": "[On Play] If your Leader has the {Supernovas} type, rest up to 1 of your opponent's Characters with a cost of 5 or less. Then, set up to 1 of your DON!! cards as active at the end of this turn.",
+			"trigger": "",
+			"set_code": "ST24",
+			"set_name": "Starter Deck - GREEN Jewelry Bonney [ST-24]",
+			"number": "005",
+			"card_code": "ST24-005",
+			"variant_id": "ST24-005_r1",
+			"art_type": "AA",
+			"foil_grade": "parallel",
+			"variant_index": 1,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST24-005_r1.png?260911"
+		}
+	]
+}

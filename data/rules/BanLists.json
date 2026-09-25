@@ -1,0 +1,29 @@
+{
+  "formats": [
+	{
+	  "name": "Official EN (Current)",
+	  "description": "The current official English format Banned & Restricted list as of late 2024.",
+	  "banned": [
+		{ "card_id": "OP05-041", "name": "Sakazuki" },
+		{ "card_id": "ST06-015", "name": "Great Eruption" }
+	  ],
+	  "restricted": [
+		{ "card_id": "OP02-013", "name": "Moby Dick", "limit": 1 }
+	  ]
+	},
+	{
+	  "name": "Official JP (Current)",
+	  "description": "The current official Japanese format Banned & Restricted list as of late 2024.",
+	  "banned": [
+		{ "card_id": "OP06-086", "name": "Gecko Moria" }
+	  ],
+	  "restricted": []
+	},
+	{
+	  "name": "Legacy Format (No Bans)",
+	  "description": "A custom format for fun matches with no cards banned or restricted.",
+	  "banned": [],
+	  "restricted": []
+	}
+  ]
+}

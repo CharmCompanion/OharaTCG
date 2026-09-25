@@ -50,6 +50,16 @@ text = "Fullscreen"
 [node name="CheckBox" type="CheckBox" parent="Panel/VBoxContainer/FullscreenRow"]
 layout_mode = 2
 
+[node name="BackgroundRow" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/BackgroundRow"]
+layout_mode = 2
+text = "Table Background"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/VBoxContainer/BackgroundRow"]
+layout_mode = 2
+
 [node name="UIScaleRow" type="VBoxContainer" parent="Panel/VBoxContainer"]
 layout_mode = 2
 

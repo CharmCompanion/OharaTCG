@@ -1,0 +1,197 @@
+{
+	"main": [
+		{
+			"name": "Sanji",
+			"type": "Character",
+			"color": "Red",
+			"cost": 5,
+			"power": 3000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[DON!! x2] This Character gains [Rush]. (This card can attack on the turn in which it is played.) [On Play] Draw 1 card and play up to 1 {Straw Hat Crew} type Character card with a cost of 5 or less other than [Sanji] from your hand.",
+			"trigger": "",
+			"set_code": "ST31",
+			"set_name": "Starter Deck - RED Monkey.D.Luffy [ST-31]",
+			"number": "001",
+			"card_code": "ST31-001",
+			"variant_id": "ST31-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST31-001.png?260911"
+		},
+		{
+			"name": "Jinbe",
+			"type": "Character",
+			"color": "Red",
+			"cost": 5,
+			"power": 6000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Strike",
+			"traits": [
+				"Fish-Man",
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] Draw 1 card and play up to 1 {Straw Hat Crew} type card with a cost of 1 from your hand.",
+			"trigger": "",
+			"set_code": "ST31",
+			"set_name": "Starter Deck - RED Monkey.D.Luffy [ST-31]",
+			"number": "002",
+			"card_code": "ST31-002",
+			"variant_id": "ST31-002",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST31-002.png?260911"
+		},
+		{
+			"name": "Brook",
+			"type": "Character",
+			"color": "Red",
+			"cost": 2,
+			"power": 3000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Slash",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Slash"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[Opponent's Turn] If you have a total of 3 or more given DON!! cards, this Character gains [Blocker] and +3000 power. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+			"trigger": "",
+			"set_code": "ST31",
+			"set_name": "Starter Deck - RED Monkey.D.Luffy [ST-31]",
+			"number": "003",
+			"card_code": "ST31-003",
+			"variant_id": "ST31-003",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST31-003.png?260911"
+		},
+		{
+			"name": "Monkey.D.Luffy",
+			"type": "Character",
+			"color": "Red",
+			"cost": 7,
+			"power": 9000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"The Four Emperors",
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "If you have a total of 3 or more given DON!! cards, this Character gains [Rush]. (This card can attack on the turn in which it is played.) [On Play] For every {Straw Hat Crew} type card on your field, give up to 1 of your opponent's Characters −1000 power during this turn.",
+			"trigger": "",
+			"set_code": "ST31",
+			"set_name": "Starter Deck - RED Monkey.D.Luffy [ST-31]",
+			"number": "004",
+			"card_code": "ST31-004",
+			"variant_id": "ST31-004",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST31-004.png?260911"
+		},
+		{
+			"name": "Monkey.D.Luffy",
+			"type": "Character",
+			"color": "Red",
+			"cost": 7,
+			"power": 9000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "Special",
+			"attribute": "Strike",
+			"traits": [
+				"The Four Emperors",
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "If you have a total of 3 or more given DON!! cards, this Character gains [Rush]. (This card can attack on the turn in which it is played.) [On Play] For every {Straw Hat Crew} type card on your field, give up to 1 of your opponent's Characters −1000 power during this turn.",
+			"trigger": "",
+			"set_code": "ST31",
+			"set_name": "Starter Deck - RED Monkey.D.Luffy [ST-31]",
+			"number": "004",
+			"card_code": "ST31-004",
+			"variant_id": "ST31-004_p1",
+			"art_type": "AA",
+			"foil_grade": "parallel",
+			"variant_index": 1,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST31-004_p1.png?260911"
+		},
+		{
+			"name": "Thousand Sunny",
+			"type": "Stage",
+			"color": "Red",
+			"cost": 1,
+			"power": 0,
+			"life": 0,
+			"counter": 0,
+			"rarity": "Common",
+			"attribute": "",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [],
+			"archetype": "Straw Hat",
+			"effect": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 {Straw Hat Crew} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order. [Activate: Main] You may rest this Stage: Give up to 1 rested DON!! card to 1 of your [Monkey.D.Luffy] cards.",
+			"trigger": "",
+			"set_code": "ST31",
+			"set_name": "Starter Deck - RED Monkey.D.Luffy [ST-31]",
+			"number": "005",
+			"card_code": "ST31-005",
+			"variant_id": "ST31-005",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST31-005.png?260911"
+		}
+	]
+}

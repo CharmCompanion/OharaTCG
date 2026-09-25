@@ -1,0 +1,68 @@
+{
+	"main": [
+		{
+			"name": "Sanji",
+			"type": "Leader",
+			"color": "Red",
+			"cost": 5,
+			"power": 5000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "Leader",
+			"attribute": "Strike",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[Activate: Main] [Once Per Turn] Up to 1 of your Characters without an [On Play] effect and with a cost of 8 or less gains [Rush] during this turn. (This card can attack on the turn in which it is played.)",
+			"trigger": "",
+			"set_code": "PRB01",
+			"set_name": "Premium Booster - One Piece Card The Best [PRB-01]",
+			"number": "001",
+			"card_code": "PRB01-001",
+			"variant_id": "PRB01-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/PRB01-001.png?260911"
+		},
+		{
+			"name": "Sanji",
+			"type": "Leader",
+			"color": "Red",
+			"cost": 5,
+			"power": 5000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "Leader",
+			"attribute": "Strike",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[Activate: Main] [Once Per Turn] Up to 1 of your Characters without an [On Play] effect and with a cost of 8 or less gains [Rush] during this turn. (This card can attack on the turn in which it is played.)",
+			"trigger": "",
+			"set_code": "PRB01",
+			"set_name": "Premium Booster - One Piece Card The Best [PRB-01]",
+			"number": "001",
+			"card_code": "PRB01-001",
+			"variant_id": "PRB01-001_p1",
+			"art_type": "AA",
+			"foil_grade": "parallel",
+			"variant_index": 1,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/PRB01-001_p1.png?260911"
+		}
+	]
+}

@@ -1,0 +1,232 @@
+{
+	"main": [
+		{
+			"name": "Uta",
+			"type": "Character",
+			"color": "Red",
+			"cost": 6,
+			"power": 4000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "SuperRare",
+			"attribute": "Special",
+			"traits": [
+				"FILM"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "",
+			"effect": "If you have a Character with 10000 power or more, give this card in your hand −4 cost. [Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+			"trigger": "",
+			"set_code": "ST23",
+			"set_name": "Starter Deck - RED Shanks [ST-23]",
+			"number": "001",
+			"card_code": "ST23-001",
+			"variant_id": "ST23-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST23-001.png?260911"
+		},
+		{
+			"name": "ウタ",
+			"type": "Character",
+			"color": "Red",
+			"cost": 6,
+			"power": 4000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "SuperRare",
+			"attribute": "Special",
+			"traits": [
+				"FILM"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "",
+			"effect": "手札のこのカードは、自分のパワー10000以上のキャラがいる場合、コスト-4。 【ブロッカー】(相手のアタックの後、このカードをレストにし、アタックの対象をこのカードにできる)",
+			"trigger": "",
+			"set_code": "ST23",
+			"set_name": "Starter Deck - RED Shanks [ST-23]",
+			"number": "001",
+			"card_code": "ST23-001",
+			"variant_id": "ST23-001_p1",
+			"art_type": "AA",
+			"foil_grade": "parallel",
+			"variant_index": 1,
+			"block_number": 3,
+			"region": "JP",
+			"count": 1,
+			"img_url": "https://www.onepiece-cardgame.com/images/cardlist/card/ST23-001_p1.png?260828"
+		},
+		{
+			"name": "Shanks",
+			"type": "Character",
+			"color": "Red",
+			"cost": 9,
+			"power": 10000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "SuperRare",
+			"attribute": "Slash",
+			"traits": [
+				"The Four Emperors",
+				"Red-Haired Pirates"
+			],
+			"tags": [
+				"Slash"
+			],
+			"archetype": "",
+			"effect": "If your opponent has a Character with 8000 base power or more, give this card in your hand −3 cost. [On Play] If your Leader has the {Red-Haired Pirates} type or is [Uta], your Leader gains +2000 power until the end of your opponent's next End Phase.",
+			"trigger": "",
+			"set_code": "ST23",
+			"set_name": "Starter Deck - RED Shanks [ST-23]",
+			"number": "002",
+			"card_code": "ST23-002",
+			"variant_id": "ST23-002",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST23-002.png?260911"
+		},
+		{
+			"name": "Benn.Beckman",
+			"type": "Character",
+			"color": "Red",
+			"cost": 4,
+			"power": 5000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Ranged",
+			"traits": [
+				"Red-Haired Pirates"
+			],
+			"tags": [
+				"Ranged"
+			],
+			"archetype": "",
+			"effect": "[On Play] You may trash 1 card from your hand: If your Leader has the {Red-Haired Pirates} type, K.O. up to 1 of your opponent's Characters with 4000 base power or less.",
+			"trigger": "",
+			"set_code": "ST23",
+			"set_name": "Starter Deck - RED Shanks [ST-23]",
+			"number": "003",
+			"card_code": "ST23-003",
+			"variant_id": "ST23-003",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST23-003.png?260911"
+		},
+		{
+			"name": "Monkey.D.Luffy",
+			"type": "Character",
+			"color": "Red",
+			"cost": 1,
+			"power": 2000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Strike",
+			"traits": [
+				"FILM",
+				"Supernovas",
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Supernovas",
+			"effect": "[Activate: Main] You may rest 1 of your DON!! cards and this Character: Give up to 1 of your opponent's Characters −1000 power during this turn.",
+			"trigger": "",
+			"set_code": "ST23",
+			"set_name": "Starter Deck - RED Shanks [ST-23]",
+			"number": "004",
+			"card_code": "ST23-004",
+			"variant_id": "ST23-004",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST23-004.png?260911"
+		},
+		{
+			"name": "Monkey.D.Luffy",
+			"type": "Character",
+			"color": "Red",
+			"cost": 1,
+			"power": 2000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Strike",
+			"traits": [
+				"Animal",
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Animal",
+			"effect": "[Activate: Main] You may rest 1 of your DON!! cards and this Character: Give up to 1 of your opponent's Characters −1000 power during this turn.",
+			"trigger": "",
+			"set_code": "ST23",
+			"set_name": "Starter Deck - RED Shanks [ST-23]",
+			"number": "004",
+			"card_code": "ST23-004",
+			"variant_id": "ST23-004_r1",
+			"art_type": "AA",
+			"foil_grade": "parallel",
+			"variant_index": 1,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST23-004_r1.png?260911"
+		},
+		{
+			"name": "Yasopp",
+			"type": "Character",
+			"color": "Red",
+			"cost": 1,
+			"power": 1000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Ranged",
+			"traits": [
+				"Red-Haired Pirates"
+			],
+			"tags": [
+				"Ranged"
+			],
+			"archetype": "",
+			"effect": "[Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+			"trigger": "",
+			"set_code": "ST23",
+			"set_name": "Starter Deck - RED Shanks [ST-23]",
+			"number": "005",
+			"card_code": "ST23-005",
+			"variant_id": "ST23-005",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST23-005.png?260911"
+		}
+	]
+}

@@ -1,0 +1,5 @@
+cards 2817 covered 2817 dead 0 empty_sections 0
+
+=== DEAD CARDS (no tokens) top 80 ===
+
+=== TIMED BODIES WITH ZERO ACTIONS top 120 ===

@@ -2,7 +2,7 @@
 .godot/
 /android/
 
-# Large local build artifacts (don’t commit)
+# Large local build artifacts (don't commit)
 addons/Builds_Windows/
 
 # Python junk

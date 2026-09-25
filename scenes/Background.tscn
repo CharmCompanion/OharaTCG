@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://ddim186c4jit8"]
+[gd_scene load_steps=10 format=3 uid="uid://ddim186c4jit8"]
 
+[ext_resource type="Script" path="res://scripts/background/Background.gd" id="1_bg"]
 [ext_resource type="Texture2D" uid="uid://ohmetinqqjgs" path="res://assets/backgrounds/Ocean and Clouds/Ocean_1/4.png" id="2_fwrf6"]
 [ext_resource type="Script" uid="uid://d3jg7pkxsfuds" path="res://scripts/background/parallax_layer.gd" id="3_5txi7"]
 [ext_resource type="Texture2D" uid="uid://cct21mndl7vg4" path="res://assets/backgrounds/Ocean and Clouds/Ocean_1/3.png" id="4_866lp"]
@@ -16,37 +17,37 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
+script = ExtResource("1_bg")
 
 [node name="Background" type="ParallaxBackground" parent="."]
 
 [node name="Layer_Ocean" type="Sprite2D" parent="Background"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.833333, 0.833333)
 texture = ExtResource("2_fwrf6")
 centered = false
 
 [node name="ParallaxLayerShading" type="ParallaxLayer" parent="Background"]
-motion_mirroring = Vector2(1152, 0)
+motion_mirroring = Vector2(1920, 0)
 script = ExtResource("3_5txi7")
 
 [node name="Layer_Shading" type="Sprite2D" parent="Background/ParallaxLayerShading"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.833333, 0.833333)
 texture = ExtResource("4_866lp")
 centered = false
 
 [node name="Layer_Ship" type="Sprite2D" parent="Background"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.833333, 0.833333)
 texture = ExtResource("5_43vpv")
 centered = false
 offset = Vector2(0, 8)
 script = ExtResource("6_47vcq")
 
 [node name="ParallaxLayerClouds" type="ParallaxLayer" parent="Background"]
-motion_mirroring = Vector2(1152, 0)
+motion_mirroring = Vector2(1920, 0)
 script = ExtResource("3_5txi7")
 
 [node name="Layer_Clouds" type="Sprite2D" parent="Background/ParallaxLayerClouds"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.833333, 0.833333)
 texture = ExtResource("7_ps3vh")
 centered = false
 
@@ -58,7 +59,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0.0666667)
-mouse_filter = 2
 script = ExtResource("8_ramdn")
 
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]

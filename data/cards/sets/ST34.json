@@ -1,0 +1,166 @@
+{
+	"main": [
+		{
+			"name": "Charlotte Katakuri",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 5,
+			"power": 7000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"Big Mom Pirates"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "",
+			"effect": "[Your Turn] [Once Per Turn] When a DON!! card on your field is returned to your DON!! deck, if your Leader has the {Big Mom Pirates} type, add up to 2 DON!! cards from your DON!! deck and rest them. [On K.O.] Play up to 1 Character card with 8000 power or less from your hand.",
+			"trigger": "",
+			"set_code": "ST34",
+			"set_name": "Starter Deck - PURPLE Charlotte Katakuri [ST-34]",
+			"number": "001",
+			"card_code": "ST34-001",
+			"variant_id": "ST34-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST34-001.png?260911"
+		},
+		{
+			"name": "Charlotte Cracker",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 4,
+			"power": 5000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Slash",
+			"traits": [
+				"Big Mom Pirates"
+			],
+			"tags": [
+				"Slash"
+			],
+			"archetype": "",
+			"effect": "[On Play] If your Leader has the {Big Mom Pirates} type, add up to 1 DON!! card from your DON!! deck and rest it. Then, K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+			"trigger": "",
+			"set_code": "ST34",
+			"set_name": "Starter Deck - PURPLE Charlotte Katakuri [ST-34]",
+			"number": "002",
+			"card_code": "ST34-002",
+			"variant_id": "ST34-002",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST34-002.png?260911"
+		},
+		{
+			"name": "Charlotte Brulee",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 1,
+			"power": 2000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Special",
+			"traits": [
+				"Big Mom Pirates"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "",
+			"effect": "[On Play] Look at 3 cards from the top of your deck; reveal up to 1 {Big Mom Pirates} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+			"trigger": "",
+			"set_code": "ST34",
+			"set_name": "Starter Deck - PURPLE Charlotte Katakuri [ST-34]",
+			"number": "003",
+			"card_code": "ST34-003",
+			"variant_id": "ST34-003",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST34-003.png?260911"
+		},
+		{
+			"name": "Charlotte Linlin",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 10,
+			"power": 12000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "SuperRare",
+			"attribute": "Special",
+			"traits": [
+				"The Four Emperors",
+				"Big Mom Pirates"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "",
+			"effect": "[On Play] DON!! −4, you may trash 1 card from your hand: Add up to 1 card from the top of your deck to the top of your Life cards. Then, up to 1 of your opponent's Characters' base power becomes 0 during this turn.",
+			"trigger": "",
+			"set_code": "ST34",
+			"set_name": "Starter Deck - PURPLE Charlotte Katakuri [ST-34]",
+			"number": "004",
+			"card_code": "ST34-004",
+			"variant_id": "ST34-004",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST34-004.png?260911"
+		},
+		{
+			"name": "Baron Tamago &amp; Pekoms",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 3,
+			"power": 4000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Strike",
+			"traits": [
+				"Minks",
+				"Big Mom Pirates"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "",
+			"effect": "[When Attacking] DON!! −1: K.O. up to 1 of your opponent's Characters with 2000 base power or less.",
+			"trigger": "",
+			"set_code": "ST34",
+			"set_name": "Starter Deck - PURPLE Charlotte Katakuri [ST-34]",
+			"number": "005",
+			"card_code": "ST34-005",
+			"variant_id": "ST34-005",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST34-005.png?260911"
+		}
+	]
+}

@@ -1,0 +1,197 @@
+{
+	"main": [
+		{
+			"name": "Soba Mask",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 7,
+			"power": 9000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "Common",
+			"attribute": "Strike",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "If you have a [San-Gorou] or [Sanji] Character with 7000 base power or more, give this card in your hand −5 cost. [On Play] Return all of your [San-Gorou] and [Sanji] Characters to the owner's hand.",
+			"trigger": "",
+			"set_code": "ST26",
+			"set_name": "Starter Deck - PURPLE/BLACK Monkey.D.Luffy [ST-26]",
+			"number": "001",
+			"card_code": "ST26-001",
+			"variant_id": "ST26-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST26-001.png?260911"
+		},
+		{
+			"name": "Tony Tony.Chopper",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 3,
+			"power": 4000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Wisdom",
+			"traits": [
+				"Animal",
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Wisdom"
+			],
+			"archetype": "Animal",
+			"effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] DON!! −2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Rest up to 1 of your opponent's DON!! cards or Characters with a cost of 1 or less.",
+			"trigger": "",
+			"set_code": "ST26",
+			"set_name": "Starter Deck - PURPLE/BLACK Monkey.D.Luffy [ST-26]",
+			"number": "002",
+			"card_code": "ST26-002",
+			"variant_id": "ST26-002",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST26-002.png?260911"
+		},
+		{
+			"name": "Nico Robin",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 3,
+			"power": 4000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[On Play] DON!! −2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Add up to 1 DON!! card from your DON!! deck and set it as active.",
+			"trigger": "",
+			"set_code": "ST26",
+			"set_name": "Starter Deck - PURPLE/BLACK Monkey.D.Luffy [ST-26]",
+			"number": "003",
+			"card_code": "ST26-003",
+			"variant_id": "ST26-003",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST26-003.png?260911"
+		},
+		{
+			"name": "General Franky",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 8,
+			"power": 10000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "Common",
+			"attribute": "Ranged",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Ranged"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[On Play] DON!! −2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Give up to 2 of your opponent's Characters −2000 power during this turn.",
+			"trigger": "",
+			"set_code": "ST26",
+			"set_name": "Starter Deck - PURPLE/BLACK Monkey.D.Luffy [ST-26]",
+			"number": "004",
+			"card_code": "ST26-004",
+			"variant_id": "ST26-004",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST26-004.png?260911"
+		},
+		{
+			"name": "Monkey.D.Luffy",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 6,
+			"power": 7000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[On Play]/[When Attacking] DON!! −2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader is multicolored and your opponent has 5 or more DON!! cards on their field, your {Straw Hat Crew} type Leader's base power becomes 7000 until the end of your opponent's next End Phase.",
+			"trigger": "",
+			"set_code": "ST26",
+			"set_name": "Starter Deck - PURPLE/BLACK Monkey.D.Luffy [ST-26]",
+			"number": "005",
+			"card_code": "ST26-005",
+			"variant_id": "ST26-005",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST26-005.png?260911"
+		},
+		{
+			"name": "Monkey.D.Luffy",
+			"type": "Character",
+			"color": "Purple",
+			"cost": 6,
+			"power": 7000,
+			"life": 0,
+			"counter": 0,
+			"rarity": "Special",
+			"attribute": "Strike",
+			"traits": [
+				"Straw Hat Crew"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Straw Hat",
+			"effect": "[On Play]/[When Attacking] DON!! −2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader is multicolored and your opponent has 5 or more DON!! cards on their field, your {Straw Hat Crew} type Leader's base power becomes 7000 until the end of your opponent's next End Phase.",
+			"trigger": "",
+			"set_code": "ST26",
+			"set_name": "Starter Deck - PURPLE/BLACK Monkey.D.Luffy [ST-26]",
+			"number": "005",
+			"card_code": "ST26-005",
+			"variant_id": "ST26-005_p1",
+			"art_type": "AA",
+			"foil_grade": "parallel",
+			"variant_index": 1,
+			"block_number": 3,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST26-005_p1.png?260911"
+		}
+	]
+}

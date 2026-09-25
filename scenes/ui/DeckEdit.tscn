@@ -1,0 +1,529 @@
+[gd_scene load_steps=5 format=3 uid="uid://h4giod6mhv2h"]
+
+[ext_resource type="Script" uid="uid://dveft3ujnhv0y" path="res://scripts/decks/Decks.gd" id="1_d0c6c"]
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(0.18, 0.18, 0.18, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.22, 0.22, 0.22, 1)
+
+[sub_resource type="StyleBoxFlat" id="2"]
+content_margin_left = 8.0
+content_margin_top = 2.0
+content_margin_right = 8.0
+content_margin_bottom = 2.0
+bg_color = Color(0.18, 0.18, 0.18, 1)
+border_width_bottom = 1
+border_color = Color(0.22, 0.22, 0.22, 1)
+
+[sub_resource type="GDScript" id="GDScript_o1os1"]
+script/source = "# res://DeckGenerator.gd
+@tool
+extends Node
+
+## Click the checkbox next to this property in the Inspector
+## to create all the deck files automatically.
+@export var generate_decks_now := false:
+	set(value):
+		if value:
+			_generate_all_deck_files()
+			# Reset the checkbox so it acts like a button
+			set_block_signals(true)
+			generate_decks_now = false
+			set_block_signals(false)
+			notify_property_list_changed()
+
+
+func _generate_all_deck_files():
+	print(\"--- Starting deck generation ---\")
+	var deck_dir = \"res://data/decks\"
+	DirAccess.make_dir_recursive_absolute(deck_dir)
+	
+	# Using your new requested format
+	var all_decks = {
+		\"ST01-StrawHats.json\": \"\"\"[
+	{ \"id\": \"ST01-001\", \"count\": 1 }, { \"id\": \"ST01-006\", \"count\": 4 }, { \"id\": \"ST01-007\", \"count\": 4 },
+	{ \"id\": \"ST01-002\", \"count\": 4 }, { \"id\": \"ST01-003\", \"count\": 4 }, { \"id\": \"ST01-011\", \"count\": 2 },
+	{ \"id\": \"ST01-004\", \"count\": 4 }, { \"id\": \"ST01-009\", \"count\": 4 }, { \"id\": \"ST01-005\", \"count\": 4 },
+	{ \"id\": \"ST01-008\", \"count\": 4 }, { \"id\": \"ST01-013\", \"count\": 2 }, { \"id\": \"ST01-010\", \"count\": 4 },
+	{ \"id\": \"ST01-012\", \"count\": 2 }, { \"id\": \"ST01-014\", \"count\": 2 }, { \"id\": \"ST01-016\", \"count\": 2 },
+	{ \"id\": \"ST01-015\", \"count\": 2 }, { \"id\": \"ST01-017\", \"count\": 2 }
+]\"\"\"
+		# Add more decks here if you want the generator to create them
+	}
+
+	for filename in all_decks:
+		var file_path = deck_dir.path_join(filename)
+		var file_content = all_decks[filename]
+		
+		var file = FileAccess.open(file_path, FileAccess.WRITE)
+		if file:
+			file.store_string(file_content)
+			print(\"Created deck file: \", file_path)
+		else:
+			push_error(\"Failed to create deck file: \" + file_path)
+			
+	print(\"--- Deck generation complete! ---\")
+"
+
+[node name="DeckEdit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d0c6c")
+deck_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/DeckDropdown")
+rename_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/RenameButton")
+save_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/SaveButton")
+delete_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/DeleteButton")
+file_dialog_path = NodePath("SaveFileDialog")
+deck_name_edit_path = NodePath("DeckNameEdit")
+import_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/ImportButton")
+export_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/ExportButton")
+clear_main_deck_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/ClearMainDeckButton")
+clear_don_deck_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/ClearDonDeckButton")
+name_search_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls/SearchBox")
+search_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls/SearchButton")
+filter_toggle_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls/FilterToggle")
+filters_row_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow")
+set_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/SetDropdown")
+color_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ColorDropdown")
+type_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/TypeDropdown")
+card_type_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/CardTypeDropdown")
+filter_method_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/FilterMethodDropdown")
+archetype_dropdown_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ArchetypeDropdown")
+alt_art_toggle_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/AltArtToggle")
+apply_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ApplyFiltersButton")
+clear_button_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow/ClearButton")
+search_grid_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/SearchScroll/SearchGrid")
+main_deck_grid_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DeckScroll/MainDeckGrid")
+don_deck_grid_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DonStrip/DonDeckGrid")
+leader_container_path = NodePath("LeaderContainer")
+deck_stats_line1_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox/StatsLine1")
+deck_stats_line2_path = NodePath("CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox/StatsLine2")
+validation_format_dropdown_path = NodePath("ValidationFormatDropdown")
+validation_button_path = NodePath("ValidationButton")
+validation_result_label_path = NodePath("ValidationResultLabel")
+card_preview_path = NodePath("HoverPopup/CardPreview")
+card_name_label_path = NodePath("HoverPopup/CardNameLabel")
+card_details_label_path = NodePath("HoverPopup/CardDetailsLabel")
+counters_label_path = NodePath("HoverPopup/CountersLabel")
+hover_popup_path = NodePath("HoverPopup")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.18, 0.18, 0.18, 1)
+
+[node name="CanvasClamp" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Frame1152x648" type="Control" parent="CanvasClamp"]
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 2
+
+[node name="BorderPanel" type="Panel" parent="CanvasClamp/Frame1152x648"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("1")
+
+[node name="Inset" type="MarginContainer" parent="CanvasClamp/Frame1152x648"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="RootVBox" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox"]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+theme_override_styles/panel = SubResource("2")
+
+[node name="HeaderBar" type="HBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="BackButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "< Back"
+
+[node name="DeckDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="RenameButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Rename"
+
+[node name="SaveButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Save"
+
+[node name="DeleteButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Delete"
+
+[node name="ExportButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Export"
+
+[node name="ImportButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Import"
+
+[node name="ClearMainDeckButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Clear Main Deck"
+
+[node name="ClearDonDeckButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+text = "Clear Don!!"
+
+[node name="StatsVBox" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="StatsLine1" type="Label" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "Character: 0    Event: 0    Stage: 0"
+horizontal_alignment = 2
+clip_text = true
+
+[node name="StatsLine2" type="Label" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Header/HeaderBar/StatsVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "1000: 0    2000: 0    Total: 0"
+horizontal_alignment = 2
+clip_text = true
+
+[node name="Body" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="Whole" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="TopFrame" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Content" type="HBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="LeftSearch" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content"]
+custom_minimum_size = Vector2(460, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LeftPanelVBox" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="FilterToolbar" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="TopControls" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 3
+
+[node name="SearchBox" type="LineEdit" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Search"
+
+[node name="SearchButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Search"
+
+[node name="FilterToggle" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/TopControls"]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+text = "Filters"
+
+[node name="FiltersRow" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 3
+
+[node name="SetDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TypeDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CardTypeDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FilterMethodDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ArchetypeDropdown" type="OptionButton" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AltArtToggle" type="CheckBox" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Alt Arts"
+
+[node name="ApplyFiltersButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apply"
+
+[node name="ClearButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/FilterToolbar/FiltersRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Clear"
+
+[node name="SearchScroll" type="ScrollContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="SearchGrid" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/SearchScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+columns = 5
+
+[node name="PaginationBar" type="HBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+theme_override_constants/separation = 8
+
+[node name="PrevPageButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/PaginationBar"]
+layout_mode = 2
+text = "< Prev"
+
+[node name="PageLabel" type="Label" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/PaginationBar"]
+layout_mode = 2
+text = "Page 1 / 1"
+
+[node name="NextPageButton" type="Button" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/LeftSearch/LeftPanelVBox/PaginationBar"]
+layout_mode = 2
+text = "Next >"
+
+[node name="RightCombined" type="VBoxContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="DeckScroll" type="ScrollContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="MainDeckGrid" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DeckScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 10
+
+[node name="DonStrip" type="PanelContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DonDeckGrid" type="GridContainer" parent="CanvasClamp/Frame1152x648/Inset/RootVBox/Body/Whole/TopFrame/Content/RightCombined/DonStrip"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+columns = 10
+
+[node name="SaveFileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+size = Vector2i(400, 200)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.json ; Deck Files")
+
+[node name="DeckNameEdit" type="LineEdit" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 31.0
+
+[node name="LeaderContainer" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ValidationFormatDropdown" type="OptionButton" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 20.0
+
+[node name="ValidationButton" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 31.0
+text = "Validate"
+
+[node name="ValidationResultLabel" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 40.0
+bbcode_enabled = true
+text = "Validation results..."
+
+[node name="HoverPopup" type="PopupPanel" parent="."]
+size = Vector2i(250, 400)
+
+[node name="CardPreview" type="Panel" parent="HoverPopup"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 246.0
+offset_bottom = 396.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardNameLabel" type="Label" parent="HoverPopup"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 246.0
+offset_bottom = 396.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Card Name"
+horizontal_alignment = 1
+
+[node name="CardDetailsLabel" type="RichTextLabel" parent="HoverPopup"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 246.0
+offset_bottom = 396.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+text = "Card Details"
+fit_content = true
+
+[node name="CountersLabel" type="Label" parent="HoverPopup"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 246.0
+offset_bottom = 396.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Counters"
+horizontal_alignment = 1
+
+[node name="HoverVBox" type="VBoxContainer" parent="HoverPopup"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 246.0
+offset_bottom = 396.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+
+[node name="HoverName" type="Label" parent="HoverPopup/HoverVBox"]
+layout_mode = 2
+text = "Card Name"
+horizontal_alignment = 1
+
+[node name="HoverStats" type="Label" parent="HoverPopup/HoverVBox"]
+layout_mode = 2
+text = "Card Stats"
+horizontal_alignment = 1
+
+[node name="DeckGeneratorNode" type="Node" parent="."]
+script = SubResource("GDScript_o1os1")

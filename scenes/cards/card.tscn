@@ -1,118 +1,111 @@
-[gd_scene load_steps=10 format=3 uid="uid://3trgkf0u68ry"]
+[gd_scene load_steps=5 format=3 uid="uid://3trgkf0u68ry"]
 
-[ext_resource type="Script" uid="uid://dnjo7osixa1og" path="res://addons/smart_drag_drop/card/card.gd" id="1_gelhr"]
-[ext_resource type="Script" uid="uid://clffwysr052qw" path="res://addons/smart_drag_drop/card/state_machine/card_state_machine.gd" id="2_vqdgh"]
-[ext_resource type="Script" uid="uid://dwimu5gotiwlg" path="res://addons/smart_drag_drop/card/state_machine/states/idle_card_state.gd" id="3_bx54l"]
-[ext_resource type="Script" uid="uid://bsaunj5bcaeld" path="res://addons/smart_drag_drop/card/state_machine/states/clicked_card_state.gd" id="4_2bop5"]
-[ext_resource type="Script" uid="uid://ckhrs7ch34o8" path="res://addons/smart_drag_drop/card/state_machine/states/drag_card_state.gd" id="5_f7w2d"]
-[ext_resource type="Script" uid="uid://dpvqm06v1cjm" path="res://addons/smart_drag_drop/card/state_machine/states/release_card_state.gd" id="6_r0y7t"]
-[ext_resource type="Script" uid="uid://kqh34vnnkvkv" path="res://addons/smart_drag_drop/card/state_machine/states/hover_card_state.gd" id="7_xjssr"]
+[ext_resource type="Script" uid="uid://5bfmc8hq4f6a" path="res://scripts/decks/Card.gd" id="1_0qqw3"]
 [ext_resource type="Texture2D" uid="uid://bybjxjwjk12tt" path="res://assets/cards/Base/BaseCard.png" id="8_mmwdp"]
+[ext_resource type="Shader" path="res://shaders/holo_card.gdshader" id="9_holoshader"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gwet6"]
-size = Vector2(75, 125)
+size = Vector2(100, 150)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_count_badge"]
-bg_color = Color(0.1, 0.1, 0.1, 0.85)
-corner_radius_top_left = 12
-corner_radius_top_right = 12
-corner_radius_bottom_left = 12
-corner_radius_bottom_right = 12
-expand_margin_left = 4.0
-expand_margin_top = 4.0
-expand_margin_right = 4.0
-expand_margin_bottom = 4.0
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_holo"]
+shader = ExtResource("9_holoshader")
+shader_parameter/u_strength = 0.0
 
 [node name="Card" type="Control"]
-custom_minimum_size = Vector2(75, 125)
-layout_mode = 2
-anchors_preset = 0
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 75.0
-offset_bottom = 125.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-script = ExtResource("1_gelhr")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+script = ExtResource("1_0qqw3")
 metadata/_edit_use_anchors_ = true
 
-[node name="CardImage" type="TextureButton" parent="." node_paths=PackedStringArray("shortcut_context")]
-custom_minimum_size = Vector2(75, 125)
+[node name="CardImage" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 0.0
-offset_bottom = 0.0
-scale = Vector2(1, 1)
-shortcut_context = NodePath("../CardStateMachine/Click")
-button_mask = 0
+grow_horizontal = 2
+grow_vertical = 2
 texture_normal = ExtResource("8_mmwdp")
-stretch_mode = 4
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="CountLabel" type="Label" parent="."]
-unique_name_in_owner = true
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 layout_mode = 1
-custom_minimum_size = Vector2(22, 22)
-anchors_preset = 0
-anchor_left = 1.0
-anchor_top = 1.0
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -26.0
-offset_top = -26.0
-offset_right = -4.0
-offset_bottom = -4.0
-scale = Vector2(0.8, 0.8)
-text = "xN"
-horizontal_alignment = 2
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0, 0, 0, 1)
+
+[node name="Holo" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+material = SubResource("ShaderMaterial_holo")
+texture = ExtResource("8_mmwdp")
+expand_mode = 1
+stretch_mode = 6
+mouse_filter = 2
+
+[node name="NameLabel" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -23.5
+offset_right = 23.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Name"
+horizontal_alignment = 1
 vertical_alignment = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_count_badge")
 
-[node name="CardStateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
-script = ExtResource("2_vqdgh")
-initial_state = NodePath("Idle")
-
-[node name="Idle" type="Node" parent="CardStateMachine"]
-script = ExtResource("3_bx54l")
-
-[node name="Click" type="Node" parent="CardStateMachine"]
-script = ExtResource("4_2bop5")
-
-[node name="Drag" type="Node" parent="CardStateMachine"]
-script = ExtResource("5_f7w2d")
-
-[node name="Release" type="Node" parent="CardStateMachine"]
-script = ExtResource("6_r0y7t")
-
-[node name="Hover" type="Node" parent="CardStateMachine"]
-script = ExtResource("7_xjssr")
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "State"
 
 [node name="DropPointDetector" type="Area2D" parent="."]
-position = Vector2(37.5, 62.5)
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DropPointDetector"]
+position = Vector2(50, 75)
 shape = SubResource("RectangleShape2D_gwet6")
 
 [node name="CardsDetector" type="Area2D" parent="."]
-position = Vector2(37.5, 62.5)
 collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CardsDetector"]
+position = Vector2(50, 75)
 shape = SubResource("RectangleShape2D_gwet6")
 debug_color = Color(0, 0.6, 0.701961, 0)
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
-[connection signal="gui_input" from="CardImage" to="." method="_on_card_image_gui_input"]
-[connection signal="mouse_entered" from="CardImage" to="." method="_on_card_image_mouse_entered"]
-[connection signal="mouse_exited" from="CardImage" to="." method="_on_card_image_mouse_exited"]

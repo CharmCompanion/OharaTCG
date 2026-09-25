@@ -1,0 +1,164 @@
+{
+	"main": [
+		{
+			"name": "Koby",
+			"type": "Character",
+			"color": "Blue",
+			"cost": 2,
+			"power": 1000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Strike",
+			"traits": [
+				"Navy"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Navy",
+			"effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Play] You may trash 1 card from your hand: Draw 1 card.",
+			"trigger": "",
+			"set_code": "ST33",
+			"set_name": "Starter Deck - BLUE Kuzan [ST-33]",
+			"number": "001",
+			"card_code": "ST33-001",
+			"variant_id": "ST33-001",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST33-001.png?260911"
+		},
+		{
+			"name": "Sakazuki",
+			"type": "Character",
+			"color": "Blue",
+			"cost": 4,
+			"power": 5000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "Common",
+			"attribute": "Special",
+			"traits": [
+				"Navy"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "Navy",
+			"effect": "[When Attacking] You may trash 1 card from your hand: If your opponent has 6 or more cards in their hand, your opponent trashes 1 card from their hand. [On K.O.] Play up to 1 {Navy} type Character card with a cost of 4 or less from your hand.",
+			"trigger": "",
+			"set_code": "ST33",
+			"set_name": "Starter Deck - BLUE Kuzan [ST-33]",
+			"number": "002",
+			"card_code": "ST33-002",
+			"variant_id": "ST33-002",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST33-002.png?260911"
+		},
+		{
+			"name": "Smoker",
+			"type": "Character",
+			"color": "Blue",
+			"cost": 2,
+			"power": 3000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "Common",
+			"attribute": "Special",
+			"traits": [
+				"Navy"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "Navy",
+			"effect": "[On Play] You may trash 1 card from your hand: Place up to 2 of your opponent's Characters with a cost of 2 or less at the bottom of the owner's deck.",
+			"trigger": "",
+			"set_code": "ST33",
+			"set_name": "Starter Deck - BLUE Kuzan [ST-33]",
+			"number": "003",
+			"card_code": "ST33-003",
+			"variant_id": "ST33-003",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST33-003.png?260911"
+		},
+		{
+			"name": "Borsalino",
+			"type": "Character",
+			"color": "Blue",
+			"cost": 6,
+			"power": 6000,
+			"life": 0,
+			"counter": 2000,
+			"rarity": "SuperRare",
+			"attribute": "Special",
+			"traits": [
+				"Navy"
+			],
+			"tags": [
+				"Special"
+			],
+			"archetype": "Navy",
+			"effect": "During the turn in which a card in your hand is trashed by an effect, give this card in your hand −3 cost. [Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+			"trigger": "",
+			"set_code": "ST33",
+			"set_name": "Starter Deck - BLUE Kuzan [ST-33]",
+			"number": "004",
+			"card_code": "ST33-004",
+			"variant_id": "ST33-004",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST33-004.png?260911"
+		},
+		{
+			"name": "Monkey.D.Garp",
+			"type": "Character",
+			"color": "Blue",
+			"cost": 6,
+			"power": 6000,
+			"life": 0,
+			"counter": 1000,
+			"rarity": "SuperRare",
+			"attribute": "Strike",
+			"traits": [
+				"Navy"
+			],
+			"tags": [
+				"Strike"
+			],
+			"archetype": "Navy",
+			"effect": "[On Play] If your Leader has the {Navy} type, play up to 1 blue {Navy} type Character card with 8000 power or less other than [Monkey.D.Garp] from your hand.",
+			"trigger": "",
+			"set_code": "ST33",
+			"set_name": "Starter Deck - BLUE Kuzan [ST-33]",
+			"number": "005",
+			"card_code": "ST33-005",
+			"variant_id": "ST33-005",
+			"art_type": "",
+			"foil_grade": "",
+			"variant_index": 0,
+			"block_number": 5,
+			"region": "EN",
+			"count": 1,
+			"img_url": "https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST33-005.png?260911"
+		}
+	]
+}

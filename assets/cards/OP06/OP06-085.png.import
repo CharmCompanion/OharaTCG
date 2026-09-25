@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7pwl3py4y8au"
-valid=false
+uid="uid://dio3w14o4ndsb"
+path="res://.godot/imported/OP06-085.png-98d7bef7b2bad5e0ce9e3cebaf4f698c.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/cards/OP06/OP06-085.png"
+dest_files=["res://.godot/imported/OP06-085.png-98d7bef7b2bad5e0ce9e3cebaf4f698c.ctex"]
 
 [params]
 
